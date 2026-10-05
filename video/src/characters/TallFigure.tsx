@@ -10,7 +10,7 @@ import { INK } from "./parts";
  * Origin = ground between the feet.
  */
 
-export type Hold = "fork" | "knife" | "drumstick" | "tape" | "chop" | "phone" | "torch" | null;
+export type Hold = "fork" | "knife" | "drumstick" | "tape" | "chop" | "phone" | "torch" | "spray" | "pitchfork" | "shotgun" | null;
 
 export interface Pose {
   lean: number;
@@ -46,6 +46,10 @@ export interface TallFigureProps {
   tears?: boolean;
   halo?: boolean;
   sway?: number;
+  /** domestic look: torso colour (robe), pink hair curlers instead of a hat, face colour (e.g. a green face mask) */
+  robe?: string;
+  curlers?: boolean;
+  face?: string;
 }
 
 const HoldProp: React.FC<{ kind: Hold; at: Pt; angle: number; s: number }> = ({ kind, at, angle, s }) => {
@@ -94,6 +98,34 @@ const HoldProp: React.FC<{ kind: Hold; at: Pt; angle: number; s: number }> = ({ 
           <rect x={-10} y={2} width={20} height={36} fill="#9fc7e8" opacity={0.85} />
         </g>
       );
+    case "spray":
+      return (
+        <g transform={tr}>
+          {/* trigger spray bottle, nozzle pointing along the forearm */}
+          <path d="M-22,10 L22,10 L26,96 Q0,108 -26,96 Z" fill="#7fb8d8" opacity={0.85} stroke={INK} strokeWidth={4} />
+          <path d="M-22,52 L24,52 L26,96 Q0,108 -26,96 Z" fill="#4f97c4" opacity={0.9} />
+          <rect x={-14} y={-14} width={28} height={26} rx={4} fill="#f2f0ea" stroke={INK} strokeWidth={4} />
+          <path d="M-10,-14 L-10,-44 L34,-44 L34,-30 L8,-30 L8,-14 Z" fill="#f2f0ea" stroke={INK} strokeWidth={4} strokeLinejoin="round" />
+          <path d="M-14,0 C-30,6 -32,30 -18,40" fill="none" stroke="#f2f0ea" strokeWidth={8} strokeLinecap="round" />
+        </g>
+      );
+    case "pitchfork":
+      return (
+        <g transform={tr}>
+          <rect x={-5} y={-120} width={10} height={300} fill="#6b4a2c" stroke={INK} strokeWidth={3} />
+          <path d="M-26,180 L26,180 L26,192 L-26,192 Z" fill="#8b8a86" stroke={INK} strokeWidth={3} />
+          {[-22, 0, 22].map((fx) => (
+            <path key={fx} d={`M${fx - 3},190 L${fx + 3},190 L${fx},250 Z`} fill="#a9a8a2" stroke={INK} strokeWidth={2} />
+          ))}
+        </g>
+      );
+    case "shotgun":
+      return (
+        <g transform={tr}>
+          <path d="M-10,-40 L10,-40 L14,40 L-14,40 Z" fill="#5a3a22" stroke={INK} strokeWidth={3} />
+          <rect x={-6} y={36} width={12} height={170} fill="#2a2a2e" stroke={INK} strokeWidth={3} />
+        </g>
+      );
     case "torch":
       return (
         <g transform={tr}>
@@ -124,6 +156,9 @@ export const TallFigure: React.FC<TallFigureProps> = ({
   tears = false,
   halo = false,
   sway = 1,
+  robe,
+  curlers = false,
+  face,
 }) => {
   const P: Pose = { ...POSE_STAND, ...pose };
   const t2 = onN(frame, 2) / 24;
@@ -200,7 +235,14 @@ export const TallFigure: React.FC<TallFigureProps> = ({
       <path d={limbPath(legB)} stroke={fill} strokeWidth={limbW * 1.15} fill="none" strokeLinecap="round" strokeLinejoin="round" />
       <path d={`M${legB[2][0] - 10 * u},${legB[2][1]} l${46 * u},0`} stroke={fill} strokeWidth={16 * u} strokeLinecap="round" />
       {/* torso: overalls hint */}
-      <path d={torso} fill={fill} stroke={rim} strokeWidth={3 * u} />
+      <path d={torso} fill={robe ?? fill} stroke={rim} strokeWidth={3 * u} />
+      {robe ? (
+        <g>
+          <path d={`M${-36 * u},${hipY - 70 * u} Q0,${hipY - 60 * u} ${36 * u},${hipY - 74 * u}`} stroke="#8a3d5e" strokeWidth={10 * u} fill="none" strokeLinecap="round" />
+          <path d={`M${4 * u},${hipY - 66 * u} l${-10 * u},${60 * u} M${8 * u},${hipY - 66 * u} l${14 * u},${54 * u}`} stroke="#8a3d5e" strokeWidth={7 * u} strokeLinecap="round" />
+          <path d={`M${-40 * u},${hipY + 4 * u} L${-46 * u},${hipY + 150 * u} L${46 * u},${hipY + 150 * u} L${40 * u},${hipY + 4 * u} Z`} fill={robe} stroke={rim} strokeWidth={3 * u} />
+        </g>
+      ) : null}
       <path
         d={`M${-26 * u},${hipY - 8 * u} L${sh[0] - 22 * u},${sh[1] + 30 * u} M${26 * u},${hipY - 8 * u} L${sh[0] + 22 * u},${sh[1] + 30 * u}`}
         stroke="#211b29"
@@ -215,7 +257,23 @@ export const TallFigure: React.FC<TallFigureProps> = ({
       {/* head */}
       <g transform={`translate(${headC[0]} ${headC[1]}) rotate(${P.head + lean * 0.3})`}>
         {halo ? <ellipse cx={0} cy={-headRy - 46 * u} rx={46 * u} ry={12 * u} fill="none" stroke="#f3d65a" strokeWidth={8 * u} /> : null}
-        <ellipse rx={headRx} ry={headRy} fill={fill} stroke={rim} strokeWidth={3 * u} />
+        <ellipse rx={headRx} ry={headRy} fill={face ?? fill} stroke={rim} strokeWidth={3 * u} />
+        {curlers
+          ? [-22, -6, 10, 26, -14, 18].map((cx, i) => (
+              <rect
+                key={i}
+                x={cx * u - 8 * u}
+                y={-headRy - (i < 4 ? 6 : 22) * u}
+                width={16 * u}
+                height={22 * u}
+                rx={6 * u}
+                fill="#e889b0"
+                stroke={INK}
+                strokeWidth={2.5 * u}
+                transform={`rotate(${(i - 2.5) * 12} ${cx * u} ${-headRy})`}
+              />
+            ))
+          : null}
         {eyes === "dots" ? (
           <>
             <circle cx={-11 * u} cy={-8 * u} r={3.6 * u} fill="#f2ead8" />

@@ -18,7 +18,7 @@ const variants = {
 };
 for (const [name, fx] of Object.entries(variants)) {
   const inputProps = { captions: true, debug: false, fx };
-  const composition = await selectComposition({ serveUrl, id: "Oats", inputProps, browserExecutable });
+  const composition = await selectComposition({ serveUrl, id: "ep001-oats", inputProps, browserExecutable });
   const times = [];
   for (let i = 0; i < 3; i++) {
     const t0 = Date.now();

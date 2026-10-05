@@ -1,16 +1,18 @@
 """Merge transcript + speaker turns + Rhubarb mouth cues into a render timeline.
 
-Usage: python pipeline/build_timeline.py episodes/001-oats video/src/episodes/oats/timeline.json [--fps 24]
+Usage: python pipeline/build_timeline.py episodes/001-oats [--out video/src/episodes/001-oats/timeline.json] [--fps 24]
 
 Inputs (inside the episode dir):
   analysis/transcript.json   word timestamps (pipeline/transcribe.py)
   analysis/mouth_cues.json   Rhubarb output (pipeline/lipsync.sh)
-  speakers.json              speaker turns
+  speakers.json              speaker turns: {"from": seconds} or {"at": "first words of the turn"}
   source/audio_16k_mono.wav  for the loudness envelope
 """
 import argparse
 import bisect
+import difflib
 import json
+import re
 from pathlib import Path
 
 import numpy as np
@@ -20,26 +22,95 @@ GAP_MERGE = 0.28  # seconds of silence inside a speaker's words that still count
 PAD = 0.04
 
 
+def norm(w: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", w.lower())
+
+
+def find_phrase(words: list[dict], phrase: str, start_idx: int = 0, window: int = 160) -> tuple[int, float]:
+    """Index of the first word where `phrase` is spoken (fuzzy), searching a window after start_idx.
+    Returns the earliest position scoring >= 0.75, else the best-scoring one in the window."""
+    target = [norm(x) for x in phrase.split() if norm(x)]
+    n = len(target)
+    tj = " ".join(target)
+    best = (min(start_idx, len(words) - 1), 0.0)
+    end = min(len(words) - n + 1, start_idx + window)
+    for i in range(start_idx, max(start_idx + 1, end)):
+        cand = " ".join(norm(w["word"]) for w in words[i : i + n])
+        r = difflib.SequenceMatcher(None, tj, cand).ratio()
+        if r >= 0.75:
+            # take the best of this and the next few positions (avoid locking on one word early)
+            cands = [(i, r)]
+            for j in range(i + 1, min(i + 7, len(words) - n + 1)):
+                cands.append((j, difflib.SequenceMatcher(None, tj, " ".join(norm(w["word"]) for w in words[j : j + n])).ratio()))
+            return max(cands, key=lambda c: c[1])
+        if r > best[1]:
+            best = (i, r)
+    return best
+
+
+VOWEL_SHAPES = {"a": "D", "o": "E", "u": "F", "w": "F", "e": "C", "i": "C", "y": "C"}
+CONS_SHAPES = {"m": "A", "b": "A", "p": "A", "f": "G", "v": "G", "l": "H"}
+
+
+def synth_mouth(words: list[dict]) -> list[dict]:
+    """Rough mouth shapes from spelling (provisional mode, no audio for Rhubarb)."""
+    cues = []
+    for w in words:
+        letters = [c for c in w["word"].lower() if c.isalpha()] or ["a"]
+        dur = max(0.08, w["end"] - w["start"])
+        n = max(1, min(len(letters), int(dur / 0.09)))
+        for k in range(n):
+            ch = letters[int(k * len(letters) / n)]
+            val = VOWEL_SHAPES.get(ch) or CONS_SHAPES.get(ch) or "B"
+            cues.append({"start": w["start"] + dur * k / n, "end": w["start"] + dur * (k + 1) / n, "value": val})
+    return cues
+
+
+def resolve_turns(turns: list[dict], words: list[dict]) -> list[dict]:
+    """Turns may give a start time ("from") or the opening words ("at"); return [{from, speaker}]."""
+    out, idx = [], 0
+    for t in turns:
+        if "at" in t:
+            i, score = find_phrase(words, t["at"], idx)
+            if score < 0.6:
+                ctx = " ".join(w["word"] for w in words[i : i + 6])
+                print(f"WARNING: weak match ({score:.2f}) for turn '{t['at']}' -> '{ctx}' @ {words[i]['start']:.2f}")
+            out.append({"from": max(0.0, words[i]["start"] - 0.05), "speaker": t["speaker"]})
+            idx = min(i + 1, len(words) - 1)
+        else:
+            out.append({"from": float(t["from"]), "speaker": t["speaker"]})
+    return out
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("episode", type=Path)
-    ap.add_argument("out", type=Path)
+    ap.add_argument("--out", type=Path, default=None)
     ap.add_argument("--fps", type=int, default=24)
+    ap.add_argument("--transcript", default="analysis/transcript.json", help="relative to the episode dir")
+    ap.add_argument("--provisional", action="store_true", help="no audio yet: synthesize mouth shapes + loudness from words")
+    ap.add_argument("--duration", type=float, default=None, help="clip length in seconds (provisional mode)")
     args = ap.parse_args()
     ep = args.episode
+    out_path = args.out or Path(__file__).resolve().parent.parent / "video" / "src" / "episodes" / ep.resolve().name / "timeline.json"
 
-    transcript = json.loads((ep / "analysis/transcript.json").read_text())
-    cues = json.loads((ep / "analysis/mouth_cues.json").read_text())["mouthCues"]
-    turns = json.loads((ep / "speakers.json").read_text())["turns"]
-    audio, sr = sf.read(ep / "source/audio_16k_mono.wav")
-    duration = len(audio) / sr
+    transcript = json.loads((ep / args.transcript).read_text())
+    spk_cfg = json.loads((ep / "speakers.json").read_text())
+    words = [w for s in transcript["segments"] for w in s["words"]]
+    if args.provisional:
+        cues = synth_mouth(words)
+        duration = args.duration or (words[-1]["end"] + 1.0)
+        audio, sr = None, 16000
+    else:
+        cues = json.loads((ep / "analysis/mouth_cues.json").read_text())["mouthCues"]
+        audio, sr = sf.read(ep / "source/audio_16k_mono.wav")
+        duration = len(audio) / sr
 
+    turns = resolve_turns(spk_cfg["turns"], words)
     turn_starts = [t["from"] for t in turns]
 
     def speaker_at(t: float) -> str:
         return turns[max(0, bisect.bisect_right(turn_starts, t) - 1)]["speaker"]
-
-    words = [w for s in transcript["segments"] for w in s["words"]]
 
     # Group consecutive words of the same speaker into lines.
     lines = []
@@ -81,26 +152,33 @@ def main() -> None:
         tracks[spk] = track
 
     # Loudness envelope per video frame (0..1).
-    hop = sr / args.fps
     n_frames = int(np.ceil(duration * args.fps))
-    env = []
-    for i in range(n_frames):
-        a, b = int(i * hop), int((i + 1) * hop)
-        chunk = audio[a:b]
-        env.append(float(np.sqrt(np.mean(chunk**2))) if len(chunk) else 0.0)
-    env = np.array(env)
-    env = env / (np.percentile(env, 99) + 1e-9)
-    env = np.clip(env, 0, 1)
+    if audio is None:
+        env = np.zeros(n_frames)
+        for w in words:
+            env[int(w["start"] * args.fps) : int(w["end"] * args.fps) + 1] = 0.55
+    else:
+        hop = sr / args.fps
+        env = []
+        for i in range(n_frames):
+            a, b = int(i * hop), int((i + 1) * hop)
+            chunk = audio[a:b]
+            env.append(float(np.sqrt(np.mean(chunk**2))) if len(chunk) else 0.0)
+        env = np.array(env)
+        env = env / (np.percentile(env, 99) + 1e-9)
+        env = np.clip(env, 0, 1)
 
     out = {
+        "provisional": bool(args.provisional),
         "fps": args.fps,
         "duration": round(duration, 3),
         "lines": lines,
         "mouth": tracks,
         "energy": [round(float(x), 3) for x in env],
     }
-    args.out.parent.mkdir(parents=True, exist_ok=True)
-    args.out.write_text(json.dumps(out))
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(json.dumps(out))
+    print("wrote", out_path)
     for ln in lines:
         print(f"{ln['start']:7.2f}-{ln['end']:7.2f} {ln['speaker']:>9}: {ln['text'][:90]}")
 

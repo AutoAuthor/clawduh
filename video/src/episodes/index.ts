@@ -1,0 +1,6 @@
+import type { EpisodeDef } from "../engine/episode";
+import { episode as ep001 } from "./001-oats";
+import { episode as ep003 } from "./003-wouldnt";
+
+/** Every episode gets two compositions: ep<id> (1920x1080) and ep<id>-vertical (1080x1920). */
+export const EPISODES: EpisodeDef[] = [ep001, ep003];

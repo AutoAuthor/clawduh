@@ -61,7 +61,7 @@ export interface EyeProps {
   ry: number;
   rot?: number;
   look?: Pt;
-  kind?: "dot" | "slit";
+  kind?: "dot" | "slit" | "vslit";
   pupil?: number;
   sclera?: string;
   iris?: string;
@@ -151,6 +151,13 @@ export const Eye: React.FC<EyeProps> = ({
             <circle cx={px} cy={py} r={rx * pupil} fill="#120a08" />
             <circle cx={px - rx * pupil * 0.35} cy={py - rx * pupil * 0.35} r={rx * pupil * 0.28} fill="#fff" opacity={0.85} />
           </>
+        ) : kind === "vslit" ? (
+          <>
+            {/* cat eye: big iris, vertical slit that widens with `pupil` (0.1 = needle, 0.6 = round) */}
+            <ellipse cx={px} cy={py} rx={rx * 0.9} ry={ry * 0.92} fill={iris} />
+            <ellipse cx={px} cy={py} rx={Math.max(rx * 0.06, rx * pupil)} ry={ry * 0.78} fill="#120a08" />
+            <circle cx={px - rx * 0.3} cy={py - ry * 0.38} r={rx * 0.14} fill="#fff" opacity={0.8} />
+          </>
         ) : (
           <>
             <ellipse cx={px} cy={py} rx={rx * 0.86} ry={ry * 0.9} fill={iris} />
@@ -211,6 +218,8 @@ export interface MouthProps {
   skew?: number;
   /** extra-wide open scream multiplier */
   scream?: number;
+  /** two pointed canines (cats, foxes...) */
+  fangs?: boolean;
 }
 
 export const Mouth: React.FC<MouthProps> = ({
@@ -230,6 +239,7 @@ export const Mouth: React.FC<MouthProps> = ({
   seed,
   skew = 0,
   scream = 1,
+  fangs = false,
 }) => {
   const s = SHAPES[shape];
   const hw = (w / 2) * s.wide;
@@ -316,6 +326,17 @@ export const Mouth: React.FC<MouthProps> = ({
         ) : null}
         {s.top ? teethTop : null}
         {s.bottom ? teethBot : null}
+        {fangs && oh > 4
+          ? [-1, 1].map((sd) => (
+              <path
+                key={sd}
+                d={`M${cx + sd * hw * 0.62 - 7},${top - 6} L${cx + sd * hw * 0.62 + 7},${top - 6} L${cx + sd * hw * 0.62},${top + Math.min(oh * 0.6, maxOpen * 0.45)} Z`}
+                fill={toothColor}
+                stroke={INK}
+                strokeWidth={2}
+              />
+            ))
+          : null}
       </g>
       <path d={d} fill="none" stroke={INK} strokeWidth={sw} strokeLinejoin="round" />
       {s.bite ? <path d={`M${cx - hw * 0.8},${bot * 0.3} Q${cx},${bot + 6} ${cx + hw * 0.8},${bot * 0.3}`} fill="none" stroke={lip} strokeWidth={sw + 4} /> : null}

@@ -1,0 +1,312 @@
+{
+  "language": "en",
+  "duration": 18.9706875,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.8,
+      "text": "I do not fear you, mother.",
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.48,
+          "word": "I",
+          "p": 0.757
+        },
+        {
+          "start": 0.48,
+          "end": 0.64,
+          "word": "do",
+          "p": 0.96
+        },
+        {
+          "start": 0.64,
+          "end": 0.84,
+          "word": "not",
+          "p": 0.998
+        },
+        {
+          "start": 0.84,
+          "end": 1.2,
+          "word": "fear",
+          "p": 0.996
+        },
+        {
+          "start": 1.2,
+          "end": 1.5,
+          "word": "you,",
+          "p": 0.986
+        },
+        {
+          "start": 1.7,
+          "end": 1.8,
+          "word": "mother.",
+          "p": 0.625
+        }
+      ]
+    },
+    {
+      "start": 3.22,
+      "end": 6.28,
+      "text": "This device is nothing more than an empty threat.",
+      "words": [
+        {
+          "start": 3.22,
+          "end": 3.52,
+          "word": "This",
+          "p": 0.96
+        },
+        {
+          "start": 3.52,
+          "end": 4.1,
+          "word": "device",
+          "p": 0.978
+        },
+        {
+          "start": 4.1,
+          "end": 4.66,
+          "word": "is",
+          "p": 0.938
+        },
+        {
+          "start": 4.66,
+          "end": 4.92,
+          "word": "nothing",
+          "p": 0.997
+        },
+        {
+          "start": 4.92,
+          "end": 5.28,
+          "word": "more",
+          "p": 0.997
+        },
+        {
+          "start": 5.28,
+          "end": 5.46,
+          "word": "than",
+          "p": 0.989
+        },
+        {
+          "start": 5.46,
+          "end": 5.6,
+          "word": "an",
+          "p": 0.991
+        },
+        {
+          "start": 5.6,
+          "end": 5.82,
+          "word": "empty",
+          "p": 0.998
+        },
+        {
+          "start": 5.82,
+          "end": 6.28,
+          "word": "threat.",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 7.14,
+      "end": 10.98,
+      "text": "You do not have a heart to dampen me, your favorite son.",
+      "words": [
+        {
+          "start": 7.14,
+          "end": 7.36,
+          "word": "You",
+          "p": 0.981
+        },
+        {
+          "start": 7.36,
+          "end": 7.6,
+          "word": "do",
+          "p": 0.991
+        },
+        {
+          "start": 7.6,
+          "end": 7.74,
+          "word": "not",
+          "p": 0.993
+        },
+        {
+          "start": 7.74,
+          "end": 7.92,
+          "word": "have",
+          "p": 0.998
+        },
+        {
+          "start": 7.92,
+          "end": 8.08,
+          "word": "a",
+          "p": 0.605
+        },
+        {
+          "start": 8.08,
+          "end": 8.4,
+          "word": "heart",
+          "p": 0.999
+        },
+        {
+          "start": 8.4,
+          "end": 8.68,
+          "word": "to",
+          "p": 0.925
+        },
+        {
+          "start": 8.68,
+          "end": 9.04,
+          "word": "dampen",
+          "p": 0.982
+        },
+        {
+          "start": 9.04,
+          "end": 9.38,
+          "word": "me,",
+          "p": 0.992
+        },
+        {
+          "start": 9.94,
+          "end": 10.14,
+          "word": "your",
+          "p": 0.958
+        },
+        {
+          "start": 10.14,
+          "end": 10.48,
+          "word": "favorite",
+          "p": 0.747
+        },
+        {
+          "start": 10.48,
+          "end": 10.98,
+          "word": "son.",
+          "p": 0.976
+        }
+      ]
+    },
+    {
+      "start": 12.04,
+      "end": 13.98,
+      "text": "In fact, I challenge you.",
+      "words": [
+        {
+          "start": 12.04,
+          "end": 12.26,
+          "word": "In",
+          "p": 0.988
+        },
+        {
+          "start": 12.26,
+          "end": 12.52,
+          "word": "fact,",
+          "p": 0.999
+        },
+        {
+          "start": 12.86,
+          "end": 12.98,
+          "word": "I",
+          "p": 0.987
+        },
+        {
+          "start": 12.98,
+          "end": 13.5,
+          "word": "challenge",
+          "p": 0.996
+        },
+        {
+          "start": 13.5,
+          "end": 13.98,
+          "word": "you.",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 14.74,
+      "end": 17.32,
+      "text": "I beg of you to prove your worth.",
+      "words": [
+        {
+          "start": 14.74,
+          "end": 14.92,
+          "word": "I",
+          "p": 0.996
+        },
+        {
+          "start": 14.92,
+          "end": 15.38,
+          "word": "beg",
+          "p": 0.988
+        },
+        {
+          "start": 15.38,
+          "end": 15.58,
+          "word": "of",
+          "p": 0.996
+        },
+        {
+          "start": 15.58,
+          "end": 15.72,
+          "word": "you",
+          "p": 0.999
+        },
+        {
+          "start": 15.72,
+          "end": 16.04,
+          "word": "to",
+          "p": 0.956
+        },
+        {
+          "start": 16.04,
+          "end": 16.36,
+          "word": "prove",
+          "p": 0.978
+        },
+        {
+          "start": 16.36,
+          "end": 16.72,
+          "word": "your",
+          "p": 0.989
+        },
+        {
+          "start": 16.72,
+          "end": 17.32,
+          "word": "worth.",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 17.84,
+      "end": 18.52,
+      "text": "I don't beli-",
+      "words": [
+        {
+          "start": 17.84,
+          "end": 17.98,
+          "word": "I",
+          "p": 0.984
+        },
+        {
+          "start": 17.98,
+          "end": 18.36,
+          "word": "don't",
+          "p": 0.982
+        },
+        {
+          "start": 18.36,
+          "end": 18.52,
+          "word": "beli",
+          "p": 0.5
+        },
+        {
+          "start": 18.52,
+          "end": 18.52,
+          "word": "-",
+          "p": 0.801
+        }
+      ]
+    }
+  ]
+}

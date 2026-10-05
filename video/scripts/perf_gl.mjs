@@ -11,7 +11,7 @@ const inputProps = { captions: true, debug: false };
 for (const gl of ["swangle", "swiftshader", "angle", "egl", null]) {
   try {
     const chromiumOptions = gl ? { gl } : {};
-    const composition = await selectComposition({ serveUrl, id: "Oats", inputProps, browserExecutable, chromiumOptions });
+    const composition = await selectComposition({ serveUrl, id: "ep001-oats", inputProps, browserExecutable, chromiumOptions });
     const times = [];
     for (const f of [160, 161, 162, 2837, 3023]) {
       const t0 = Date.now();

@@ -1,0 +1,8 @@
+{
+  "_comment": "Single speaker: the cat talks the whole time; the mother never speaks.",
+  "cast": {
+    "crumpet": "Crumpet - the defiant house cat ('your favorite son')",
+    "mother": "Mother - a tall skinny figure in curlers and a face mask, holding a spray bottle (silent)"
+  },
+  "turns": [{ "at": "I do not fear you, mother", "speaker": "crumpet" }]
+}

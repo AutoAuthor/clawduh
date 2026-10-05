@@ -2,11 +2,11 @@
 // Usage: [COMP=OatsVertical] [OUT=out/stills_v] node scripts/stills.mjs [frame ...]   (no args = middle of every shot)
 import { bundle } from "@remotion/bundler";
 import { renderStill, selectComposition } from "@remotion/renderer";
-import { existsSync, mkdirSync, readFileSync } from "node:fs";
+import { existsSync, mkdirSync } from "node:fs";
 import path from "node:path";
 
 const HEADLESS = "/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell";
-const compId = process.env.COMP ?? "Oats";
+const compId = process.env.COMP ?? "ep001-oats";
 const out = path.resolve(process.env.OUT ?? "out/stills");
 mkdirSync(out, { recursive: true });
 
@@ -17,15 +17,8 @@ const composition = await selectComposition({ serveUrl, id: compId, inputProps, 
 
 let frames = process.argv.slice(2).map(Number);
 if (frames.length === 0) {
-  // parse shot starts/ends from the shot list source
-  const src = readFileSync("src/episodes/oats/shots.tsx", "utf8");
-  const re = /start: ([\d.]+), end: ([\d.]+)/g;
-  let m;
-  while ((m = re.exec(src))) {
-    const s = Number(m[1]);
-    const e = Math.min(Number(m[2]), composition.durationInFrames / composition.fps);
-    frames.push(Math.round(((s + e) / 2) * composition.fps));
-  }
+  // middle of every shot (shot list is exposed on the composition's props)
+  for (const [s, e] of composition.props.shotTimes ?? []) frames.push(Math.round(((s + e) / 2) * composition.fps));
 }
 for (const f of frames) {
   const file = path.join(out, `f${String(f).padStart(5, "0")}.jpg`);

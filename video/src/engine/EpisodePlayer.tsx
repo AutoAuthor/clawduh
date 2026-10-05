@@ -122,7 +122,10 @@ export const EpisodePlayer: React.FC<EpisodePlayerProps> = ({
           {shot.name} | t={t.toFixed(2)} | f={frame}
         </div>
       ) : null}
-      <Audio src={audioSrc} />
+      {timeline.provisional ? null : <Audio src={audioSrc} />}
+      {timeline.provisional && debug ? (
+        <div style={{ position: "absolute", right: 20, top: 16, color: "#ff5", font: "26px monospace", textShadow: "0 0 4px #000" }}>PROVISIONAL TIMING (no audio)</div>
+      ) : null}
       {/* preload the boil maps so <feImage> never samples an unloaded image */}
       <div style={{ position: "absolute", width: 1, height: 1, overflow: "hidden", opacity: 0 }}>
         {DISP_MAPS.map((m, i) => (

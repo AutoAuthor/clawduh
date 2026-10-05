@@ -22,6 +22,8 @@ export interface MouthCue {
 
 /** Output of pipeline/build_timeline.py */
 export interface Timeline {
+  /** true when built from captions without the audio (no sound, approximate lip-sync) */
+  provisional?: boolean;
   fps: number;
   duration: number;
   lines: Line[];
@@ -62,4 +64,33 @@ export function energyAt(tl: Timeline, t: number): number {
 
 export function lineAt(tl: Timeline, t: number): Line | undefined {
   return tl.lines.find((l) => t >= l.start - 0.05 && t <= l.end + 0.25);
+}
+
+const normWord = (w: string) => w.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+/**
+ * Time (seconds) at which `phrase` is spoken, found by fuzzy word matching — so shot lists can be
+ * written against the script ("start when he says 'Lies!'") and survive re-transcription.
+ *   edge: "start" (first word starts, default) | "end" (last word ends)
+ *   after: only search words starting after this time;  offset: added to the result.
+ */
+export function cue(tl: Timeline, phrase: string, opts: { edge?: "start" | "end"; after?: number; offset?: number } = {}): number {
+  const words = tl.lines.flatMap((l) => l.words);
+  const target = phrase.split(/\s+/).map(normWord).filter(Boolean);
+  const n = target.length;
+  let best = { i: -1, score: -1 };
+  for (let i = 0; i + n <= words.length; i++) {
+    if (opts.after !== undefined && words[i].start < opts.after) continue;
+    let hits = 0;
+    for (let k = 0; k < n; k++) if (normWord(words[i + k].word) === target[k]) hits++;
+    const score = hits / n;
+    if (score > best.score) best = { i, score };
+    if (score === 1) break;
+  }
+  if (best.i < 0 || best.score < 0.5) {
+    console.warn(`cue(): no good match for "${phrase}" (best ${best.score.toFixed(2)})`);
+    if (best.i < 0) return opts.after ?? 0;
+  }
+  const t = opts.edge === "end" ? words[best.i + n - 1].end : words[best.i].start;
+  return t + (opts.offset ?? 0);
 }

@@ -5,8 +5,8 @@
   "description": "Automated crude/creepy 2D animation pipeline (Remotion)",
   "scripts": {
     "studio": "remotion studio",
-    "render": "remotion render",
-    "still": "remotion still",
+    "render": "node scripts/render.mjs",
+    "stills": "node scripts/stills.mjs",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
