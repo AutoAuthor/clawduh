@@ -66,7 +66,7 @@ const unit = (a: Pt, b: Pt): Pt => {
   return [dx / l, dy / l];
 };
 const mixPt = (a: Pt, b: Pt, k: number): Pt => [a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k];
-const f = (p: Pt) => `${p[0].toFixed(1)},${p[1].toFixed(1)}`;
+const xy = (p: Pt) => `${p[0].toFixed(1)},${p[1].toFixed(1)}`;
 
 /**
  * A robe sleeve over an arm [shoulder, elbow, wrist]. Built from the arm's own joints, so it bends and swings
@@ -102,25 +102,20 @@ const Sleeve: React.FC<{ arm: Pt[]; u: number; color: string; trim: string; fold
   const [cUp, cLo] = side(C, dF, 26 * u, 40 * u);
   const back = (p: Pt): Pt => [p[0] - dU[0] * 12 * u, p[1] - dU[1] * 12 * u];
   const curve = (pts: Pt[]) => smoothPath(pts, false, 0.9).replace(/^M[^C]*/, "");
-  const d = `M${f(sUp)}${curve([sUp, eUp, cUp])} L${f(cLo)}${curve([cLo, eLo, sLo])} C${f(back(sLo))} ${f(back(sUp))} ${f(sUp)} Z`;
+  const d = `M${xy(sUp)}${curve([sUp, eUp, cUp])} L${xy(cLo)}${curve([cLo, eLo, sLo])} C${xy(back(sLo))} ${xy(back(sUp))} ${xy(sUp)} Z`;
   // fluffy terry-cloth cuff along the opening
   const cuffN = 4;
   const cuffR = (Math.hypot(cLo[0] - cUp[0], cLo[1] - cUp[1]) / cuffN) * 0.62;
   const foldA = mixPt(mixPt(eUp, eLo, 0.62), E, 0.15);
   const foldB = mixPt(cUp, cLo, 0.6);
   const foldMid = mixPt(foldA, foldB, 0.5);
+  const fwd = (p: Pt, k: number): Pt => [p[0] + dF[0] * k * u, p[1] + dF[1] * k * u];
   return (
     <g>
       <path d={d} fill={color} stroke={line} strokeWidth={3 * u} strokeLinejoin="round" />
       {/* elbow crease + a fold hanging down the forearm */}
-      <path
-        d={`M${f(mixPt(eUp, E, 0.2))} Q${f([E[0] + dF[0] * 8 * u, E[1] + dF[1] * 8 * u])} ${f([mixPt(E, eLo, 0.35)[0] + dF[0] * 20 * u, mixPt(E, eLo, 0.35)[1] + dF[1] * 20 * u])}`}
-        stroke={fold}
-        strokeWidth={3 * u}
-        fill="none"
-        strokeLinecap="round"
-      />
-      <path d={`M${f(foldA)} Q${f([foldMid[0], foldMid[1] + 6 * u])} ${f(foldB)}`} stroke={fold} strokeWidth={3 * u} fill="none" strokeLinecap="round" />
+      <path d={`M${xy(mixPt(eUp, E, 0.2))} Q${xy(fwd(E, 8))} ${xy(fwd(mixPt(E, eLo, 0.35), 20))}`} stroke={fold} strokeWidth={3 * u} fill="none" strokeLinecap="round" />
+      <path d={`M${xy(foldA)} Q${xy([foldMid[0], foldMid[1] + 6 * u])} ${xy(foldB)}`} stroke={fold} strokeWidth={3 * u} fill="none" strokeLinecap="round" />
       {Array.from({ length: cuffN }).map((_, i) => {
         const p = mixPt(cUp, cLo, (i + 0.5) / cuffN);
         return <circle key={i} cx={p[0]} cy={p[1]} r={cuffR} fill={trim} stroke={line} strokeWidth={2.2 * u} />;
@@ -328,7 +323,7 @@ export const TallFigure: React.FC<TallFigureProps> = ({
         ],
         false,
         0.6,
-      ) + ` Q${f([hemX, hemY + 10 * u])} ${f([hemX - 60 * u, hemY])} Z`;
+      ) + ` Q${xy([hemX, hemY + 10 * u])} ${xy([hemX - 60 * u, hemY])} Z`;
     const belt = shade(robe, 0.66);
     const trim = shade(robe, 1.08);
     const knot = along(waist, 6 * u);
@@ -340,14 +335,14 @@ export const TallFigure: React.FC<TallFigureProps> = ({
       <g>
         <path d={body} fill={robe} stroke={rim} strokeWidth={3 * u} strokeLinejoin="round" />
         {/* wrap edge from the knot down to the hem */}
-        <path d={`M${f([knot[0] + 2 * u, knot[1] + 8 * u])} Q${f([knot[0] + 18 * u, (knot[1] + hemY) / 2])} ${f([hemX + 16 * u, hemY + 6 * u])}`} stroke={shade(robe, 0.72)} strokeWidth={3 * u} fill="none" strokeLinecap="round" />
+        <path d={`M${xy([knot[0] + 2 * u, knot[1] + 8 * u])} Q${xy([knot[0] + 18 * u, (knot[1] + hemY) / 2])} ${xy([hemX + 16 * u, hemY + 6 * u])}`} stroke={shade(robe, 0.72)} strokeWidth={3 * u} fill="none" strokeLinecap="round" />
         {/* V neckline (bare black chest) + shawl collar wrapping behind the neck */}
-        <path d={`M${f(collarL)} L${f(collarR)} L${f(vBottom)} Z`} fill={fill} />
-        <path d={`M${f(vBottom)} L${f(collarL)} Q${f(nape)} ${f(collarR)} Z`} fill="none" stroke={rim} strokeWidth={15 * u} strokeLinejoin="round" />
-        <path d={`M${f(vBottom)} L${f(collarL)} Q${f(nape)} ${f(collarR)} Z`} fill="none" stroke={trim} strokeWidth={10 * u} strokeLinejoin="round" />
+        <path d={`M${xy(collarL)} L${xy(collarR)} L${xy(vBottom)} Z`} fill={fill} />
+        <path d={`M${xy(vBottom)} L${xy(collarL)} Q${xy(nape)} ${xy(collarR)} Z`} fill="none" stroke={rim} strokeWidth={15 * u} strokeLinejoin="round" />
+        <path d={`M${xy(vBottom)} L${xy(collarL)} Q${xy(nape)} ${xy(collarR)} Z`} fill="none" stroke={trim} strokeWidth={10 * u} strokeLinejoin="round" />
         {/* tie belt */}
-        <path d={`M${f(along(waist, -37 * u))} Q${f(along(waist - 0.035, 0))} ${f(along(waist + 0.013, 37 * u))}`} stroke={belt} strokeWidth={10 * u} fill="none" strokeLinecap="round" />
-        <path d={`M${f(knot)} l${-10 * u},${60 * u} M${f([knot[0] + 4 * u, knot[1]])} l${14 * u},${54 * u}`} stroke={belt} strokeWidth={7 * u} strokeLinecap="round" />
+        <path d={`M${xy(along(waist, -37 * u))} Q${xy(along(waist - 0.035, 0))} ${xy(along(waist + 0.013, 37 * u))}`} stroke={belt} strokeWidth={10 * u} fill="none" strokeLinecap="round" />
+        <path d={`M${xy(knot)} l${-10 * u},${60 * u} M${xy([knot[0] + 4 * u, knot[1]])} l${14 * u},${54 * u}`} stroke={belt} strokeWidth={7 * u} strokeLinecap="round" />
         <ellipse cx={knot[0] + 2 * u} cy={knot[1]} rx={8 * u} ry={6 * u} fill={belt} />
       </g>
     );
