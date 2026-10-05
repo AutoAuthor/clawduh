@@ -1,5 +1,7 @@
 # Episode 003 — "You Wouldn't"
 
+![preview](preview.jpg)
+
 | | |
 |---|---|
 | **Audio** | burialgoods — "You wouldn't" · YouTube: https://youtu.be/OqEE_A93LmI · mirror: https://archive.org/details/you-wouldnt-dubbed-meme-by-burialgoods. |

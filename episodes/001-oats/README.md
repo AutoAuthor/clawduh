@@ -1,5 +1,7 @@
 # Episode 001 — "Brother, May I Have Some Oats?"
 
+![preview](preview.jpg)
+
 | | |
 |---|---|
 | **Audio** | burialgoods — "brother may I have some oats" (a tribute to Joe Capo) · mirror: https://archive.org/details/brother-may-i-have-some-oats |

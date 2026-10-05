@@ -12,7 +12,7 @@ const out = path.resolve(process.env.OUT ?? "out/stills");
 mkdirSync(out, { recursive: true });
 
 const serveUrl = await bundle({ entryPoint: path.resolve("src/index.ts") });
-const inputProps = { captions: true, debug: true };
+const inputProps = { captions: true, debug: process.env.DEBUG !== "0" };
 const browserExecutable = existsSync(HEADLESS) ? HEADLESS : null;
 const composition = await selectComposition({ serveUrl, id: compId, inputProps, browserExecutable, chromiumOptions: { gl: "swiftshader" } });
 

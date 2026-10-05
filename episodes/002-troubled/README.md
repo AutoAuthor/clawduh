@@ -1,5 +1,7 @@
 # Episode 002 — "Brother, I Am Troubled"
 
+![preview](preview.jpg)
+
 | | |
 |---|---|
 | **Audio** | burialgoods — "Brother, I am troubled" · YouTube: https://youtu.be/yA5lujNlkn8 |
