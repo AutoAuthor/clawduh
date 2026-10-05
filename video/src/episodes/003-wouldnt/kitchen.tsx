@@ -305,14 +305,14 @@ export const OverShoulderScene: React.FC = () => {
   const { shot } = useEpisode();
   const { t, frame, local } = shot;
   const step = easeInOut(prog(local, 0.0, 0.95));
-  const cam = camLerp({ x: 960, y: 520, zoom: 1.0 }, { x: 960, y: 500, zoom: 1.06 }, easeInOut(shot.p));
+  const cam = camLerp({ x: 960, y: 520, zoom: 1.0 }, { x: 960, y: 480, zoom: 1.06 }, easeInOut(shot.p));
   return (
     <Stage cam={cam} frame={frame} overlay={<LightWash id="hallwash" color="#f3dca0" cx={500} cy={300} r={900} opacity={0.25} />}>
       <rect x={-600} y={-1300} width={3400} height={3600} fill="#1b2422" />
       <rect x={560} y={80} width={420} height={900} fill="#f3dca0" opacity={0.85} />
       <rect x={560} y={80} width={420} height={900} fill="none" stroke="#141b1a" strokeWidth={24} />
       <rect x={-600} y={980} width={3400} height={1400} fill="#2e2c30" />
-      <Mother x={lerp(770, 820, step)} y={1080} h={lerp(1050, 1200, step)} t={t} frame={frame} raise={1} />
+      <Mother x={lerp(770, 820, step)} y={1080} h={lerp(1050, 1120, step)} t={t} frame={frame} raise={1} />
       {/* the cat from behind (foreground silhouette) */}
       <g transform="translate(1380 1200)">
         <path d="M-260,0 C-280,-200 -180,-330 0,-340 C180,-330 280,-200 260,0 Z" fill="#4d5259" stroke={INK} strokeWidth={8} />

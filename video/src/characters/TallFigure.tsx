@@ -46,11 +46,88 @@ export interface TallFigureProps {
   tears?: boolean;
   halo?: boolean;
   sway?: number;
-  /** domestic look: torso colour (robe), pink hair curlers instead of a hat, face colour (e.g. a green face mask) */
+  /** domestic look: robe colour (one-piece knee-length robe with sleeves over both arms), pink hair curlers instead of a hat, face colour (e.g. a green face mask) */
   robe?: string;
   curlers?: boolean;
   face?: string;
 }
+
+/** Multiply a #rrggbb colour's channels by k (k < 1 darker, k > 1 lighter). */
+const shade = (hex: string, k: number) => {
+  const n = parseInt(hex.slice(1), 16);
+  const ch = (v: number) => Math.round(Math.min(255, Math.max(0, v * k))).toString(16).padStart(2, "0");
+  return `#${ch((n >> 16) & 255)}${ch((n >> 8) & 255)}${ch(n & 255)}`;
+};
+
+const unit = (a: Pt, b: Pt): Pt => {
+  const dx = b[0] - a[0];
+  const dy = b[1] - a[1];
+  const l = Math.hypot(dx, dy) || 1;
+  return [dx / l, dy / l];
+};
+const mixPt = (a: Pt, b: Pt, k: number): Pt => [a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k];
+const f = (p: Pt) => `${p[0].toFixed(1)},${p[1].toFixed(1)}`;
+
+/**
+ * A robe sleeve over an arm [shoulder, elbow, wrist]. Built from the arm's own joints, so it bends and swings
+ * with the arm: it tapers to the elbow, flares into a bell cuff part-way down the forearm (the bare wrist pokes
+ * out) and, the more horizontal the arm, the more its underside sags under its own weight.
+ */
+const Sleeve: React.FC<{ arm: Pt[]; u: number; color: string; trim: string; fold: string; line: string; flutter: number }> = ({
+  arm,
+  u,
+  color,
+  trim,
+  fold,
+  line,
+  flutter,
+}) => {
+  const [S, E, H] = arm;
+  const C = mixPt(E, H, 0.66);
+  const dU = unit(S, E);
+  const dF = unit(E, C);
+  const dE = unit([0, 0], [dU[0] + dF[0], dU[1] + dF[1]]);
+  // the same side of the arm is "underneath" at every joint (picked once from the arm's overall direction)
+  const sgn = H[0] >= S[0] ? 1 : -1;
+  const side = (p: Pt, d: Pt, halfW: number, sag: number): [Pt, Pt] => {
+    const n: Pt = [-d[1] * sgn, d[0] * sgn];
+    const hang = sag * Math.abs(d[0]) * flutter;
+    return [
+      [p[0] - n[0] * halfW, p[1] - n[1] * halfW],
+      [p[0] + n[0] * halfW, p[1] + n[1] * halfW + hang],
+    ];
+  };
+  const [sUp, sLo] = side(S, dU, 22 * u, 0);
+  const [eUp, eLo] = side(E, dE, 17 * u, 20 * u);
+  const [cUp, cLo] = side(C, dF, 26 * u, 40 * u);
+  const back = (p: Pt): Pt => [p[0] - dU[0] * 12 * u, p[1] - dU[1] * 12 * u];
+  const curve = (pts: Pt[]) => smoothPath(pts, false, 0.9).replace(/^M[^C]*/, "");
+  const d = `M${f(sUp)}${curve([sUp, eUp, cUp])} L${f(cLo)}${curve([cLo, eLo, sLo])} C${f(back(sLo))} ${f(back(sUp))} ${f(sUp)} Z`;
+  // fluffy terry-cloth cuff along the opening
+  const cuffN = 4;
+  const cuffR = (Math.hypot(cLo[0] - cUp[0], cLo[1] - cUp[1]) / cuffN) * 0.62;
+  const foldA = mixPt(mixPt(eUp, eLo, 0.62), E, 0.15);
+  const foldB = mixPt(cUp, cLo, 0.6);
+  const foldMid = mixPt(foldA, foldB, 0.5);
+  return (
+    <g>
+      <path d={d} fill={color} stroke={line} strokeWidth={3 * u} strokeLinejoin="round" />
+      {/* elbow crease + a fold hanging down the forearm */}
+      <path
+        d={`M${f(mixPt(eUp, E, 0.2))} Q${f([E[0] + dF[0] * 8 * u, E[1] + dF[1] * 8 * u])} ${f([mixPt(E, eLo, 0.35)[0] + dF[0] * 20 * u, mixPt(E, eLo, 0.35)[1] + dF[1] * 20 * u])}`}
+        stroke={fold}
+        strokeWidth={3 * u}
+        fill="none"
+        strokeLinecap="round"
+      />
+      <path d={`M${f(foldA)} Q${f([foldMid[0], foldMid[1] + 6 * u])} ${f(foldB)}`} stroke={fold} strokeWidth={3 * u} fill="none" strokeLinecap="round" />
+      {Array.from({ length: cuffN }).map((_, i) => {
+        const p = mixPt(cUp, cLo, (i + 0.5) / cuffN);
+        return <circle key={i} cx={p[0]} cy={p[1]} r={cuffR} fill={trim} stroke={line} strokeWidth={2.2 * u} />;
+      })}
+    </g>
+  );
+};
 
 const HoldProp: React.FC<{ kind: Hold; at: Pt; angle: number; s: number }> = ({ kind, at, angle, s }) => {
   if (!kind) return null;
@@ -175,8 +252,11 @@ export const TallFigure: React.FC<TallFigureProps> = ({
   const legF = limb([12 * u, hipY], [P.legF[0], P.legF[1]], legLen);
   const legB = limb([-12 * u, hipY], [P.legB[0], P.legB[1]], legLen);
   const armLen = [190 * u, 180 * u];
-  const armF = limb([sh[0] + 14 * u, sh[1] + 10 * u], [P.armF[0], P.armF[1]], armLen);
-  const armB = limb([sh[0] - 14 * u, sh[1] + 10 * u], [P.armB[0], P.armB[1]], armLen);
+  // in a robe the arms hang from the shoulder seams, so the sleeves start at the shoulders (not at the neck)
+  const shX = (robe ? 30 : 14) * u;
+  const shY = sh[1] + (robe ? 12 : 10) * u;
+  const armF = limb([sh[0] + shX, shY], [P.armF[0], P.armF[1]], armLen);
+  const armB = limb([sh[0] - shX, shY], [P.armB[0], P.armB[1]], armLen);
   const limbW = 22 * u;
 
   const torso = smoothPath(
@@ -210,6 +290,79 @@ export const TallFigure: React.FC<TallFigureProps> = ({
   };
 
   const limbPath = (pts: Pt[]) => smoothPath(pts, false, 0.5);
+  const legs = (pts: Pt[]) => (
+    <>
+      <path d={limbPath(pts)} stroke={fill} strokeWidth={limbW * 1.15} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      <path d={`M${pts[2][0] - 10 * u},${pts[2][1]} l${46 * u},0`} stroke={fill} strokeWidth={16 * u} strokeLinecap="round" />
+    </>
+  );
+
+  // Robe: one knee-length garment over the body; both legs go under it, both arms inside its sleeves.
+  let robeParts: React.ReactNode = null;
+  let sleeve: (arm: Pt[], back: boolean) => React.ReactNode = () => null;
+  if (robe) {
+    const hip: Pt = [0, hipY];
+    const axis = unit(hip, sh);
+    const perp: Pt = [-axis[1], axis[0]];
+    const along = (k: number, off = 0): Pt => {
+      const p = mixPt(hip, sh, k);
+      return [p[0] + perp[0] * off, p[1] + perp[1] * off];
+    };
+    const hemY = hipY + 205 * u;
+    // the hem follows the knees
+    const hemX = ((legF[1][0] + legB[1][0]) / 2) * (205 / 218);
+    const waist = 0.24;
+    const body =
+      smoothPath(
+        [
+          [hemX - 60 * u, hemY],
+          [-42 * u, hipY + 6 * u],
+          along(waist, -35 * u),
+          [sh[0] - 52 * u, sh[1] + 18 * u],
+          [sh[0] - 28 * u, sh[1] - 8 * u],
+          [sh[0] + 28 * u, sh[1] - 8 * u],
+          [sh[0] + 52 * u, sh[1] + 18 * u],
+          along(waist, 35 * u),
+          [42 * u, hipY + 6 * u],
+          [hemX + 60 * u, hemY],
+        ],
+        false,
+        0.6,
+      ) + ` Q${f([hemX, hemY + 10 * u])} ${f([hemX - 60 * u, hemY])} Z`;
+    const belt = shade(robe, 0.66);
+    const trim = shade(robe, 1.08);
+    const knot = along(waist, 6 * u);
+    const vBottom = along(0.64, 4 * u);
+    const collarL = along(1, -17 * u);
+    const collarR = along(1, 17 * u);
+    const nape = along(1.03);
+    robeParts = (
+      <g>
+        <path d={body} fill={robe} stroke={rim} strokeWidth={3 * u} strokeLinejoin="round" />
+        {/* wrap edge from the knot down to the hem */}
+        <path d={`M${f([knot[0] + 2 * u, knot[1] + 8 * u])} Q${f([knot[0] + 18 * u, (knot[1] + hemY) / 2])} ${f([hemX + 16 * u, hemY + 6 * u])}`} stroke={shade(robe, 0.72)} strokeWidth={3 * u} fill="none" strokeLinecap="round" />
+        {/* V neckline (bare black chest) + shawl collar wrapping behind the neck */}
+        <path d={`M${f(collarL)} L${f(collarR)} L${f(vBottom)} Z`} fill={fill} />
+        <path d={`M${f(vBottom)} L${f(collarL)} Q${f(nape)} ${f(collarR)} Z`} fill="none" stroke={rim} strokeWidth={15 * u} strokeLinejoin="round" />
+        <path d={`M${f(vBottom)} L${f(collarL)} Q${f(nape)} ${f(collarR)} Z`} fill="none" stroke={trim} strokeWidth={10 * u} strokeLinejoin="round" />
+        {/* tie belt */}
+        <path d={`M${f(along(waist, -37 * u))} Q${f(along(waist - 0.035, 0))} ${f(along(waist + 0.013, 37 * u))}`} stroke={belt} strokeWidth={10 * u} fill="none" strokeLinecap="round" />
+        <path d={`M${f(knot)} l${-10 * u},${60 * u} M${f([knot[0] + 4 * u, knot[1]])} l${14 * u},${54 * u}`} stroke={belt} strokeWidth={7 * u} strokeLinecap="round" />
+        <ellipse cx={knot[0] + 2 * u} cy={knot[1]} rx={8 * u} ry={6 * u} fill={belt} />
+      </g>
+    );
+    sleeve = (arm, back) => (
+      <Sleeve
+        arm={arm}
+        u={u}
+        color={shade(robe, back ? 0.82 : 1)}
+        trim={shade(trim, back ? 0.82 : 1)}
+        fold={shade(robe, back ? 0.64 : 0.78)}
+        line={rim}
+        flutter={1 + 0.12 * noise2D(id + (back ? "sleeveB" : "sleeveF"), t2 * 0.9, 0)}
+      />
+    );
+  }
   const headRx = 30 * u;
   const headRy = 42 * u;
   const grinW = headRx * 1.9 * grin;
@@ -229,31 +382,32 @@ export const TallFigure: React.FC<TallFigureProps> = ({
   return (
     <g transform={`translate(${x} ${y}) scale(${flip ? -1 : 1} 1)`}>
       <ellipse cx={0} cy={0} rx={90 * u} ry={14 * u} fill="#000" opacity={0.35} />
-      {/* back limbs */}
+      {/* back limbs (in a robe: the back arm wears its sleeve, both legs go under the hem) */}
       <path d={limbPath(armB)} stroke={fill} strokeWidth={limbW} fill="none" strokeLinecap="round" strokeLinejoin="round" />
       {hand(armB, holdB, -1)}
-      <path d={limbPath(legB)} stroke={fill} strokeWidth={limbW * 1.15} fill="none" strokeLinecap="round" strokeLinejoin="round" />
-      <path d={`M${legB[2][0] - 10 * u},${legB[2][1]} l${46 * u},0`} stroke={fill} strokeWidth={16 * u} strokeLinecap="round" />
-      {/* torso: overalls hint */}
-      <path d={torso} fill={robe ?? fill} stroke={rim} strokeWidth={3 * u} />
+      {sleeve(armB, true)}
+      {legs(legB)}
       {robe ? (
-        <g>
-          <path d={`M${-36 * u},${hipY - 70 * u} Q0,${hipY - 60 * u} ${36 * u},${hipY - 74 * u}`} stroke="#8a3d5e" strokeWidth={10 * u} fill="none" strokeLinecap="round" />
-          <path d={`M${4 * u},${hipY - 66 * u} l${-10 * u},${60 * u} M${8 * u},${hipY - 66 * u} l${14 * u},${54 * u}`} stroke="#8a3d5e" strokeWidth={7 * u} strokeLinecap="round" />
-          <path d={`M${-40 * u},${hipY + 4 * u} L${-46 * u},${hipY + 150 * u} L${46 * u},${hipY + 150 * u} L${40 * u},${hipY + 4 * u} Z`} fill={robe} stroke={rim} strokeWidth={3 * u} />
-        </g>
-      ) : null}
-      <path
-        d={`M${-26 * u},${hipY - 8 * u} L${sh[0] - 22 * u},${sh[1] + 30 * u} M${26 * u},${hipY - 8 * u} L${sh[0] + 22 * u},${sh[1] + 30 * u}`}
-        stroke="#211b29"
-        strokeWidth={6 * u}
-      />
-      <rect x={-30 * u} y={hipY - 120 * u} width={60 * u} height={70 * u} rx={6 * u} fill="#17121d" transform={`rotate(${lean * 0.6} 0 ${hipY})`} />
+        <>
+          {legs(legF)}
+          {robeParts}
+        </>
+      ) : (
+        <>
+          {/* torso: overalls hint */}
+          <path d={torso} fill={fill} stroke={rim} strokeWidth={3 * u} />
+          <path
+            d={`M${-26 * u},${hipY - 8 * u} L${sh[0] - 22 * u},${sh[1] + 30 * u} M${26 * u},${hipY - 8 * u} L${sh[0] + 22 * u},${sh[1] + 30 * u}`}
+            stroke="#211b29"
+            strokeWidth={6 * u}
+          />
+          <rect x={-30 * u} y={hipY - 120 * u} width={60 * u} height={70 * u} rx={6 * u} fill="#17121d" transform={`rotate(${lean * 0.6} 0 ${hipY})`} />
+        </>
+      )}
       {/* neck */}
       <path d={`M${sh[0]},${sh[1]} L${neckTop[0]},${neckTop[1]}`} stroke={fill} strokeWidth={14 * u} strokeLinecap="round" />
-      {/* front limbs */}
-      <path d={limbPath(legF)} stroke={fill} strokeWidth={limbW * 1.15} fill="none" strokeLinecap="round" strokeLinejoin="round" />
-      <path d={`M${legF[2][0] - 10 * u},${legF[2][1]} l${46 * u},0`} stroke={fill} strokeWidth={16 * u} strokeLinecap="round" />
+      {/* front leg */}
+      {robe ? null : legs(legF)}
       {/* head */}
       <g transform={`translate(${headC[0]} ${headC[1]}) rotate(${P.head + lean * 0.3})`}>
         {halo ? <ellipse cx={0} cy={-headRy - 46 * u} rx={46 * u} ry={12 * u} fill="none" stroke="#f3d65a" strokeWidth={8 * u} /> : null}
@@ -327,6 +481,7 @@ export const TallFigure: React.FC<TallFigureProps> = ({
       </g>
       <path d={limbPath(armF)} stroke={fill} strokeWidth={limbW} fill="none" strokeLinecap="round" strokeLinejoin="round" />
       {hand(armF, holdF, 1)}
+      {sleeve(armF, false)}
     </g>
   );
 };
