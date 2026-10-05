@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill } from "remotion";
+import { AbsoluteFill, useVideoConfig } from "remotion";
 import type { Timeline, Word } from "./timeline";
 import { rnd } from "./util";
 
@@ -33,17 +33,19 @@ export function buildPhrases(tl: Timeline): Phrase[] {
 }
 
 /** Burned-in captions: each word pops in when spoken, current word highlighted. */
-export const Captions: React.FC<{ phrases: Phrase[]; t: number; bottom?: number }> = ({ phrases, t, bottom = 96 }) => {
+export const Captions: React.FC<{ phrases: Phrase[]; t: number; bottom?: number }> = ({ phrases, t, bottom }) => {
+  const { width, height } = useVideoConfig();
+  const portrait = height > width;
   const ph = phrases.find((p) => t >= p.start - 0.08 && t <= p.end + 0.35);
   if (!ph) return null;
   return (
-    <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "center", paddingBottom: bottom, pointerEvents: "none" }}>
+    <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "center", paddingBottom: bottom ?? (portrait ? Math.round(height * 0.27) : 96), pointerEvents: "none" }}>
       <div
         style={{
           fontFamily: "PatrickHand",
-          fontSize: 76,
+          fontSize: portrait ? 88 : 76,
           lineHeight: 1.05,
-          maxWidth: 1500,
+          maxWidth: portrait ? 940 : 1500,
           textAlign: "center",
           letterSpacing: 1,
           display: "flex",

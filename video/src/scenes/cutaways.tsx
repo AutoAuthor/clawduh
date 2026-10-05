@@ -4,6 +4,7 @@ import { Dumpling } from "../characters/Dumpling";
 import { Candle, DumplingBack, Portrait, SheepBust } from "../characters/extras";
 import { INK } from "../characters/parts";
 import { TallFigure } from "../characters/TallFigure";
+import { useVideoConfig } from "remotion";
 import { useEpisode } from "../engine/context";
 import { Cam, LightWash, Stage, camLerp, camPath } from "../engine/Stage";
 import { energyAt, isTalking, mouthAt } from "../engine/timeline";
@@ -41,9 +42,9 @@ export const FarmhouseWindowScene: React.FC = () => {
   const dt = local - (throwT + 0.15);
   return (
     <Stage cam={cam} frame={frame}>
-      <rect x={-300} y={-300} width={2600} height={1500} fill="#1d1418" />
-      {Array.from({ length: 16 }).map((_, i) => (
-        <line key={i} x1={-300} y1={-200 + i * 90} x2={2300} y2={-200 + i * 90 + (i % 3) * 4} stroke="#120c0f" strokeWidth={5} />
+      <rect x={-600} y={-1300} width={3200} height={3600} fill="#1d1418" />
+      {Array.from({ length: 36 }).map((_, i) => (
+        <line key={i} x1={-600} y1={-1100 + i * 90} x2={2600} y2={-1100 + i * 90 + (i % 3) * 4} stroke="#120c0f" strokeWidth={5} />
       ))}
       <defs>
         <linearGradient id="winlight" x1="0" y1="0" x2="0" y2="1">
@@ -99,7 +100,7 @@ export const VisionScene: React.FC = () => {
   });
   return (
     <Stage cam={cam} frame={frame} overlay={<LightWash id="heav" color="#fff2b0" cx={960} cy={380} r={900} opacity={0.35} />}>
-      <rect x={-400} y={-300} width={2800} height={1600} fill="#e9c95a" />
+      <rect x={-600} y={-1300} width={3200} height={3600} fill="#e9c95a" />
       {rays.map((d, i) => (
         <path key={i} d={d} fill="#f6e7a8" opacity={0.75} />
       ))}
@@ -188,8 +189,8 @@ export const GirthScene: React.FC = () => {
   const bandD = `M${bandX},${cy - ry * 0.97} Q${bandX - rx * 0.32},${cy} ${bandX},${cy + ry * 0.97}`;
   return (
     <Stage cam={cam} frame={frame} shakeAmp={stamp > 0 && stamp < 1 ? 8 : 0}>
-      <rect x={-400} y={-300} width={2800} height={1600} fill="#2a2030" />
-      <rect x={-400} y={880} width={2800} height={600} fill="#2a1e16" />
+      <rect x={-600} y={-1300} width={3200} height={3600} fill="#2a2030" />
+      <rect x={-600} y={880} width={3200} height={1600} fill="#2a1e16" />
       <Dumpling id="girth-dumpling" x={DX} y={DY} scale={S} t={t} frame={frame} mouth="X" expr={stamp > 0.5 ? "dreamy" : "smug"} girth={girth} chewing />
       {/* measuring tape */}
       <path d={bandD} stroke={INK} strokeWidth={46} fill="none" />
@@ -229,7 +230,7 @@ export const CaveScene: React.FC = () => {
   const flick = 0.85 + noise2D("cavefire", t * 4, 0) * 0.15;
   return (
     <Stage cam={cam} frame={frame} overlay={<LightWash id="cavewash" color="#ff9a3a" cx={960} cy={1300} r={1100} opacity={0.45 * flick} />}>
-      <rect x={-400} y={-300} width={2800} height={1600} fill="#140e0c" />
+      <rect x={-600} y={-1300} width={3200} height={3600} fill="#140e0c" />
       {/* lit wall */}
       <path d="M140,120 C500,40 1400,40 1780,140 L1820,820 C1400,880 500,880 100,820 Z" fill="#5a4636" stroke={INK} strokeWidth={8} />
       <path d="M140,120 C500,40 1400,40 1780,140 L1820,820 C1400,880 500,880 100,820 Z" fill="#ffb05a" opacity={0.14 * flick} />
@@ -247,7 +248,7 @@ export const CaveScene: React.FC = () => {
       <path d="M-400,-300 L2400,-300 L2400,120 C1800,40 1300,-20 960,-10 C600,-20 100,40 -400,120 Z" fill="#0d0907" />
       <path d="M-400,1500 L-400,700 C-200,820 0,980 120,1200 Z" fill="#0d0907" />
       <path d="M2400,1500 L2400,700 C2200,820 2000,980 1820,1200 Z" fill="#0d0907" />
-      <rect x={-400} y={940} width={2800} height={500} fill="#1c1410" />
+      <rect x={-600} y={940} width={3200} height={1500} fill="#1c1410" />
       {/* Dumpling, seen from behind, utterly content */}
       <DumplingBack x={960} y={1140} s={1.15} t={t} walk={0} />
     </Stage>
@@ -264,11 +265,11 @@ export const LambsScene: React.FC = () => {
   const cam = camLerp({ x: 960, y: 800, zoom: 1.55 }, { x: 960, y: 815, zoom: 1.78 }, easeInOut(shot.p));
   return (
     <Stage cam={cam} frame={frame}>
-      <rect x={-400} y={-300} width={2800} height={1600} fill="#2e2018" />
+      <rect x={-600} y={-1300} width={3200} height={3600} fill="#2e2018" />
       {Array.from({ length: 22 }).map((_, i) => (
         <line key={i} x1={-400 + i * 130} y1={-300} x2={-400 + i * 130 + (i % 2) * 6} y2={900} stroke="#1f150f" strokeWidth={8} />
       ))}
-      <rect x={-400} y={860} width={2800} height={600} fill="#7d6a34" />
+      <rect x={-600} y={860} width={3200} height={1600} fill="#7d6a34" />
       {Array.from({ length: 70 }).map((_, i) => {
         const x = rnd(`hay${i}`) * 2400 - 200;
         const y = 870 + rnd(`hayy${i}`) * 240;
@@ -305,7 +306,7 @@ export const PortraitsScene: React.FC = () => {
   );
   const extras = useMemo(() => {
     const out: Array<{ x: number; y: number; w: number; h: number; seed: string; props: Record<string, boolean>; tilt: number }> = [];
-    const rows = [-640, -220, 520, 1240];
+    const rows = [-640, -220, 520, 1240, -1060, 1660, 2080];
     const cols = [-760, -260, 500, 960, 1420, 2180, 2680];
     let k = 0;
     for (const ry of rows) {
@@ -374,9 +375,9 @@ export const ShedDoorScene: React.FC = () => {
       shakeAmp={local > slamAt && local < slamAt + 0.5 ? 14 : 0}
       overlay={<LightWash id="doorwash" color="#ff3a17" cx={960} cy={760} r={1000} opacity={0.6 * door} />}
     >
-      <rect x={-400} y={-300} width={2800} height={1600} fill="#120c18" />
+      <rect x={-600} y={-1300} width={3200} height={3600} fill="#120c18" />
       <circle cx={1500} cy={170} r={70} fill="#ddd68f" stroke={INK} strokeWidth={5} />
-      <rect x={-400} y={960} width={2800} height={600} fill="#2a1e16" />
+      <rect x={-600} y={960} width={3200} height={1600} fill="#2a1e16" />
       <Shed x={960} y={962} s={2.3} t={t} glow={1.2} doorOpen={door} bulb={door > 0.5} />
       <defs>
         <clipPath id="doorway">
@@ -397,15 +398,17 @@ export const ShedDoorScene: React.FC = () => {
 
 export const TitleCard: React.FC = () => {
   const { shot } = useEpisode();
+  const { width, height } = useVideoConfig();
+  const portrait = height > width;
   const { local, frame } = shot;
   const o = easeOut(prog(local, 0.1, 0.8));
   const jit = (s: string) => (rnd(`${s}${onN(frame, 3)}`) - 0.5) * 4;
   return (
-    <div style={{ position: "absolute", inset: 0, background: "#070506", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", opacity: o }}>
-      <div style={{ fontFamily: "Creepster", fontSize: 128, color: "#d9d27a", letterSpacing: 4, transform: `translate(${jit("a")}px, ${jit("b")}px) rotate(-1.5deg)`, textShadow: "0 0 30px rgba(200,40,20,0.45)" }}>
+    <div style={{ position: "absolute", inset: 0, background: "#070506", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", opacity: o, padding: portrait ? "0 70px" : 0, textAlign: "center" }}>
+      <div style={{ fontFamily: "Creepster", fontSize: portrait ? 118 : 128, lineHeight: 1.05, color: "#d9d27a", letterSpacing: 4, transform: `translate(${jit("a")}px, ${jit("b")}px) rotate(-1.5deg)`, textShadow: "0 0 30px rgba(200,40,20,0.45)" }}>
         BROTHER, MAY I HAVE SOME OATS?
       </div>
-      <div style={{ fontFamily: "SpecialElite", fontSize: 38, color: "#b9b0a0", marginTop: 36, transform: `translate(${jit("c")}px, 0)` }}>
+      <div style={{ fontFamily: "SpecialElite", fontSize: portrait ? 34 : 38, color: "#b9b0a0", marginTop: 36, transform: `translate(${jit("c")}px, 0)` }}>
         voice &amp; audio: burialgoods — "brother may I have some oats" (a tribute to Joe Capo)
       </div>
     </div>

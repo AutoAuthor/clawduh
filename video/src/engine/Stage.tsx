@@ -1,9 +1,11 @@
 import React, { useContext } from "react";
+import { useVideoConfig } from "remotion";
 import { noise2D } from "@remotion/noise";
-import { FxContext } from "./context";
+import { EpisodeContext, FxContext } from "./context";
 import { DISP_MAPS } from "./dispMaps";
 import { onN, rnd } from "./util";
 
+/** Reference (landscape) frame size the worlds and cameras are authored in. */
 export const W = 1920;
 export const H = 1080;
 
@@ -51,26 +53,30 @@ interface StageProps {
 /**
  * One SVG "stage": the world is drawn in 1920x1080 units, viewed through a camera,
  * then run through a screen-space line-boil filter so every outline wobbles like hand-drawn animation.
+ * The output frame can be any size (landscape or 9:16); the episode can reframe each shot's camera.
  */
-export const Stage: React.FC<StageProps> = ({ cam, frame, shakeAmp = 0, boil: boilAmt = 3.2, bg, children, overlay }) => {
+export const Stage: React.FC<StageProps> = ({ cam: authored, frame, shakeAmp = 0, boil: boilAmt = 3.2, bg, children, overlay }) => {
+  const { width: SW, height: SH } = useVideoConfig();
+  const ep = useContext(EpisodeContext);
+  const cam = ep?.reframe ? ep.reframe(authored) : authored;
   const boil = useContext(FxContext).boil ? boilAmt : 0;
   const s = shakeAmp > 0 ? shake(frame, shakeAmp) : { x: 0, y: 0, rot: 0, zoom: 1 };
   const z = cam.zoom;
-  const transform = `translate(${W / 2 + s.x} ${H / 2 + s.y}) rotate(${(cam.rot ?? 0) + (s.rot ?? 0)}) scale(${z}) translate(${-cam.x} ${-cam.y})`;
+  const transform = `translate(${SW / 2 + s.x} ${SH / 2 + s.y}) rotate(${(cam.rot ?? 0) + (s.rot ?? 0)}) scale(${z}) translate(${-cam.x} ${-cam.y})`;
   // Line boil: a baked smooth-noise displacement map, swapped every 3 frames ("on threes").
   const k = onN(frame, 3) / 3;
   const map = DISP_MAPS[Math.floor(rnd(`boil${k}`) * DISP_MAPS.length)];
   const ox = Math.floor(rnd(`boilx${k}`) * 200);
   const oy = Math.floor(rnd(`boily${k}`) * 120);
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} style={{ position: "absolute", inset: 0, display: "block" }}>
+    <svg viewBox={`0 0 ${SW} ${SH}`} width={SW} height={SH} style={{ position: "absolute", inset: 0, display: "block" }}>
       <defs>
-        <filter id="boil" filterUnits="userSpaceOnUse" x={-60} y={-60} width={W + 120} height={H + 120} colorInterpolationFilters="sRGB">
-          <feImage href={map} x={-260 + ox} y={-180 + oy} width={W + 400} height={H + 300} preserveAspectRatio="none" result="n" />
+        <filter id="boil" filterUnits="userSpaceOnUse" x={-60} y={-60} width={SW + 120} height={SH + 120} colorInterpolationFilters="sRGB">
+          <feImage href={map} x={-260 + ox} y={-180 + oy} width={SW + 400} height={SH + 300} preserveAspectRatio="none" result="n" />
           <feDisplacementMap in="SourceGraphic" in2="n" scale={boil * 2.2} xChannelSelector="R" yChannelSelector="G" />
         </filter>
       </defs>
-      {bg ? <rect x={0} y={0} width={W} height={H} fill={bg} /> : null}
+      {bg ? <rect x={0} y={0} width={SW} height={SH} fill={bg} /> : null}
       <g filter={boil > 0 ? "url(#boil)" : undefined}>
         <g transform={transform}>{children}</g>
         {overlay}
@@ -90,7 +96,7 @@ export function camPath(keys: Array<[number, Cam]>, local: number, ease: (x: num
   return keys[keys.length - 1][1];
 }
 
-/** Screen-space coloured light wash (e.g. red glow from the shed). */
+/** Screen-space coloured light wash (e.g. red glow from the shed). Positions are authored for 1920x1080. */
 export const LightWash: React.FC<{ id: string; color: string; cx?: number; cy?: number; r?: number; opacity: number }> = ({
   id,
   color,
@@ -98,14 +104,25 @@ export const LightWash: React.FC<{ id: string; color: string; cx?: number; cy?: 
   cy = 540,
   r = 1100,
   opacity,
-}) => (
-  <g style={{ mixBlendMode: "screen" }} opacity={opacity}>
-    <defs>
-      <radialGradient id={id} gradientUnits="userSpaceOnUse" cx={cx} cy={cy} r={r}>
-        <stop offset="0" stopColor={color} stopOpacity="0.85" />
-        <stop offset="1" stopColor={color} stopOpacity="0" />
-      </radialGradient>
-    </defs>
-    <rect x={0} y={0} width={W} height={H} fill={`url(#${id})`} />
-  </g>
-);
+}) => {
+  const { width: SW, height: SH } = useVideoConfig();
+  const sx = SW / W;
+  const sy = SH / H;
+  return (
+    <g style={{ mixBlendMode: "screen" }} opacity={opacity}>
+      <defs>
+        <radialGradient id={id} gradientUnits="userSpaceOnUse" cx={cx * sx} cy={cy * sy} r={r * Math.max(sx, sy)}>
+          <stop offset="0" stopColor={color} stopOpacity="0.85" />
+          <stop offset="1" stopColor={color} stopOpacity="0" />
+        </radialGradient>
+      </defs>
+      <rect x={-SW} y={-SH} width={SW * 3} height={SH * 3} fill={`url(#${id})`} />
+    </g>
+  );
+};
+
+/** Full-screen flash rectangle for any output size (screen space). */
+export const ScreenFlash: React.FC<{ color: string; opacity: number }> = ({ color, opacity }) => {
+  const { width: SW, height: SH } = useVideoConfig();
+  return <rect x={-SW} y={-SH} width={SW * 3} height={SH * 3} fill={color} opacity={opacity} />;
+};

@@ -5,14 +5,14 @@ import { Gristle } from "../characters/Gristle";
 import { INK, StinkLines } from "../characters/parts";
 import { TallFigure } from "../characters/TallFigure";
 import { useEpisode } from "../engine/context";
-import { LightWash, Stage, camLerp } from "../engine/Stage";
+import { LightWash, ScreenFlash, Stage, camLerp } from "../engine/Stage";
 import { blob, easeIn, easeInOut, easeOut, lerp, onN, prog, rnd, smoothPath } from "../engine/util";
 import { Fence, Hills, Sky } from "./Pen";
 
 /* Memory sequences narrated by Gristle. All use the "memory" grade (sepia/red) set on the shot. */
 
 const Ground: React.FC<{ y: number; color?: string }> = ({ y, color = "#2a2016" }) => (
-  <rect x={-600} y={y} width={3200} height={1400} fill={color} />
+  <rect x={-600} y={y} width={3200} height={2600} fill={color} />
 );
 
 /* ------------------------------------------------------------------ */
@@ -98,11 +98,11 @@ export const WeepingScene: React.FC = () => {
   return (
     <Stage cam={cam} frame={frame}>
       {/* striped wallpaper */}
-      <rect x={-400} y={-300} width={2800} height={1400} fill="#2c1f23" />
-      {Array.from({ length: 30 }).map((_, i) => (
-        <rect key={i} x={-400 + i * 96} y={-300} width={40} height={1400} fill="#36262b" />
+      <rect x={-600} y={-1300} width={3200} height={2400} fill="#2c1f23" />
+      {Array.from({ length: 32 }).map((_, i) => (
+        <rect key={i} x={-592 + i * 96} y={-1300} width={40} height={2400} fill="#36262b" />
       ))}
-      <rect x={-400} y={830} width={2800} height={600} fill="#24170f" />
+      <rect x={-600} y={830} width={3200} height={1600} fill="#24170f" />
       <line x1={-400} y1={830} x2={2400} y2={830} stroke={INK} strokeWidth={6} />
       {/* window with moonlight */}
       <rect x={1380} y={120} width={300} height={360} fill="#cfc9a0" stroke={INK} strokeWidth={8} />
@@ -285,7 +285,7 @@ export const FairScene: React.FC = () => {
     <Stage
       cam={cam}
       frame={frame}
-      overlay={flash > 0 ? <rect x={0} y={0} width={1920} height={1080} fill="#fffbe8" opacity={flash * 0.75} /> : null}
+      overlay={flash > 0 ? <ScreenFlash color="#fffbe8" opacity={flash * 0.75} /> : null}
     >
       <Sky t={tt} moonX={1450} moonY={160} id="fsky" />
       <FerrisWheel x={300} y={420} r={280} t={t} />
@@ -418,7 +418,7 @@ export const SniffScene: React.FC = () => {
   const cam = camLerp({ x: 790, y: 520, zoom: 2.7 }, { x: 795, y: 505, zoom: 3.3 }, easeInOut(shot.p));
   return (
     <Stage cam={cam} frame={frame}>
-      <rect x={-400} y={-300} width={2800} height={1500} fill="#2a1d1a" />
+      <rect x={-600} y={-1300} width={3200} height={3600} fill="#2a1d1a" />
       {Array.from({ length: 14 }).map((_, i) => (
         <circle key={i} cx={300 + rnd(`bk${i}`) * 1200} cy={200 + rnd(`bky${i}`) * 400} r={30 + rnd(`bkr${i}`) * 50} fill={["#ffd35a", "#ff6a4a", "#7ad0ff"][i % 3]} opacity={0.12} />
       ))}
@@ -554,7 +554,7 @@ export const GrossUpScene: React.FC = () => {
       shakeAmp={tremble}
       overlay={<LightWash id="gwash" color="#ff6a1a" cx={960} cy={1150} r={900} opacity={0.55} />}
     >
-      <rect x={-400} y={-300} width={2800} height={1600} fill="#120a08" />
+      <rect x={-600} y={-1300} width={3200} height={3600} fill="#120a08" />
       <defs>
         <clipPath id="gmouth">
           <path d={mouthPath} />
@@ -646,12 +646,12 @@ export const FoxScene: React.FC = () => {
   return (
     <Stage cam={cam} frame={frame} shakeAmp={2 + rise * 2}>
       <defs>
-        <linearGradient id="hellsky" x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id="hellsky" gradientUnits="userSpaceOnUse" x1="0" y1="-300" x2="0" y2="1300">
           <stop offset="0" stopColor="#1a0605" />
           <stop offset="1" stopColor="#7a1a0a" />
         </linearGradient>
       </defs>
-      <rect x={-400} y={-300} width={2800} height={1600} fill="url(#hellsky)" />
+      <rect x={-600} y={-1300} width={3200} height={3600} fill="url(#hellsky)" />
       {Array.from({ length: 6 }).map((_, i) => (
         <Flames key={i} x={-100 + i * 420} y={1090} w={520} h={420 + (i % 2) * 140} t={t + i} seed={`hf${i}`} n={6} />
       ))}

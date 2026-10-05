@@ -1,4 +1,5 @@
 import { createContext, useContext } from "react";
+import type { Cam } from "./Stage";
 import type { Timeline } from "./timeline";
 
 export interface ShotInfo {
@@ -19,6 +20,8 @@ export interface ShotInfo {
 export interface EpisodeCtx {
   timeline: Timeline;
   shot: ShotInfo;
+  /** per-format camera reframing (e.g. 9:16) applied by every <Stage> */
+  reframe?: (cam: Cam) => Cam;
 }
 
 export const EpisodeContext = createContext<EpisodeCtx | null>(null);

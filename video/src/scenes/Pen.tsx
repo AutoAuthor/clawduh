@@ -26,6 +26,7 @@ export const Sky: React.FC<{ t: number; moonX?: number; moonY?: number; id?: str
           <stop offset="1" stopColor="#c9c27a" stopOpacity="0" />
         </radialGradient>
       </defs>
+      <rect x={-600} y={-1700} width={3200} height={1302} fill={SKY_TOP} />
       <rect x={-400} y={-400} width={2720} height={1300} fill={`url(#${id}-g)`} />
       {stars.map(([sx, sy, ss], i) => (
         <circle key={i} cx={sx} cy={sy} r={1 + ss * 1.6} fill="#e8e2c8" opacity={0.25 + 0.5 * Math.abs(Math.sin(t * (0.5 + ss) + i))} />
@@ -216,7 +217,7 @@ export const Mud: React.FC<{ y: number; t: number; seed?: string }> = ({ y, t, s
   }, [y, seed]);
   return (
     <g>
-      <path d={`M-400,${y} C200,${y - 18} 900,${y + 14} 1500,${y - 10} C1900,${y - 20} 2200,${y} 2400,${y} L2400,1500 L-400,1500 Z`} fill="#2a1e16" stroke={INK} strokeWidth={5} />
+      <path d={`M-400,${y} C200,${y - 18} 900,${y + 14} 1500,${y - 10} C1900,${y - 20} 2200,${y} 2400,${y} L2400,2700 L-400,2700 Z`} fill="#2a1e16" stroke={INK} strokeWidth={5} />
       {bits.blobs.map((b, i) => (
         <path key={i} d={blob(b.x, b.y, b.rx, b.rx * 0.22, 9, 0.25, `${seed}b${i}`)} fill={i % 3 === 0 ? "#3a3550" : "#21170f"} opacity={i % 3 === 0 ? 0.7 : 0.9} />
       ))}

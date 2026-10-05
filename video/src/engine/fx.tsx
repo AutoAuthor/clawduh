@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Img, staticFile } from "remotion";
+import { AbsoluteFill, Img, staticFile, useVideoConfig } from "remotion";
 import { clamp, onN, rnd } from "./util";
 
 export type Grade = "night" | "memory" | "hell" | "heaven" | "cave" | "none";
@@ -24,6 +24,8 @@ export const gradeFilter = (g: Grade): string => {
 
 /** Animated film grain + dust from pre-rendered frames (pipeline/make_fx.py). */
 export const Grain: React.FC<{ frame: number; opacity?: number }> = ({ frame, opacity = 0.32 }) => {
+  const { width, height } = useVideoConfig();
+  const portrait = height > width;
   const i = Math.floor(rnd(`grain${onN(frame, 2)}`) * 12);
   const dx = Math.floor(rnd(`gx${onN(frame, 2)}`) * 20) * 2 - 20;
   const dy = Math.floor(rnd(`gy${onN(frame, 2)}`) * 20) * 2 - 20;
@@ -32,7 +34,11 @@ export const Grain: React.FC<{ frame: number; opacity?: number }> = ({ frame, op
     <AbsoluteFill style={{ opacity: Math.min(1, opacity * 0.9), pointerEvents: "none" }}>
       <Img
         src={staticFile(`fx/grain_${String(i).padStart(2, "0")}.png`)}
-        style={{ width: 1960, height: 1120, position: "absolute", left: -20 + dx, top: -20 + dy, imageRendering: "pixelated" }}
+        style={
+          portrait
+            ? { width: 1960, height: 1120, position: "absolute", left: width / 2 - 980 + dx, top: height / 2 - 560 + dy, imageRendering: "pixelated", transform: "rotate(90deg)" }
+            : { width: 1960, height: 1120, position: "absolute", left: -20 + dx, top: -20 + dy, imageRendering: "pixelated" }
+        }
       />
     </AbsoluteFill>
   );
