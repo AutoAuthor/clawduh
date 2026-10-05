@@ -8,7 +8,7 @@ captions and a hand-drawn horror look. **Every episode is rendered twice: 16:9 (
 | # | Title | Audio | Status | Project |
 |---|---|---|---|---|
 | 001 | Brother, May I Have Some Oats? | burialgoods | ✅ final | [episodes/001-oats](episodes/001-oats/README.md) |
-| 002 | Brother, I Am Troubled | burialgoods | ⚠️ provisional timing (needs the audio analysed) | [episodes/002-troubled](episodes/002-troubled/README.md) |
+| 002 | Brother, I Am Troubled | burialgoods | ⚠️ built (101 shots, both formats); timing provisional until the audio is analysed | [episodes/002-troubled](episodes/002-troubled/README.md) |
 | 003 | You Wouldn't | burialgoods | ✅ final | [episodes/003-wouldnt](episodes/003-wouldnt/README.md) |
 
 All three share one farm universe: the Tall Skinny Ones (farmers, drawn as impossibly long silhouettes), the

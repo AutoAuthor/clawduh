@@ -1,5 +1,6 @@
 // Render review stills (one per shot, or explicit frames) from a single bundle.
-// Usage: [COMP=OatsVertical] [OUT=out/stills_v] node scripts/stills.mjs [frame ...]   (no args = middle of every shot)
+// Usage: [COMP=ep003-wouldnt-vertical] [OUT=out/stills_v] node scripts/stills.mjs [frame ...]   (no args = middle of every shot)
+//        LIST=1 COMP=ep002-troubled node scripts/stills.mjs     (print the resolved shot list)
 import { bundle } from "@remotion/bundler";
 import { renderStill, selectComposition } from "@remotion/renderer";
 import { existsSync, mkdirSync } from "node:fs";
@@ -15,6 +16,10 @@ const inputProps = { captions: true, debug: true };
 const browserExecutable = existsSync(HEADLESS) ? HEADLESS : null;
 const composition = await selectComposition({ serveUrl, id: compId, inputProps, browserExecutable, chromiumOptions: { gl: "swiftshader" } });
 
+if (process.env.LIST) {
+  for (const [s, e, name] of composition.props.shotTimes ?? []) console.log(`${s.toFixed(2).padStart(7)} - ${e.toFixed(2).padStart(7)}  ${name}`);
+  process.exit(0);
+}
 let frames = process.argv.slice(2).map(Number);
 if (frames.length === 0) {
   // middle of every shot (shot list is exposed on the composition's props)
