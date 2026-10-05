@@ -1,0 +1,7 @@
+# third-party source media (not ours to redistribute) and large intermediates
+episodes/*/source/
+# downloaded binaries
+tools/rhubarb/
+# python
+__pycache__/
+*.pyc

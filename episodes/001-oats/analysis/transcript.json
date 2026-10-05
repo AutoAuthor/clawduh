@@ -1,0 +1,2779 @@
+{
+  "language": "en",
+  "duration": 176.402,
+  "segments": [
+    {
+      "start": 0.88,
+      "end": 3.4,
+      "text": "Brother, may I have some oats?",
+      "words": [
+        {
+          "start": 0.88,
+          "end": 1.26,
+          "word": "Brother,",
+          "p": 0.844
+        },
+        {
+          "start": 1.66,
+          "end": 2.16,
+          "word": "may",
+          "p": 0.975
+        },
+        {
+          "start": 2.16,
+          "end": 2.34,
+          "word": "I",
+          "p": 0.971
+        },
+        {
+          "start": 2.34,
+          "end": 2.76,
+          "word": "have",
+          "p": 0.997
+        },
+        {
+          "start": 2.76,
+          "end": 3.06,
+          "word": "some",
+          "p": 0.991
+        },
+        {
+          "start": 3.06,
+          "end": 3.4,
+          "word": "oats?",
+          "p": 0.976
+        }
+      ]
+    },
+    {
+      "start": 4.72,
+      "end": 5.24,
+      "text": "No.",
+      "words": [
+        {
+          "start": 4.72,
+          "end": 5.24,
+          "word": "No.",
+          "p": 0.949
+        }
+      ]
+    },
+    {
+      "start": 5.86,
+      "end": 7.62,
+      "text": "I am starving, brother.",
+      "words": [
+        {
+          "start": 5.86,
+          "end": 6.14,
+          "word": "I",
+          "p": 0.99
+        },
+        {
+          "start": 6.14,
+          "end": 6.4,
+          "word": "am",
+          "p": 0.961
+        },
+        {
+          "start": 6.4,
+          "end": 7.12,
+          "word": "starving,",
+          "p": 0.992
+        },
+        {
+          "start": 7.52,
+          "end": 7.62,
+          "word": "brother.",
+          "p": 0.827
+        }
+      ]
+    },
+    {
+      "start": 8.14,
+      "end": 9.52,
+      "text": "As am I, brother.",
+      "words": [
+        {
+          "start": 8.14,
+          "end": 8.48,
+          "word": "As",
+          "p": 0.992
+        },
+        {
+          "start": 8.48,
+          "end": 8.68,
+          "word": "am",
+          "p": 0.572
+        },
+        {
+          "start": 8.68,
+          "end": 9.0,
+          "word": "I,",
+          "p": 0.995
+        },
+        {
+          "start": 9.3,
+          "end": 9.52,
+          "word": "brother.",
+          "p": 0.996
+        }
+      ]
+    },
+    {
+      "start": 9.94,
+      "end": 13.68,
+      "text": "The tall skinny figure has thrown the oats at me.",
+      "words": [
+        {
+          "start": 9.94,
+          "end": 10.12,
+          "word": "The",
+          "p": 0.981
+        },
+        {
+          "start": 10.12,
+          "end": 10.42,
+          "word": "tall",
+          "p": 0.946
+        },
+        {
+          "start": 10.42,
+          "end": 10.8,
+          "word": "skinny",
+          "p": 0.641
+        },
+        {
+          "start": 10.8,
+          "end": 11.24,
+          "word": "figure",
+          "p": 0.977
+        },
+        {
+          "start": 11.24,
+          "end": 11.56,
+          "word": "has",
+          "p": 0.992
+        },
+        {
+          "start": 11.56,
+          "end": 11.98,
+          "word": "thrown",
+          "p": 0.993
+        },
+        {
+          "start": 11.98,
+          "end": 12.32,
+          "word": "the",
+          "p": 0.98
+        },
+        {
+          "start": 12.32,
+          "end": 12.62,
+          "word": "oats",
+          "p": 0.994
+        },
+        {
+          "start": 12.62,
+          "end": 13.22,
+          "word": "at",
+          "p": 0.991
+        },
+        {
+          "start": 13.22,
+          "end": 13.68,
+          "word": "me.",
+          "p": 0.919
+        }
+      ]
+    },
+    {
+      "start": 14.26,
+      "end": 15.28,
+      "text": "Me, brother.",
+      "words": [
+        {
+          "start": 14.26,
+          "end": 14.78,
+          "word": "Me,",
+          "p": 0.817
+        },
+        {
+          "start": 15.02,
+          "end": 15.28,
+          "word": "brother.",
+          "p": 0.995
+        }
+      ]
+    },
+    {
+      "start": 15.78,
+      "end": 19.08,
+      "text": "I believe they have taken a liking to me.",
+      "words": [
+        {
+          "start": 15.78,
+          "end": 16.28,
+          "word": "I",
+          "p": 0.992
+        },
+        {
+          "start": 16.28,
+          "end": 16.84,
+          "word": "believe",
+          "p": 0.995
+        },
+        {
+          "start": 16.84,
+          "end": 17.28,
+          "word": "they",
+          "p": 0.979
+        },
+        {
+          "start": 17.28,
+          "end": 17.48,
+          "word": "have",
+          "p": 0.993
+        },
+        {
+          "start": 17.48,
+          "end": 17.74,
+          "word": "taken",
+          "p": 0.996
+        },
+        {
+          "start": 17.74,
+          "end": 18.02,
+          "word": "a",
+          "p": 0.991
+        },
+        {
+          "start": 18.02,
+          "end": 18.32,
+          "word": "liking",
+          "p": 1.0
+        },
+        {
+          "start": 18.32,
+          "end": 18.74,
+          "word": "to",
+          "p": 0.988
+        },
+        {
+          "start": 18.74,
+          "end": 19.08,
+          "word": "me.",
+          "p": 0.894
+        }
+      ]
+    },
+    {
+      "start": 19.3,
+      "end": 19.96,
+      "text": "No, brother.",
+      "words": [
+        {
+          "start": 19.3,
+          "end": 19.64,
+          "word": "No,",
+          "p": 0.986
+        },
+        {
+          "start": 19.74,
+          "end": 19.96,
+          "word": "brother.",
+          "p": 0.995
+        }
+      ]
+    },
+    {
+      "start": 20.12,
+      "end": 21.9,
+      "text": "I have seen this before.",
+      "words": [
+        {
+          "start": 20.12,
+          "end": 20.56,
+          "word": "I",
+          "p": 0.999
+        },
+        {
+          "start": 20.56,
+          "end": 20.72,
+          "word": "have",
+          "p": 0.992
+        },
+        {
+          "start": 20.72,
+          "end": 21.04,
+          "word": "seen",
+          "p": 0.998
+        },
+        {
+          "start": 21.04,
+          "end": 21.34,
+          "word": "this",
+          "p": 0.999
+        },
+        {
+          "start": 21.34,
+          "end": 21.9,
+          "word": "before.",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 22.54,
+      "end": 24.54,
+      "text": "I have observed many things.",
+      "words": [
+        {
+          "start": 22.54,
+          "end": 22.86,
+          "word": "I",
+          "p": 0.996
+        },
+        {
+          "start": 22.86,
+          "end": 23.0,
+          "word": "have",
+          "p": 0.986
+        },
+        {
+          "start": 23.0,
+          "end": 23.46,
+          "word": "observed",
+          "p": 0.998
+        },
+        {
+          "start": 23.46,
+          "end": 23.78,
+          "word": "many",
+          "p": 0.999
+        },
+        {
+          "start": 23.78,
+          "end": 24.54,
+          "word": "things.",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 25.02,
+      "end": 27.82,
+      "text": "From the roaring beast that the tall skinny figures",
+      "words": [
+        {
+          "start": 25.02,
+          "end": 25.16,
+          "word": "From",
+          "p": 0.91
+        },
+        {
+          "start": 25.16,
+          "end": 25.32,
+          "word": "the",
+          "p": 0.97
+        },
+        {
+          "start": 25.32,
+          "end": 25.66,
+          "word": "roaring",
+          "p": 0.99
+        },
+        {
+          "start": 25.66,
+          "end": 26.12,
+          "word": "beast",
+          "p": 0.62
+        },
+        {
+          "start": 26.12,
+          "end": 26.36,
+          "word": "that",
+          "p": 0.899
+        },
+        {
+          "start": 26.36,
+          "end": 26.54,
+          "word": "the",
+          "p": 0.978
+        },
+        {
+          "start": 26.54,
+          "end": 26.88,
+          "word": "tall",
+          "p": 0.998
+        },
+        {
+          "start": 26.88,
+          "end": 27.4,
+          "word": "skinny",
+          "p": 0.855
+        },
+        {
+          "start": 27.4,
+          "end": 27.82,
+          "word": "figures",
+          "p": 0.898
+        }
+      ]
+    },
+    {
+      "start": 27.82,
+      "end": 33.1,
+      "text": "crawl in sight after travel far beyond the horizon to how the figure wept when the other",
+      "words": [
+        {
+          "start": 27.82,
+          "end": 28.2,
+          "word": "crawl",
+          "p": 0.613
+        },
+        {
+          "start": 28.2,
+          "end": 28.52,
+          "word": "in",
+          "p": 0.948
+        },
+        {
+          "start": 28.52,
+          "end": 28.72,
+          "word": "sight",
+          "p": 0.921
+        },
+        {
+          "start": 28.72,
+          "end": 28.98,
+          "word": "after",
+          "p": 0.466
+        },
+        {
+          "start": 28.98,
+          "end": 29.34,
+          "word": "travel",
+          "p": 0.935
+        },
+        {
+          "start": 29.34,
+          "end": 29.7,
+          "word": "far",
+          "p": 0.99
+        },
+        {
+          "start": 29.7,
+          "end": 30.06,
+          "word": "beyond",
+          "p": 0.992
+        },
+        {
+          "start": 30.06,
+          "end": 30.24,
+          "word": "the",
+          "p": 0.787
+        },
+        {
+          "start": 30.24,
+          "end": 30.66,
+          "word": "horizon",
+          "p": 0.991
+        },
+        {
+          "start": 30.66,
+          "end": 31.06,
+          "word": "to",
+          "p": 0.888
+        },
+        {
+          "start": 31.06,
+          "end": 31.26,
+          "word": "how",
+          "p": 0.993
+        },
+        {
+          "start": 31.26,
+          "end": 31.54,
+          "word": "the",
+          "p": 0.573
+        },
+        {
+          "start": 31.54,
+          "end": 31.94,
+          "word": "figure",
+          "p": 0.993
+        },
+        {
+          "start": 31.94,
+          "end": 32.44,
+          "word": "wept",
+          "p": 0.675
+        },
+        {
+          "start": 32.44,
+          "end": 32.74,
+          "word": "when",
+          "p": 0.959
+        },
+        {
+          "start": 32.74,
+          "end": 32.88,
+          "word": "the",
+          "p": 0.989
+        },
+        {
+          "start": 32.88,
+          "end": 33.1,
+          "word": "other",
+          "p": 0.986
+        }
+      ]
+    },
+    {
+      "start": 33.1,
+      "end": 39.34,
+      "text": "had fallen into a deep sleep. And from my experiences, I have learned that they will",
+      "words": [
+        {
+          "start": 33.1,
+          "end": 33.34,
+          "word": "had",
+          "p": 0.99
+        },
+        {
+          "start": 33.34,
+          "end": 33.72,
+          "word": "fallen",
+          "p": 0.994
+        },
+        {
+          "start": 33.72,
+          "end": 34.2,
+          "word": "into",
+          "p": 0.99
+        },
+        {
+          "start": 34.2,
+          "end": 34.46,
+          "word": "a",
+          "p": 0.975
+        },
+        {
+          "start": 34.46,
+          "end": 34.72,
+          "word": "deep",
+          "p": 0.995
+        },
+        {
+          "start": 34.72,
+          "end": 35.32,
+          "word": "sleep.",
+          "p": 0.997
+        },
+        {
+          "start": 35.86,
+          "end": 36.16,
+          "word": "And",
+          "p": 0.934
+        },
+        {
+          "start": 36.16,
+          "end": 36.36,
+          "word": "from",
+          "p": 0.933
+        },
+        {
+          "start": 36.36,
+          "end": 36.66,
+          "word": "my",
+          "p": 0.987
+        },
+        {
+          "start": 36.66,
+          "end": 37.56,
+          "word": "experiences,",
+          "p": 0.977
+        },
+        {
+          "start": 38.1,
+          "end": 38.32,
+          "word": "I",
+          "p": 0.978
+        },
+        {
+          "start": 38.32,
+          "end": 38.46,
+          "word": "have",
+          "p": 0.988
+        },
+        {
+          "start": 38.46,
+          "end": 38.84,
+          "word": "learned",
+          "p": 0.984
+        },
+        {
+          "start": 38.84,
+          "end": 39.06,
+          "word": "that",
+          "p": 0.924
+        },
+        {
+          "start": 39.06,
+          "end": 39.16,
+          "word": "they",
+          "p": 0.994
+        },
+        {
+          "start": 39.16,
+          "end": 39.34,
+          "word": "will",
+          "p": 0.989
+        }
+      ]
+    },
+    {
+      "start": 39.34,
+      "end": 48.5,
+      "text": "give extra oats to one of us before taking them into the Shed of No Return. They will",
+      "words": [
+        {
+          "start": 39.34,
+          "end": 39.66,
+          "word": "give",
+          "p": 0.997
+        },
+        {
+          "start": 39.66,
+          "end": 40.26,
+          "word": "extra",
+          "p": 0.986
+        },
+        {
+          "start": 40.26,
+          "end": 40.58,
+          "word": "oats",
+          "p": 0.669
+        },
+        {
+          "start": 40.58,
+          "end": 40.88,
+          "word": "to",
+          "p": 0.995
+        },
+        {
+          "start": 40.88,
+          "end": 41.06,
+          "word": "one",
+          "p": 0.978
+        },
+        {
+          "start": 41.06,
+          "end": 41.22,
+          "word": "of",
+          "p": 0.845
+        },
+        {
+          "start": 41.22,
+          "end": 41.5,
+          "word": "us",
+          "p": 0.998
+        },
+        {
+          "start": 41.5,
+          "end": 41.92,
+          "word": "before",
+          "p": 0.965
+        },
+        {
+          "start": 41.92,
+          "end": 42.4,
+          "word": "taking",
+          "p": 0.992
+        },
+        {
+          "start": 42.4,
+          "end": 42.72,
+          "word": "them",
+          "p": 0.996
+        },
+        {
+          "start": 42.72,
+          "end": 43.46,
+          "word": "into",
+          "p": 0.987
+        },
+        {
+          "start": 43.46,
+          "end": 44.56,
+          "word": "the",
+          "p": 0.44
+        },
+        {
+          "start": 44.56,
+          "end": 45.12,
+          "word": "Shed",
+          "p": 0.639
+        },
+        {
+          "start": 45.12,
+          "end": 45.48,
+          "word": "of",
+          "p": 0.953
+        },
+        {
+          "start": 45.48,
+          "end": 45.84,
+          "word": "No",
+          "p": 0.937
+        },
+        {
+          "start": 45.84,
+          "end": 46.56,
+          "word": "Return.",
+          "p": 0.99
+        },
+        {
+          "start": 47.92,
+          "end": 48.22,
+          "word": "They",
+          "p": 0.975
+        },
+        {
+          "start": 48.22,
+          "end": 48.5,
+          "word": "will",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 48.5,
+      "end": 54.92,
+      "text": "do terrible things in that shed, brother. Lies! That shed is where the chosen ones",
+      "words": [
+        {
+          "start": 48.5,
+          "end": 48.74,
+          "word": "do",
+          "p": 0.998
+        },
+        {
+          "start": 48.74,
+          "end": 49.28,
+          "word": "terrible",
+          "p": 0.998
+        },
+        {
+          "start": 49.28,
+          "end": 49.9,
+          "word": "things",
+          "p": 0.998
+        },
+        {
+          "start": 49.9,
+          "end": 50.14,
+          "word": "in",
+          "p": 0.995
+        },
+        {
+          "start": 50.14,
+          "end": 50.38,
+          "word": "that",
+          "p": 0.986
+        },
+        {
+          "start": 50.38,
+          "end": 50.74,
+          "word": "shed,",
+          "p": 0.777
+        },
+        {
+          "start": 51.14,
+          "end": 51.16,
+          "word": "brother.",
+          "p": 0.965
+        },
+        {
+          "start": 51.5,
+          "end": 51.96,
+          "word": "Lies!",
+          "p": 0.761
+        },
+        {
+          "start": 52.86,
+          "end": 53.12,
+          "word": "That",
+          "p": 0.987
+        },
+        {
+          "start": 53.12,
+          "end": 53.42,
+          "word": "shed",
+          "p": 0.936
+        },
+        {
+          "start": 53.42,
+          "end": 53.66,
+          "word": "is",
+          "p": 0.997
+        },
+        {
+          "start": 53.66,
+          "end": 53.88,
+          "word": "where",
+          "p": 0.995
+        },
+        {
+          "start": 53.88,
+          "end": 54.16,
+          "word": "the",
+          "p": 0.988
+        },
+        {
+          "start": 54.16,
+          "end": 54.54,
+          "word": "chosen",
+          "p": 0.786
+        },
+        {
+          "start": 54.54,
+          "end": 54.92,
+          "word": "ones",
+          "p": 0.992
+        }
+      ]
+    },
+    {
+      "start": 54.92,
+      "end": 61.56,
+      "text": "go to dine with our tall skinny gods. You are a fool, brother, and you shall be left",
+      "words": [
+        {
+          "start": 54.92,
+          "end": 55.14,
+          "word": "go",
+          "p": 0.23
+        },
+        {
+          "start": 55.14,
+          "end": 55.4,
+          "word": "to",
+          "p": 0.979
+        },
+        {
+          "start": 55.4,
+          "end": 55.74,
+          "word": "dine",
+          "p": 0.959
+        },
+        {
+          "start": 55.74,
+          "end": 55.96,
+          "word": "with",
+          "p": 0.983
+        },
+        {
+          "start": 55.96,
+          "end": 56.18,
+          "word": "our",
+          "p": 0.969
+        },
+        {
+          "start": 56.18,
+          "end": 56.58,
+          "word": "tall",
+          "p": 0.927
+        },
+        {
+          "start": 56.58,
+          "end": 57.12,
+          "word": "skinny",
+          "p": 0.439
+        },
+        {
+          "start": 57.12,
+          "end": 57.62,
+          "word": "gods.",
+          "p": 0.922
+        },
+        {
+          "start": 58.38,
+          "end": 58.68,
+          "word": "You",
+          "p": 0.931
+        },
+        {
+          "start": 58.68,
+          "end": 59.14,
+          "word": "are",
+          "p": 0.983
+        },
+        {
+          "start": 59.14,
+          "end": 59.6,
+          "word": "a",
+          "p": 0.993
+        },
+        {
+          "start": 59.6,
+          "end": 59.9,
+          "word": "fool,",
+          "p": 0.985
+        },
+        {
+          "start": 60.26,
+          "end": 60.36,
+          "word": "brother,",
+          "p": 0.942
+        },
+        {
+          "start": 60.68,
+          "end": 60.9,
+          "word": "and",
+          "p": 0.991
+        },
+        {
+          "start": 60.9,
+          "end": 61.06,
+          "word": "you",
+          "p": 0.993
+        },
+        {
+          "start": 61.06,
+          "end": 61.2,
+          "word": "shall",
+          "p": 0.989
+        },
+        {
+          "start": 61.2,
+          "end": 61.4,
+          "word": "be",
+          "p": 0.998
+        },
+        {
+          "start": 61.4,
+          "end": 61.56,
+          "word": "left",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 61.56,
+      "end": 68.32,
+      "text": "behind in the mud with your backwards ideas. No, brother! You must believe me. Share with",
+      "words": [
+        {
+          "start": 61.56,
+          "end": 62.12,
+          "word": "behind",
+          "p": 0.995
+        },
+        {
+          "start": 62.12,
+          "end": 62.34,
+          "word": "in",
+          "p": 0.992
+        },
+        {
+          "start": 62.34,
+          "end": 62.5,
+          "word": "the",
+          "p": 0.995
+        },
+        {
+          "start": 62.5,
+          "end": 62.72,
+          "word": "mud",
+          "p": 0.999
+        },
+        {
+          "start": 62.72,
+          "end": 62.94,
+          "word": "with",
+          "p": 0.992
+        },
+        {
+          "start": 62.94,
+          "end": 63.14,
+          "word": "your",
+          "p": 0.993
+        },
+        {
+          "start": 63.14,
+          "end": 63.68,
+          "word": "backwards",
+          "p": 0.934
+        },
+        {
+          "start": 63.68,
+          "end": 64.46,
+          "word": "ideas.",
+          "p": 0.996
+        },
+        {
+          "start": 64.56,
+          "end": 65.06,
+          "word": "No,",
+          "p": 0.722
+        },
+        {
+          "start": 65.2,
+          "end": 65.46,
+          "word": "brother!",
+          "p": 0.993
+        },
+        {
+          "start": 65.86,
+          "end": 66.14,
+          "word": "You",
+          "p": 0.99
+        },
+        {
+          "start": 66.14,
+          "end": 66.4,
+          "word": "must",
+          "p": 0.999
+        },
+        {
+          "start": 66.4,
+          "end": 66.88,
+          "word": "believe",
+          "p": 0.995
+        },
+        {
+          "start": 66.88,
+          "end": 67.28,
+          "word": "me.",
+          "p": 0.999
+        },
+        {
+          "start": 67.82,
+          "end": 68.06,
+          "word": "Share",
+          "p": 0.994
+        },
+        {
+          "start": 68.06,
+          "end": 68.32,
+          "word": "with",
+          "p": 0.994
+        }
+      ]
+    },
+    {
+      "start": 68.32,
+      "end": 72.92,
+      "text": "me the oats and you shall not reach the desired girth for the tall skinny ones.",
+      "words": [
+        {
+          "start": 68.32,
+          "end": 68.48,
+          "word": "me",
+          "p": 0.998
+        },
+        {
+          "start": 68.48,
+          "end": 68.7,
+          "word": "the",
+          "p": 0.989
+        },
+        {
+          "start": 68.7,
+          "end": 68.9,
+          "word": "oats",
+          "p": 0.581
+        },
+        {
+          "start": 68.9,
+          "end": 69.18,
+          "word": "and",
+          "p": 0.561
+        },
+        {
+          "start": 69.18,
+          "end": 69.36,
+          "word": "you",
+          "p": 0.997
+        },
+        {
+          "start": 69.36,
+          "end": 69.62,
+          "word": "shall",
+          "p": 0.996
+        },
+        {
+          "start": 69.62,
+          "end": 69.86,
+          "word": "not",
+          "p": 0.997
+        },
+        {
+          "start": 69.86,
+          "end": 70.26,
+          "word": "reach",
+          "p": 0.998
+        },
+        {
+          "start": 70.26,
+          "end": 70.52,
+          "word": "the",
+          "p": 0.993
+        },
+        {
+          "start": 70.52,
+          "end": 70.94,
+          "word": "desired",
+          "p": 0.994
+        },
+        {
+          "start": 70.94,
+          "end": 71.26,
+          "word": "girth",
+          "p": 0.981
+        },
+        {
+          "start": 71.26,
+          "end": 71.54,
+          "word": "for",
+          "p": 0.99
+        },
+        {
+          "start": 71.54,
+          "end": 71.68,
+          "word": "the",
+          "p": 0.983
+        },
+        {
+          "start": 71.68,
+          "end": 72.02,
+          "word": "tall",
+          "p": 0.995
+        },
+        {
+          "start": 72.02,
+          "end": 72.4,
+          "word": "skinny",
+          "p": 0.885
+        },
+        {
+          "start": 72.4,
+          "end": 72.92,
+          "word": "ones.",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 73.38,
+      "end": 79.44,
+      "text": "They will spare your life, brother. Aha! So this was all a plan to steal my oats.",
+      "words": [
+        {
+          "start": 73.38,
+          "end": 73.56,
+          "word": "They",
+          "p": 0.982
+        },
+        {
+          "start": 73.56,
+          "end": 73.84,
+          "word": "will",
+          "p": 0.998
+        },
+        {
+          "start": 73.84,
+          "end": 74.34,
+          "word": "spare",
+          "p": 0.993
+        },
+        {
+          "start": 74.34,
+          "end": 74.7,
+          "word": "your",
+          "p": 0.991
+        },
+        {
+          "start": 74.7,
+          "end": 75.1,
+          "word": "life,",
+          "p": 0.996
+        },
+        {
+          "start": 75.32,
+          "end": 75.4,
+          "word": "brother.",
+          "p": 0.961
+        },
+        {
+          "start": 75.54,
+          "end": 76.02,
+          "word": "Aha!",
+          "p": 0.734
+        },
+        {
+          "start": 76.2,
+          "end": 76.5,
+          "word": "So",
+          "p": 0.993
+        },
+        {
+          "start": 76.5,
+          "end": 76.76,
+          "word": "this",
+          "p": 0.919
+        },
+        {
+          "start": 76.76,
+          "end": 76.94,
+          "word": "was",
+          "p": 0.952
+        },
+        {
+          "start": 76.94,
+          "end": 77.18,
+          "word": "all",
+          "p": 0.993
+        },
+        {
+          "start": 77.18,
+          "end": 77.46,
+          "word": "a",
+          "p": 0.991
+        },
+        {
+          "start": 77.46,
+          "end": 77.7,
+          "word": "plan",
+          "p": 0.998
+        },
+        {
+          "start": 77.7,
+          "end": 78.06,
+          "word": "to",
+          "p": 0.985
+        },
+        {
+          "start": 78.06,
+          "end": 78.46,
+          "word": "steal",
+          "p": 0.982
+        },
+        {
+          "start": 78.46,
+          "end": 78.94,
+          "word": "my",
+          "p": 0.998
+        },
+        {
+          "start": 78.94,
+          "end": 79.44,
+          "word": "oats.",
+          "p": 0.989
+        }
+      ]
+    },
+    {
+      "start": 79.44,
+      "end": 82.14,
+      "text": "You truly are despicable, brother.",
+      "words": [
+        {
+          "start": 79.44,
+          "end": 80.32,
+          "word": "You",
+          "p": 0.252
+        },
+        {
+          "start": 80.32,
+          "end": 80.72,
+          "word": "truly",
+          "p": 0.961
+        },
+        {
+          "start": 80.72,
+          "end": 81.08,
+          "word": "are",
+          "p": 0.997
+        },
+        {
+          "start": 81.08,
+          "end": 81.68,
+          "word": "despicable,",
+          "p": 0.978
+        },
+        {
+          "start": 82.08,
+          "end": 82.14,
+          "word": "brother.",
+          "p": 0.931
+        }
+      ]
+    },
+    {
+      "start": 82.64,
+      "end": 85.48,
+      "text": "I will not trust your lies.",
+      "words": [
+        {
+          "start": 82.64,
+          "end": 82.98,
+          "word": "I",
+          "p": 0.987
+        },
+        {
+          "start": 82.98,
+          "end": 83.24,
+          "word": "will",
+          "p": 0.993
+        },
+        {
+          "start": 83.24,
+          "end": 83.56,
+          "word": "not",
+          "p": 0.997
+        },
+        {
+          "start": 83.56,
+          "end": 84.08,
+          "word": "trust",
+          "p": 0.997
+        },
+        {
+          "start": 84.08,
+          "end": 84.52,
+          "word": "your",
+          "p": 0.994
+        },
+        {
+          "start": 84.52,
+          "end": 85.48,
+          "word": "lies.",
+          "p": 0.992
+        }
+      ]
+    },
+    {
+      "start": 86.34,
+      "end": 89.96,
+      "text": "Brother, when they took me outside the reaches of the pointy fences,",
+      "words": [
+        {
+          "start": 86.34,
+          "end": 86.56,
+          "word": "Brother,",
+          "p": 0.831
+        },
+        {
+          "start": 86.92,
+          "end": 87.12,
+          "word": "when",
+          "p": 0.983
+        },
+        {
+          "start": 87.12,
+          "end": 87.24,
+          "word": "they",
+          "p": 0.995
+        },
+        {
+          "start": 87.24,
+          "end": 87.44,
+          "word": "took",
+          "p": 0.998
+        },
+        {
+          "start": 87.44,
+          "end": 87.64,
+          "word": "me",
+          "p": 0.997
+        },
+        {
+          "start": 87.64,
+          "end": 88.02,
+          "word": "outside",
+          "p": 0.997
+        },
+        {
+          "start": 88.02,
+          "end": 88.38,
+          "word": "the",
+          "p": 0.977
+        },
+        {
+          "start": 88.38,
+          "end": 88.68,
+          "word": "reaches",
+          "p": 0.987
+        },
+        {
+          "start": 88.68,
+          "end": 89.02,
+          "word": "of",
+          "p": 0.994
+        },
+        {
+          "start": 89.02,
+          "end": 89.2,
+          "word": "the",
+          "p": 0.984
+        },
+        {
+          "start": 89.2,
+          "end": 89.64,
+          "word": "pointy",
+          "p": 0.938
+        },
+        {
+          "start": 89.64,
+          "end": 89.96,
+          "word": "fences,",
+          "p": 0.994
+        }
+      ]
+    },
+    {
+      "start": 90.48,
+      "end": 93.52,
+      "text": "into the roaring beasts and way over the horizon,",
+      "words": [
+        {
+          "start": 90.48,
+          "end": 90.84,
+          "word": "into",
+          "p": 0.94
+        },
+        {
+          "start": 90.84,
+          "end": 91.18,
+          "word": "the",
+          "p": 0.991
+        },
+        {
+          "start": 91.18,
+          "end": 91.48,
+          "word": "roaring",
+          "p": 0.948
+        },
+        {
+          "start": 91.48,
+          "end": 91.86,
+          "word": "beasts",
+          "p": 0.855
+        },
+        {
+          "start": 91.86,
+          "end": 92.16,
+          "word": "and",
+          "p": 0.584
+        },
+        {
+          "start": 92.16,
+          "end": 92.34,
+          "word": "way",
+          "p": 0.994
+        },
+        {
+          "start": 92.34,
+          "end": 92.72,
+          "word": "over",
+          "p": 0.995
+        },
+        {
+          "start": 92.72,
+          "end": 92.92,
+          "word": "the",
+          "p": 0.997
+        },
+        {
+          "start": 92.92,
+          "end": 93.52,
+          "word": "horizon,",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 93.84,
+      "end": 95.3,
+      "text": "I saw it.",
+      "words": [
+        {
+          "start": 93.84,
+          "end": 94.44,
+          "word": "I",
+          "p": 0.988
+        },
+        {
+          "start": 94.44,
+          "end": 94.88,
+          "word": "saw",
+          "p": 0.996
+        },
+        {
+          "start": 94.88,
+          "end": 95.3,
+          "word": "it.",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 95.84,
+      "end": 99.42,
+      "text": "I was taken to a gathering of these tall, skinny figures.",
+      "words": [
+        {
+          "start": 95.84,
+          "end": 96.08,
+          "word": "I",
+          "p": 0.997
+        },
+        {
+          "start": 96.08,
+          "end": 96.38,
+          "word": "was",
+          "p": 0.999
+        },
+        {
+          "start": 96.38,
+          "end": 96.7,
+          "word": "taken",
+          "p": 0.99
+        },
+        {
+          "start": 96.7,
+          "end": 97.04,
+          "word": "to",
+          "p": 0.989
+        },
+        {
+          "start": 97.04,
+          "end": 97.26,
+          "word": "a",
+          "p": 0.992
+        },
+        {
+          "start": 97.26,
+          "end": 97.56,
+          "word": "gathering",
+          "p": 0.999
+        },
+        {
+          "start": 97.56,
+          "end": 97.82,
+          "word": "of",
+          "p": 0.992
+        },
+        {
+          "start": 97.82,
+          "end": 98.02,
+          "word": "these",
+          "p": 0.983
+        },
+        {
+          "start": 98.02,
+          "end": 98.46,
+          "word": "tall,",
+          "p": 0.997
+        },
+        {
+          "start": 98.7,
+          "end": 98.86,
+          "word": "skinny",
+          "p": 0.998
+        },
+        {
+          "start": 98.86,
+          "end": 99.42,
+          "word": "figures.",
+          "p": 0.992
+        }
+      ]
+    },
+    {
+      "start": 99.66,
+      "end": 102.9,
+      "text": "They paraded me around, brother, and I saw the truth.",
+      "words": [
+        {
+          "start": 99.66,
+          "end": 99.82,
+          "word": "They",
+          "p": 0.994
+        },
+        {
+          "start": 99.82,
+          "end": 100.24,
+          "word": "paraded",
+          "p": 0.996
+        },
+        {
+          "start": 100.24,
+          "end": 100.46,
+          "word": "me",
+          "p": 0.997
+        },
+        {
+          "start": 100.46,
+          "end": 100.86,
+          "word": "around,",
+          "p": 0.996
+        },
+        {
+          "start": 101.28,
+          "end": 101.28,
+          "word": "brother,",
+          "p": 0.987
+        },
+        {
+          "start": 101.28,
+          "end": 101.74,
+          "word": "and",
+          "p": 0.996
+        },
+        {
+          "start": 101.74,
+          "end": 101.88,
+          "word": "I",
+          "p": 0.994
+        },
+        {
+          "start": 101.88,
+          "end": 102.26,
+          "word": "saw",
+          "p": 0.999
+        },
+        {
+          "start": 102.26,
+          "end": 102.56,
+          "word": "the",
+          "p": 0.998
+        },
+        {
+          "start": 102.56,
+          "end": 102.9,
+          "word": "truth.",
+          "p": 0.997
+        }
+      ]
+    },
+    {
+      "start": 103.56,
+      "end": 107.26,
+      "text": "I saw the tall, skinny ones consuming our flesh.",
+      "words": [
+        {
+          "start": 103.56,
+          "end": 103.8,
+          "word": "I",
+          "p": 0.998
+        },
+        {
+          "start": 103.8,
+          "end": 104.24,
+          "word": "saw",
+          "p": 0.999
+        },
+        {
+          "start": 104.24,
+          "end": 104.46,
+          "word": "the",
+          "p": 0.993
+        },
+        {
+          "start": 104.46,
+          "end": 104.84,
+          "word": "tall,",
+          "p": 0.998
+        },
+        {
+          "start": 104.92,
+          "end": 105.32,
+          "word": "skinny",
+          "p": 0.999
+        },
+        {
+          "start": 105.32,
+          "end": 105.68,
+          "word": "ones",
+          "p": 0.997
+        },
+        {
+          "start": 105.68,
+          "end": 106.5,
+          "word": "consuming",
+          "p": 0.965
+        },
+        {
+          "start": 106.5,
+          "end": 106.86,
+          "word": "our",
+          "p": 0.996
+        },
+        {
+          "start": 106.86,
+          "end": 107.26,
+          "word": "flesh.",
+          "p": 1.0
+        }
+      ]
+    },
+    {
+      "start": 107.84,
+      "end": 109.86,
+      "text": "I could not have been mistaken, brother.",
+      "words": [
+        {
+          "start": 107.84,
+          "end": 108.4,
+          "word": "I",
+          "p": 0.532
+        },
+        {
+          "start": 108.4,
+          "end": 108.56,
+          "word": "could",
+          "p": 0.94
+        },
+        {
+          "start": 108.56,
+          "end": 108.74,
+          "word": "not",
+          "p": 0.991
+        },
+        {
+          "start": 108.74,
+          "end": 108.9,
+          "word": "have",
+          "p": 0.946
+        },
+        {
+          "start": 108.9,
+          "end": 109.0,
+          "word": "been",
+          "p": 0.986
+        },
+        {
+          "start": 109.0,
+          "end": 109.46,
+          "word": "mistaken,",
+          "p": 0.986
+        },
+        {
+          "start": 109.86,
+          "end": 109.86,
+          "word": "brother.",
+          "p": 0.931
+        }
+      ]
+    },
+    {
+      "start": 110.44,
+      "end": 113.22,
+      "text": "The smell of the flesh was surely one of us.",
+      "words": [
+        {
+          "start": 110.44,
+          "end": 110.64,
+          "word": "The",
+          "p": 0.952
+        },
+        {
+          "start": 110.64,
+          "end": 111.06,
+          "word": "smell",
+          "p": 0.993
+        },
+        {
+          "start": 111.06,
+          "end": 111.34,
+          "word": "of",
+          "p": 0.996
+        },
+        {
+          "start": 111.34,
+          "end": 111.52,
+          "word": "the",
+          "p": 0.973
+        },
+        {
+          "start": 111.52,
+          "end": 111.74,
+          "word": "flesh",
+          "p": 0.988
+        },
+        {
+          "start": 111.74,
+          "end": 112.06,
+          "word": "was",
+          "p": 0.987
+        },
+        {
+          "start": 112.06,
+          "end": 112.42,
+          "word": "surely",
+          "p": 0.996
+        },
+        {
+          "start": 112.42,
+          "end": 112.62,
+          "word": "one",
+          "p": 0.995
+        },
+        {
+          "start": 112.62,
+          "end": 112.82,
+          "word": "of",
+          "p": 0.996
+        },
+        {
+          "start": 112.82,
+          "end": 113.22,
+          "word": "us.",
+          "p": 0.962
+        }
+      ]
+    },
+    {
+      "start": 114.04,
+      "end": 118.02,
+      "text": "They suspended the flesh above a fire and let it burn before consuming it.",
+      "words": [
+        {
+          "start": 114.04,
+          "end": 114.16,
+          "word": "They",
+          "p": 0.967
+        },
+        {
+          "start": 114.16,
+          "end": 114.7,
+          "word": "suspended",
+          "p": 0.996
+        },
+        {
+          "start": 114.7,
+          "end": 114.96,
+          "word": "the",
+          "p": 0.993
+        },
+        {
+          "start": 114.96,
+          "end": 115.14,
+          "word": "flesh",
+          "p": 0.996
+        },
+        {
+          "start": 115.14,
+          "end": 115.46,
+          "word": "above",
+          "p": 0.991
+        },
+        {
+          "start": 115.46,
+          "end": 115.66,
+          "word": "a",
+          "p": 0.84
+        },
+        {
+          "start": 115.66,
+          "end": 116.0,
+          "word": "fire",
+          "p": 0.995
+        },
+        {
+          "start": 116.0,
+          "end": 116.2,
+          "word": "and",
+          "p": 0.87
+        },
+        {
+          "start": 116.2,
+          "end": 116.28,
+          "word": "let",
+          "p": 0.997
+        },
+        {
+          "start": 116.28,
+          "end": 116.56,
+          "word": "it",
+          "p": 0.997
+        },
+        {
+          "start": 116.56,
+          "end": 116.76,
+          "word": "burn",
+          "p": 0.998
+        },
+        {
+          "start": 116.76,
+          "end": 117.08,
+          "word": "before",
+          "p": 0.991
+        },
+        {
+          "start": 117.08,
+          "end": 117.68,
+          "word": "consuming",
+          "p": 0.997
+        },
+        {
+          "start": 117.68,
+          "end": 118.02,
+          "word": "it.",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 118.34,
+      "end": 120.22,
+      "text": "They did not just consume it either, brother.",
+      "words": [
+        {
+          "start": 118.34,
+          "end": 118.5,
+          "word": "They",
+          "p": 0.987
+        },
+        {
+          "start": 118.5,
+          "end": 118.66,
+          "word": "did",
+          "p": 0.994
+        },
+        {
+          "start": 118.66,
+          "end": 118.82,
+          "word": "not",
+          "p": 0.998
+        },
+        {
+          "start": 118.82,
+          "end": 119.06,
+          "word": "just",
+          "p": 0.993
+        },
+        {
+          "start": 119.06,
+          "end": 119.5,
+          "word": "consume",
+          "p": 0.997
+        },
+        {
+          "start": 119.5,
+          "end": 119.72,
+          "word": "it",
+          "p": 0.991
+        },
+        {
+          "start": 119.72,
+          "end": 119.9,
+          "word": "either,",
+          "p": 0.829
+        },
+        {
+          "start": 120.06,
+          "end": 120.22,
+          "word": "brother.",
+          "p": 0.996
+        }
+      ]
+    },
+    {
+      "start": 120.52,
+      "end": 122.04,
+      "text": "They took pleasure from this.",
+      "words": [
+        {
+          "start": 120.52,
+          "end": 120.78,
+          "word": "They",
+          "p": 0.99
+        },
+        {
+          "start": 120.78,
+          "end": 121.02,
+          "word": "took",
+          "p": 0.998
+        },
+        {
+          "start": 121.02,
+          "end": 121.38,
+          "word": "pleasure",
+          "p": 0.996
+        },
+        {
+          "start": 121.38,
+          "end": 121.7,
+          "word": "from",
+          "p": 0.998
+        },
+        {
+          "start": 121.7,
+          "end": 122.04,
+          "word": "this.",
+          "p": 0.995
+        }
+      ]
+    },
+    {
+      "start": 122.66,
+      "end": 129.06,
+      "text": "Their mouths curved a wicked smile and some even let out moans of satisfaction from consuming our flesh, brother.",
+      "words": [
+        {
+          "start": 122.66,
+          "end": 122.82,
+          "word": "Their",
+          "p": 0.956
+        },
+        {
+          "start": 122.82,
+          "end": 123.1,
+          "word": "mouths",
+          "p": 0.994
+        },
+        {
+          "start": 123.1,
+          "end": 123.56,
+          "word": "curved",
+          "p": 0.956
+        },
+        {
+          "start": 123.56,
+          "end": 123.76,
+          "word": "a",
+          "p": 0.699
+        },
+        {
+          "start": 123.76,
+          "end": 123.98,
+          "word": "wicked",
+          "p": 0.999
+        },
+        {
+          "start": 123.98,
+          "end": 124.56,
+          "word": "smile",
+          "p": 0.997
+        },
+        {
+          "start": 124.56,
+          "end": 124.88,
+          "word": "and",
+          "p": 0.815
+        },
+        {
+          "start": 124.88,
+          "end": 125.04,
+          "word": "some",
+          "p": 0.59
+        },
+        {
+          "start": 125.04,
+          "end": 125.3,
+          "word": "even",
+          "p": 0.99
+        },
+        {
+          "start": 125.3,
+          "end": 125.52,
+          "word": "let",
+          "p": 0.964
+        },
+        {
+          "start": 125.52,
+          "end": 125.78,
+          "word": "out",
+          "p": 0.974
+        },
+        {
+          "start": 125.78,
+          "end": 126.06,
+          "word": "moans",
+          "p": 0.764
+        },
+        {
+          "start": 126.06,
+          "end": 126.36,
+          "word": "of",
+          "p": 0.995
+        },
+        {
+          "start": 126.36,
+          "end": 127.14,
+          "word": "satisfaction",
+          "p": 0.991
+        },
+        {
+          "start": 127.14,
+          "end": 127.48,
+          "word": "from",
+          "p": 0.928
+        },
+        {
+          "start": 127.48,
+          "end": 128.06,
+          "word": "consuming",
+          "p": 0.997
+        },
+        {
+          "start": 128.06,
+          "end": 128.36,
+          "word": "our",
+          "p": 0.99
+        },
+        {
+          "start": 128.36,
+          "end": 128.6,
+          "word": "flesh,",
+          "p": 0.999
+        },
+        {
+          "start": 128.92,
+          "end": 129.06,
+          "word": "brother.",
+          "p": 0.995
+        }
+      ]
+    },
+    {
+      "start": 129.52,
+      "end": 131.88,
+      "text": "The figures are consumers, brother.",
+      "words": [
+        {
+          "start": 129.52,
+          "end": 129.82,
+          "word": "The",
+          "p": 0.967
+        },
+        {
+          "start": 129.82,
+          "end": 130.2,
+          "word": "figures",
+          "p": 0.962
+        },
+        {
+          "start": 130.2,
+          "end": 130.56,
+          "word": "are",
+          "p": 0.996
+        },
+        {
+          "start": 130.56,
+          "end": 131.32,
+          "word": "consumers,",
+          "p": 0.925
+        },
+        {
+          "start": 131.78,
+          "end": 131.88,
+          "word": "brother.",
+          "p": 0.997
+        }
+      ]
+    },
+    {
+      "start": 131.88,
+      "end": 137.92,
+      "text": "They are no different than the furry red demon that consumed and terrorized us and the feathered",
+      "words": [
+        {
+          "start": 131.88,
+          "end": 132.62,
+          "word": "They",
+          "p": 0.443
+        },
+        {
+          "start": 132.62,
+          "end": 132.8,
+          "word": "are",
+          "p": 0.98
+        },
+        {
+          "start": 132.8,
+          "end": 133.02,
+          "word": "no",
+          "p": 0.986
+        },
+        {
+          "start": 133.02,
+          "end": 133.52,
+          "word": "different",
+          "p": 0.997
+        },
+        {
+          "start": 133.52,
+          "end": 133.78,
+          "word": "than",
+          "p": 0.932
+        },
+        {
+          "start": 133.78,
+          "end": 133.94,
+          "word": "the",
+          "p": 0.978
+        },
+        {
+          "start": 133.94,
+          "end": 134.36,
+          "word": "furry",
+          "p": 0.958
+        },
+        {
+          "start": 134.36,
+          "end": 134.68,
+          "word": "red",
+          "p": 0.877
+        },
+        {
+          "start": 134.68,
+          "end": 135.14,
+          "word": "demon",
+          "p": 0.957
+        },
+        {
+          "start": 135.14,
+          "end": 135.36,
+          "word": "that",
+          "p": 0.956
+        },
+        {
+          "start": 135.36,
+          "end": 135.96,
+          "word": "consumed",
+          "p": 0.991
+        },
+        {
+          "start": 135.96,
+          "end": 136.26,
+          "word": "and",
+          "p": 0.962
+        },
+        {
+          "start": 136.26,
+          "end": 136.84,
+          "word": "terrorized",
+          "p": 0.974
+        },
+        {
+          "start": 136.84,
+          "end": 137.16,
+          "word": "us",
+          "p": 0.972
+        },
+        {
+          "start": 137.16,
+          "end": 137.36,
+          "word": "and",
+          "p": 0.658
+        },
+        {
+          "start": 137.36,
+          "end": 137.62,
+          "word": "the",
+          "p": 0.989
+        },
+        {
+          "start": 137.62,
+          "end": 137.92,
+          "word": "feathered",
+          "p": 0.906
+        }
+      ]
+    },
+    {
+      "start": 137.92,
+      "end": 138.42,
+      "text": "ones.",
+      "words": [
+        {
+          "start": 137.92,
+          "end": 138.42,
+          "word": "ones.",
+          "p": 0.992
+        }
+      ]
+    },
+    {
+      "start": 139.8,
+      "end": 143.12,
+      "text": "Your story amuses me, brother, but does not convince me.",
+      "words": [
+        {
+          "start": 139.8,
+          "end": 139.88,
+          "word": "Your",
+          "p": 0.695
+        },
+        {
+          "start": 139.88,
+          "end": 140.4,
+          "word": "story",
+          "p": 0.999
+        },
+        {
+          "start": 140.4,
+          "end": 140.92,
+          "word": "amuses",
+          "p": 0.977
+        },
+        {
+          "start": 140.92,
+          "end": 141.22,
+          "word": "me,",
+          "p": 0.997
+        },
+        {
+          "start": 141.44,
+          "end": 141.58,
+          "word": "brother,",
+          "p": 0.926
+        },
+        {
+          "start": 141.86,
+          "end": 142.08,
+          "word": "but",
+          "p": 0.996
+        },
+        {
+          "start": 142.08,
+          "end": 142.2,
+          "word": "does",
+          "p": 0.887
+        },
+        {
+          "start": 142.2,
+          "end": 142.42,
+          "word": "not",
+          "p": 0.998
+        },
+        {
+          "start": 142.42,
+          "end": 142.8,
+          "word": "convince",
+          "p": 0.996
+        },
+        {
+          "start": 142.8,
+          "end": 143.12,
+          "word": "me.",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 143.7,
+      "end": 148.24,
+      "text": "I shall have these oats myself and dine with the tall, skinny gods.",
+      "words": [
+        {
+          "start": 143.7,
+          "end": 143.88,
+          "word": "I",
+          "p": 0.997
+        },
+        {
+          "start": 143.88,
+          "end": 144.14,
+          "word": "shall",
+          "p": 0.998
+        },
+        {
+          "start": 144.14,
+          "end": 144.44,
+          "word": "have",
+          "p": 0.996
+        },
+        {
+          "start": 144.44,
+          "end": 144.76,
+          "word": "these",
+          "p": 0.984
+        },
+        {
+          "start": 144.76,
+          "end": 145.06,
+          "word": "oats",
+          "p": 0.374
+        },
+        {
+          "start": 145.06,
+          "end": 145.72,
+          "word": "myself",
+          "p": 0.991
+        },
+        {
+          "start": 145.72,
+          "end": 146.12,
+          "word": "and",
+          "p": 0.902
+        },
+        {
+          "start": 146.12,
+          "end": 146.52,
+          "word": "dine",
+          "p": 0.893
+        },
+        {
+          "start": 146.52,
+          "end": 146.78,
+          "word": "with",
+          "p": 0.996
+        },
+        {
+          "start": 146.78,
+          "end": 146.98,
+          "word": "the",
+          "p": 0.988
+        },
+        {
+          "start": 146.98,
+          "end": 147.28,
+          "word": "tall,",
+          "p": 0.986
+        },
+        {
+          "start": 147.44,
+          "end": 147.72,
+          "word": "skinny",
+          "p": 0.998
+        },
+        {
+          "start": 147.72,
+          "end": 148.24,
+          "word": "gods.",
+          "p": 0.959
+        }
+      ]
+    },
+    {
+      "start": 149.08,
+      "end": 150.84,
+      "text": "I am sorry for you, brother.",
+      "words": [
+        {
+          "start": 149.08,
+          "end": 149.42,
+          "word": "I",
+          "p": 0.992
+        },
+        {
+          "start": 149.42,
+          "end": 149.72,
+          "word": "am",
+          "p": 0.969
+        },
+        {
+          "start": 149.72,
+          "end": 150.02,
+          "word": "sorry",
+          "p": 0.999
+        },
+        {
+          "start": 150.02,
+          "end": 150.36,
+          "word": "for",
+          "p": 0.998
+        },
+        {
+          "start": 150.36,
+          "end": 150.56,
+          "word": "you,",
+          "p": 0.995
+        },
+        {
+          "start": 150.78,
+          "end": 150.84,
+          "word": "brother.",
+          "p": 0.996
+        }
+      ]
+    },
+    {
+      "start": 151.6,
+      "end": 157.22,
+      "text": "Your eyes cannot take the blinding light of the truth, and you scurry back to your",
+      "words": [
+        {
+          "start": 151.6,
+          "end": 151.96,
+          "word": "Your",
+          "p": 0.991
+        },
+        {
+          "start": 151.96,
+          "end": 152.32,
+          "word": "eyes",
+          "p": 1.0
+        },
+        {
+          "start": 152.32,
+          "end": 152.62,
+          "word": "cannot",
+          "p": 0.992
+        },
+        {
+          "start": 152.62,
+          "end": 153.12,
+          "word": "take",
+          "p": 0.998
+        },
+        {
+          "start": 153.12,
+          "end": 153.32,
+          "word": "the",
+          "p": 0.998
+        },
+        {
+          "start": 153.32,
+          "end": 153.74,
+          "word": "blinding",
+          "p": 0.998
+        },
+        {
+          "start": 153.74,
+          "end": 154.12,
+          "word": "light",
+          "p": 0.999
+        },
+        {
+          "start": 154.12,
+          "end": 154.38,
+          "word": "of",
+          "p": 0.974
+        },
+        {
+          "start": 154.38,
+          "end": 154.56,
+          "word": "the",
+          "p": 0.979
+        },
+        {
+          "start": 154.56,
+          "end": 154.84,
+          "word": "truth,",
+          "p": 0.983
+        },
+        {
+          "start": 155.32,
+          "end": 155.58,
+          "word": "and",
+          "p": 0.992
+        },
+        {
+          "start": 155.58,
+          "end": 155.78,
+          "word": "you",
+          "p": 0.998
+        },
+        {
+          "start": 155.78,
+          "end": 156.36,
+          "word": "scurry",
+          "p": 0.998
+        },
+        {
+          "start": 156.36,
+          "end": 156.68,
+          "word": "back",
+          "p": 0.998
+        },
+        {
+          "start": 156.68,
+          "end": 156.92,
+          "word": "to",
+          "p": 0.997
+        },
+        {
+          "start": 156.92,
+          "end": 157.22,
+          "word": "your",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 157.22,
+      "end": 157.74,
+      "text": "cave.",
+      "words": [
+        {
+          "start": 157.22,
+          "end": 157.74,
+          "word": "cave.",
+          "p": 0.995
+        }
+      ]
+    },
+    {
+      "start": 157.74,
+      "end": 163.82,
+      "text": "I shall take care of your spawn once they consume you, brother, as they have consumed",
+      "words": [
+        {
+          "start": 157.74,
+          "end": 158.82,
+          "word": "I",
+          "p": 0.881
+        },
+        {
+          "start": 158.82,
+          "end": 159.08,
+          "word": "shall",
+          "p": 0.969
+        },
+        {
+          "start": 159.08,
+          "end": 159.42,
+          "word": "take",
+          "p": 0.993
+        },
+        {
+          "start": 159.42,
+          "end": 159.64,
+          "word": "care",
+          "p": 0.99
+        },
+        {
+          "start": 159.64,
+          "end": 159.82,
+          "word": "of",
+          "p": 0.997
+        },
+        {
+          "start": 159.82,
+          "end": 159.98,
+          "word": "your",
+          "p": 0.991
+        },
+        {
+          "start": 159.98,
+          "end": 160.38,
+          "word": "spawn",
+          "p": 0.921
+        },
+        {
+          "start": 160.38,
+          "end": 160.7,
+          "word": "once",
+          "p": 0.941
+        },
+        {
+          "start": 160.7,
+          "end": 160.92,
+          "word": "they",
+          "p": 0.996
+        },
+        {
+          "start": 160.92,
+          "end": 161.42,
+          "word": "consume",
+          "p": 0.987
+        },
+        {
+          "start": 161.42,
+          "end": 161.72,
+          "word": "you,",
+          "p": 0.968
+        },
+        {
+          "start": 161.92,
+          "end": 162.02,
+          "word": "brother,",
+          "p": 0.93
+        },
+        {
+          "start": 162.56,
+          "end": 162.88,
+          "word": "as",
+          "p": 0.97
+        },
+        {
+          "start": 162.88,
+          "end": 163.08,
+          "word": "they",
+          "p": 0.997
+        },
+        {
+          "start": 163.08,
+          "end": 163.2,
+          "word": "have",
+          "p": 0.98
+        },
+        {
+          "start": 163.2,
+          "end": 163.82,
+          "word": "consumed",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 163.82,
+      "end": 168.5,
+      "text": "your lover, our father, our mother, and many more.",
+      "words": [
+        {
+          "start": 163.82,
+          "end": 164.12,
+          "word": "your",
+          "p": 0.966
+        },
+        {
+          "start": 164.12,
+          "end": 164.52,
+          "word": "lover,",
+          "p": 0.989
+        },
+        {
+          "start": 165.1,
+          "end": 165.26,
+          "word": "our",
+          "p": 0.972
+        },
+        {
+          "start": 165.26,
+          "end": 165.76,
+          "word": "father,",
+          "p": 0.988
+        },
+        {
+          "start": 166.22,
+          "end": 166.38,
+          "word": "our",
+          "p": 0.994
+        },
+        {
+          "start": 166.38,
+          "end": 166.8,
+          "word": "mother,",
+          "p": 0.995
+        },
+        {
+          "start": 167.54,
+          "end": 167.74,
+          "word": "and",
+          "p": 0.996
+        },
+        {
+          "start": 167.74,
+          "end": 168.0,
+          "word": "many",
+          "p": 0.998
+        },
+        {
+          "start": 168.0,
+          "end": 168.5,
+          "word": "more.",
+          "p": 0.998
+        }
+      ]
+    }
+  ]
+}
