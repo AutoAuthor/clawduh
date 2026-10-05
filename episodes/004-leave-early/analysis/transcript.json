@@ -1,0 +1,2561 @@
+{
+  "language": "en",
+  "duration": 91.277625,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.18,
+      "text": "You good, man? You look like dog shit.",
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.24,
+          "word": "You",
+          "p": 0.28
+        },
+        {
+          "start": 0.24,
+          "end": 0.44,
+          "word": "good,",
+          "p": 0.868
+        },
+        {
+          "start": 0.7,
+          "end": 0.8,
+          "word": "man?",
+          "p": 0.987
+        },
+        {
+          "start": 1.08,
+          "end": 1.1,
+          "word": "You",
+          "p": 0.954
+        },
+        {
+          "start": 1.1,
+          "end": 1.24,
+          "word": "look",
+          "p": 0.992
+        },
+        {
+          "start": 1.24,
+          "end": 1.42,
+          "word": "like",
+          "p": 0.995
+        },
+        {
+          "start": 1.42,
+          "end": 1.84,
+          "word": "dog",
+          "p": 0.978
+        },
+        {
+          "start": 1.84,
+          "end": 2.18,
+          "word": "shit.",
+          "p": 0.729
+        }
+      ]
+    },
+    {
+      "start": 2.3,
+      "end": 4.14,
+      "text": "I'm not feeling a thing, man. I just wish I could leave work early.",
+      "words": [
+        {
+          "start": 2.3,
+          "end": 2.3,
+          "word": "I'm",
+          "p": 0.421
+        },
+        {
+          "start": 2.3,
+          "end": 2.3,
+          "word": "not",
+          "p": 0.308
+        },
+        {
+          "start": 2.3,
+          "end": 2.36,
+          "word": "feeling",
+          "p": 0.972
+        },
+        {
+          "start": 2.36,
+          "end": 2.6,
+          "word": "a",
+          "p": 0.468
+        },
+        {
+          "start": 2.6,
+          "end": 2.72,
+          "word": "thing,",
+          "p": 0.974
+        },
+        {
+          "start": 2.86,
+          "end": 2.94,
+          "word": "man.",
+          "p": 0.963
+        },
+        {
+          "start": 3.0,
+          "end": 3.06,
+          "word": "I",
+          "p": 0.984
+        },
+        {
+          "start": 3.06,
+          "end": 3.2,
+          "word": "just",
+          "p": 0.942
+        },
+        {
+          "start": 3.2,
+          "end": 3.34,
+          "word": "wish",
+          "p": 0.993
+        },
+        {
+          "start": 3.34,
+          "end": 3.44,
+          "word": "I",
+          "p": 0.96
+        },
+        {
+          "start": 3.44,
+          "end": 3.56,
+          "word": "could",
+          "p": 0.976
+        },
+        {
+          "start": 3.56,
+          "end": 3.68,
+          "word": "leave",
+          "p": 0.987
+        },
+        {
+          "start": 3.68,
+          "end": 3.88,
+          "word": "work",
+          "p": 0.982
+        },
+        {
+          "start": 3.88,
+          "end": 4.14,
+          "word": "early.",
+          "p": 0.997
+        }
+      ]
+    },
+    {
+      "start": 4.24,
+      "end": 4.86,
+      "text": "Shit your pants.",
+      "words": [
+        {
+          "start": 4.24,
+          "end": 4.34,
+          "word": "Shit",
+          "p": 0.496
+        },
+        {
+          "start": 4.34,
+          "end": 4.5,
+          "word": "your",
+          "p": 0.989
+        },
+        {
+          "start": 4.5,
+          "end": 4.86,
+          "word": "pants.",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 8.48,
+      "end": 8.78,
+      "text": "Huh?",
+      "words": [
+        {
+          "start": 8.48,
+          "end": 8.78,
+          "word": "Huh?",
+          "p": 0.892
+        }
+      ]
+    },
+    {
+      "start": 9.7,
+      "end": 10.78,
+      "text": "You want to go home early?",
+      "words": [
+        {
+          "start": 9.7,
+          "end": 9.96,
+          "word": "You",
+          "p": 0.959
+        },
+        {
+          "start": 9.96,
+          "end": 10.08,
+          "word": "want",
+          "p": 0.502
+        },
+        {
+          "start": 10.08,
+          "end": 10.16,
+          "word": "to",
+          "p": 0.998
+        },
+        {
+          "start": 10.16,
+          "end": 10.3,
+          "word": "go",
+          "p": 0.998
+        },
+        {
+          "start": 10.3,
+          "end": 10.52,
+          "word": "home",
+          "p": 1.0
+        },
+        {
+          "start": 10.52,
+          "end": 10.78,
+          "word": "early?",
+          "p": 0.992
+        }
+      ]
+    },
+    {
+      "start": 11.2,
+      "end": 12.3,
+      "text": "Um, yes, sir.",
+      "words": [
+        {
+          "start": 11.2,
+          "end": 11.2,
+          "word": "Um,",
+          "p": 0.61
+        },
+        {
+          "start": 11.46,
+          "end": 11.76,
+          "word": "yes,",
+          "p": 0.261
+        },
+        {
+          "start": 11.86,
+          "end": 12.3,
+          "word": "sir.",
+          "p": 0.776
+        }
+      ]
+    },
+    {
+      "start": 12.4,
+      "end": 13.78,
+      "text": "Shit your pants, I'll have to let you go.",
+      "words": [
+        {
+          "start": 12.4,
+          "end": 12.54,
+          "word": "Shit",
+          "p": 0.847
+        },
+        {
+          "start": 12.54,
+          "end": 12.66,
+          "word": "your",
+          "p": 0.992
+        },
+        {
+          "start": 12.66,
+          "end": 12.9,
+          "word": "pants,",
+          "p": 0.999
+        },
+        {
+          "start": 12.94,
+          "end": 13.04,
+          "word": "I'll",
+          "p": 0.95
+        },
+        {
+          "start": 13.04,
+          "end": 13.16,
+          "word": "have",
+          "p": 0.998
+        },
+        {
+          "start": 13.16,
+          "end": 13.28,
+          "word": "to",
+          "p": 0.998
+        },
+        {
+          "start": 13.28,
+          "end": 13.38,
+          "word": "let",
+          "p": 0.998
+        },
+        {
+          "start": 13.38,
+          "end": 13.48,
+          "word": "you",
+          "p": 0.999
+        },
+        {
+          "start": 13.48,
+          "end": 13.78,
+          "word": "go.",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 17.06,
+      "end": 18.7,
+      "text": "If I shit my pants, you'll let me go home?",
+      "words": [
+        {
+          "start": 17.06,
+          "end": 17.36,
+          "word": "If",
+          "p": 0.839
+        },
+        {
+          "start": 17.36,
+          "end": 17.66,
+          "word": "I",
+          "p": 0.972
+        },
+        {
+          "start": 17.66,
+          "end": 17.82,
+          "word": "shit",
+          "p": 0.997
+        },
+        {
+          "start": 17.82,
+          "end": 17.98,
+          "word": "my",
+          "p": 0.998
+        },
+        {
+          "start": 17.98,
+          "end": 18.22,
+          "word": "pants,",
+          "p": 0.999
+        },
+        {
+          "start": 18.3,
+          "end": 18.38,
+          "word": "you'll",
+          "p": 0.878
+        },
+        {
+          "start": 18.38,
+          "end": 18.46,
+          "word": "let",
+          "p": 0.995
+        },
+        {
+          "start": 18.46,
+          "end": 18.56,
+          "word": "me",
+          "p": 0.998
+        },
+        {
+          "start": 18.56,
+          "end": 18.68,
+          "word": "go",
+          "p": 0.997
+        },
+        {
+          "start": 18.68,
+          "end": 18.7,
+          "word": "home?",
+          "p": 0.995
+        }
+      ]
+    },
+    {
+      "start": 18.7,
+      "end": 21.88,
+      "text": "You shit your pants right now? My hands will be tied.",
+      "words": [
+        {
+          "start": 18.7,
+          "end": 18.88,
+          "word": "You",
+          "p": 0.939
+        },
+        {
+          "start": 18.88,
+          "end": 19.08,
+          "word": "shit",
+          "p": 0.994
+        },
+        {
+          "start": 19.08,
+          "end": 19.24,
+          "word": "your",
+          "p": 0.996
+        },
+        {
+          "start": 19.24,
+          "end": 19.64,
+          "word": "pants",
+          "p": 0.999
+        },
+        {
+          "start": 19.64,
+          "end": 19.92,
+          "word": "right",
+          "p": 0.899
+        },
+        {
+          "start": 19.92,
+          "end": 20.34,
+          "word": "now?",
+          "p": 0.999
+        },
+        {
+          "start": 20.78,
+          "end": 21.04,
+          "word": "My",
+          "p": 0.993
+        },
+        {
+          "start": 21.04,
+          "end": 21.26,
+          "word": "hands",
+          "p": 0.998
+        },
+        {
+          "start": 21.26,
+          "end": 21.38,
+          "word": "will",
+          "p": 0.891
+        },
+        {
+          "start": 21.38,
+          "end": 21.52,
+          "word": "be",
+          "p": 0.999
+        },
+        {
+          "start": 21.52,
+          "end": 21.88,
+          "word": "tied.",
+          "p": 0.994
+        }
+      ]
+    },
+    {
+      "start": 22.26,
+      "end": 25.04,
+      "text": "Your pants will be soiled and you'll have to skedaddle out of here.",
+      "words": [
+        {
+          "start": 22.26,
+          "end": 22.5,
+          "word": "Your",
+          "p": 0.984
+        },
+        {
+          "start": 22.5,
+          "end": 22.76,
+          "word": "pants",
+          "p": 0.997
+        },
+        {
+          "start": 22.76,
+          "end": 22.94,
+          "word": "will",
+          "p": 0.975
+        },
+        {
+          "start": 22.94,
+          "end": 23.06,
+          "word": "be",
+          "p": 0.998
+        },
+        {
+          "start": 23.06,
+          "end": 23.5,
+          "word": "soiled",
+          "p": 0.998
+        },
+        {
+          "start": 23.5,
+          "end": 23.62,
+          "word": "and",
+          "p": 0.6
+        },
+        {
+          "start": 23.62,
+          "end": 23.8,
+          "word": "you'll",
+          "p": 0.99
+        },
+        {
+          "start": 23.8,
+          "end": 23.94,
+          "word": "have",
+          "p": 0.998
+        },
+        {
+          "start": 23.94,
+          "end": 24.18,
+          "word": "to",
+          "p": 0.993
+        },
+        {
+          "start": 24.18,
+          "end": 24.56,
+          "word": "skedaddle",
+          "p": 0.983
+        },
+        {
+          "start": 24.56,
+          "end": 24.82,
+          "word": "out",
+          "p": 0.998
+        },
+        {
+          "start": 24.82,
+          "end": 24.94,
+          "word": "of",
+          "p": 0.911
+        },
+        {
+          "start": 24.94,
+          "end": 25.04,
+          "word": "here.",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 25.06,
+      "end": 25.48,
+      "text": "You should do it.",
+      "words": [
+        {
+          "start": 25.06,
+          "end": 25.1,
+          "word": "You",
+          "p": 0.805
+        },
+        {
+          "start": 25.1,
+          "end": 25.26,
+          "word": "should",
+          "p": 0.991
+        },
+        {
+          "start": 25.26,
+          "end": 25.38,
+          "word": "do",
+          "p": 0.998
+        },
+        {
+          "start": 25.38,
+          "end": 25.48,
+          "word": "it.",
+          "p": 0.997
+        }
+      ]
+    },
+    {
+      "start": 25.58,
+      "end": 25.92,
+      "text": "Well, sir.",
+      "words": [
+        {
+          "start": 25.58,
+          "end": 25.68,
+          "word": "Well,",
+          "p": 0.877
+        },
+        {
+          "start": 25.74,
+          "end": 25.92,
+          "word": "sir.",
+          "p": 0.995
+        }
+      ]
+    },
+    {
+      "start": 25.98,
+      "end": 27.62,
+      "text": "Shit your pants and you're gone. I'll see you tomorrow.",
+      "words": [
+        {
+          "start": 25.98,
+          "end": 26.16,
+          "word": "Shit",
+          "p": 0.936
+        },
+        {
+          "start": 26.16,
+          "end": 26.3,
+          "word": "your",
+          "p": 0.996
+        },
+        {
+          "start": 26.3,
+          "end": 26.52,
+          "word": "pants",
+          "p": 0.999
+        },
+        {
+          "start": 26.52,
+          "end": 26.66,
+          "word": "and",
+          "p": 0.88
+        },
+        {
+          "start": 26.66,
+          "end": 26.84,
+          "word": "you're",
+          "p": 0.988
+        },
+        {
+          "start": 26.84,
+          "end": 27.04,
+          "word": "gone.",
+          "p": 0.997
+        },
+        {
+          "start": 27.18,
+          "end": 27.28,
+          "word": "I'll",
+          "p": 0.981
+        },
+        {
+          "start": 27.28,
+          "end": 27.38,
+          "word": "see",
+          "p": 0.999
+        },
+        {
+          "start": 27.38,
+          "end": 27.46,
+          "word": "you",
+          "p": 0.99
+        },
+        {
+          "start": 27.46,
+          "end": 27.62,
+          "word": "tomorrow.",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 27.62,
+      "end": 30.76,
+      "text": "Sir, I don't know. Can't I just say I shat my pants?",
+      "words": [
+        {
+          "start": 27.62,
+          "end": 28.2,
+          "word": "Sir,",
+          "p": 0.37
+        },
+        {
+          "start": 28.52,
+          "end": 28.68,
+          "word": "I",
+          "p": 0.958
+        },
+        {
+          "start": 28.68,
+          "end": 29.02,
+          "word": "don't",
+          "p": 0.884
+        },
+        {
+          "start": 29.02,
+          "end": 29.22,
+          "word": "know.",
+          "p": 0.997
+        },
+        {
+          "start": 29.3,
+          "end": 29.5,
+          "word": "Can't",
+          "p": 0.787
+        },
+        {
+          "start": 29.5,
+          "end": 29.54,
+          "word": "I",
+          "p": 0.984
+        },
+        {
+          "start": 29.54,
+          "end": 29.74,
+          "word": "just",
+          "p": 0.971
+        },
+        {
+          "start": 29.74,
+          "end": 30.12,
+          "word": "say",
+          "p": 0.937
+        },
+        {
+          "start": 30.12,
+          "end": 30.36,
+          "word": "I",
+          "p": 0.922
+        },
+        {
+          "start": 30.36,
+          "end": 30.46,
+          "word": "shat",
+          "p": 0.904
+        },
+        {
+          "start": 30.46,
+          "end": 30.76,
+          "word": "my",
+          "p": 0.906
+        },
+        {
+          "start": 30.76,
+          "end": 30.76,
+          "word": "pants?",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 31.02,
+      "end": 32.74,
+      "text": "No sir, not now. I gotta see that shit in your pants.",
+      "words": [
+        {
+          "start": 31.02,
+          "end": 31.02,
+          "word": "No",
+          "p": 0.871
+        },
+        {
+          "start": 31.02,
+          "end": 31.02,
+          "word": "sir,",
+          "p": 0.587
+        },
+        {
+          "start": 31.12,
+          "end": 31.26,
+          "word": "not",
+          "p": 0.985
+        },
+        {
+          "start": 31.26,
+          "end": 31.56,
+          "word": "now.",
+          "p": 0.992
+        },
+        {
+          "start": 31.66,
+          "end": 31.72,
+          "word": "I",
+          "p": 0.989
+        },
+        {
+          "start": 31.72,
+          "end": 31.9,
+          "word": "gotta",
+          "p": 0.803
+        },
+        {
+          "start": 31.9,
+          "end": 32.14,
+          "word": "see",
+          "p": 0.987
+        },
+        {
+          "start": 32.14,
+          "end": 32.34,
+          "word": "that",
+          "p": 0.991
+        },
+        {
+          "start": 32.34,
+          "end": 32.54,
+          "word": "shit",
+          "p": 0.959
+        },
+        {
+          "start": 32.54,
+          "end": 32.66,
+          "word": "in",
+          "p": 0.993
+        },
+        {
+          "start": 32.66,
+          "end": 32.74,
+          "word": "your",
+          "p": 0.993
+        },
+        {
+          "start": 32.74,
+          "end": 32.74,
+          "word": "pants.",
+          "p": 0.994
+        }
+      ]
+    },
+    {
+      "start": 32.76,
+      "end": 33.44,
+      "text": "He's gotta see it.",
+      "words": [
+        {
+          "start": 32.76,
+          "end": 32.92,
+          "word": "He's",
+          "p": 0.619
+        },
+        {
+          "start": 32.92,
+          "end": 33.08,
+          "word": "gotta",
+          "p": 0.874
+        },
+        {
+          "start": 33.08,
+          "end": 33.44,
+          "word": "see",
+          "p": 0.99
+        },
+        {
+          "start": 33.44,
+          "end": 33.44,
+          "word": "it.",
+          "p": 0.984
+        }
+      ]
+    },
+    {
+      "start": 33.46,
+      "end": 35.68,
+      "text": "Once I see the shit in your pants, you'll be excused.",
+      "words": [
+        {
+          "start": 33.46,
+          "end": 33.64,
+          "word": "Once",
+          "p": 0.962
+        },
+        {
+          "start": 33.64,
+          "end": 33.78,
+          "word": "I",
+          "p": 0.989
+        },
+        {
+          "start": 33.78,
+          "end": 34.0,
+          "word": "see",
+          "p": 0.994
+        },
+        {
+          "start": 34.0,
+          "end": 34.18,
+          "word": "the",
+          "p": 0.622
+        },
+        {
+          "start": 34.18,
+          "end": 34.34,
+          "word": "shit",
+          "p": 0.998
+        },
+        {
+          "start": 34.34,
+          "end": 34.46,
+          "word": "in",
+          "p": 0.995
+        },
+        {
+          "start": 34.46,
+          "end": 34.6,
+          "word": "your",
+          "p": 0.995
+        },
+        {
+          "start": 34.6,
+          "end": 34.88,
+          "word": "pants,",
+          "p": 0.999
+        },
+        {
+          "start": 34.96,
+          "end": 35.1,
+          "word": "you'll",
+          "p": 0.975
+        },
+        {
+          "start": 35.1,
+          "end": 35.24,
+          "word": "be",
+          "p": 0.999
+        },
+        {
+          "start": 35.24,
+          "end": 35.68,
+          "word": "excused.",
+          "p": 0.997
+        }
+      ]
+    },
+    {
+      "start": 35.74,
+      "end": 37.38,
+      "text": "He's gotta see the shit, but sir-",
+      "words": [
+        {
+          "start": 35.74,
+          "end": 35.86,
+          "word": "He's",
+          "p": 0.98
+        },
+        {
+          "start": 35.86,
+          "end": 36.0,
+          "word": "gotta",
+          "p": 0.964
+        },
+        {
+          "start": 36.0,
+          "end": 36.22,
+          "word": "see",
+          "p": 0.997
+        },
+        {
+          "start": 36.22,
+          "end": 36.4,
+          "word": "the",
+          "p": 0.985
+        },
+        {
+          "start": 36.4,
+          "end": 36.72,
+          "word": "shit,",
+          "p": 0.994
+        },
+        {
+          "start": 36.96,
+          "end": 37.04,
+          "word": "but",
+          "p": 0.973
+        },
+        {
+          "start": 37.04,
+          "end": 37.24,
+          "word": "sir",
+          "p": 0.887
+        },
+        {
+          "start": 37.24,
+          "end": 37.38,
+          "word": "-",
+          "p": 0.474
+        }
+      ]
+    },
+    {
+      "start": 37.38,
+      "end": 40.64,
+      "text": "And for the record, if you would've just said you shat your pants, I would've believed-",
+      "words": [
+        {
+          "start": 37.38,
+          "end": 37.38,
+          "word": "And",
+          "p": 0.807
+        },
+        {
+          "start": 37.38,
+          "end": 37.5,
+          "word": "for",
+          "p": 0.938
+        },
+        {
+          "start": 37.5,
+          "end": 37.66,
+          "word": "the",
+          "p": 0.996
+        },
+        {
+          "start": 37.66,
+          "end": 37.88,
+          "word": "record,",
+          "p": 0.999
+        },
+        {
+          "start": 37.98,
+          "end": 38.12,
+          "word": "if",
+          "p": 0.974
+        },
+        {
+          "start": 38.12,
+          "end": 38.24,
+          "word": "you",
+          "p": 0.996
+        },
+        {
+          "start": 38.24,
+          "end": 38.46,
+          "word": "would've",
+          "p": 0.693
+        },
+        {
+          "start": 38.46,
+          "end": 38.68,
+          "word": "just",
+          "p": 0.984
+        },
+        {
+          "start": 38.68,
+          "end": 38.94,
+          "word": "said",
+          "p": 0.979
+        },
+        {
+          "start": 38.94,
+          "end": 39.14,
+          "word": "you",
+          "p": 0.969
+        },
+        {
+          "start": 39.14,
+          "end": 39.42,
+          "word": "shat",
+          "p": 0.998
+        },
+        {
+          "start": 39.42,
+          "end": 39.56,
+          "word": "your",
+          "p": 0.996
+        },
+        {
+          "start": 39.56,
+          "end": 39.86,
+          "word": "pants,",
+          "p": 0.999
+        },
+        {
+          "start": 40.0,
+          "end": 40.12,
+          "word": "I",
+          "p": 0.99
+        },
+        {
+          "start": 40.12,
+          "end": 40.34,
+          "word": "would've",
+          "p": 0.936
+        },
+        {
+          "start": 40.34,
+          "end": 40.6,
+          "word": "believed",
+          "p": 0.978
+        },
+        {
+          "start": 40.6,
+          "end": 40.64,
+          "word": "-",
+          "p": 0.416
+        }
+      ]
+    },
+    {
+      "start": 40.64,
+      "end": 41.68,
+      "text": "You could've just said it. You could've just lied.",
+      "words": [
+        {
+          "start": 40.64,
+          "end": 40.68,
+          "word": "You",
+          "p": 0.967
+        },
+        {
+          "start": 40.68,
+          "end": 40.88,
+          "word": "could've",
+          "p": 0.946
+        },
+        {
+          "start": 40.88,
+          "end": 41.02,
+          "word": "just",
+          "p": 0.991
+        },
+        {
+          "start": 41.02,
+          "end": 41.22,
+          "word": "said",
+          "p": 0.998
+        },
+        {
+          "start": 41.22,
+          "end": 41.32,
+          "word": "it.",
+          "p": 0.992
+        },
+        {
+          "start": 41.38,
+          "end": 41.38,
+          "word": "You",
+          "p": 0.941
+        },
+        {
+          "start": 41.38,
+          "end": 41.58,
+          "word": "could've",
+          "p": 0.977
+        },
+        {
+          "start": 41.58,
+          "end": 41.68,
+          "word": "just",
+          "p": 0.979
+        },
+        {
+          "start": 41.68,
+          "end": 41.68,
+          "word": "lied.",
+          "p": 0.725
+        }
+      ]
+    },
+    {
+      "start": 41.68,
+      "end": 43.96,
+      "text": "No arguing with a man that claims shit in the pants.",
+      "words": [
+        {
+          "start": 41.68,
+          "end": 41.8,
+          "word": "No",
+          "p": 0.649
+        },
+        {
+          "start": 41.8,
+          "end": 42.2,
+          "word": "arguing",
+          "p": 0.906
+        },
+        {
+          "start": 42.2,
+          "end": 42.4,
+          "word": "with",
+          "p": 0.995
+        },
+        {
+          "start": 42.4,
+          "end": 42.56,
+          "word": "a",
+          "p": 0.657
+        },
+        {
+          "start": 42.56,
+          "end": 42.72,
+          "word": "man",
+          "p": 0.998
+        },
+        {
+          "start": 42.72,
+          "end": 42.9,
+          "word": "that",
+          "p": 0.837
+        },
+        {
+          "start": 42.9,
+          "end": 43.1,
+          "word": "claims",
+          "p": 0.666
+        },
+        {
+          "start": 43.1,
+          "end": 43.36,
+          "word": "shit",
+          "p": 0.986
+        },
+        {
+          "start": 43.36,
+          "end": 43.46,
+          "word": "in",
+          "p": 0.997
+        },
+        {
+          "start": 43.46,
+          "end": 43.62,
+          "word": "the",
+          "p": 0.979
+        },
+        {
+          "start": 43.62,
+          "end": 43.96,
+          "word": "pants.",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 44.12,
+      "end": 47.52,
+      "text": "But now, because you asked me, I'll be forced to bear witness.",
+      "words": [
+        {
+          "start": 44.12,
+          "end": 44.3,
+          "word": "But",
+          "p": 0.975
+        },
+        {
+          "start": 44.3,
+          "end": 44.68,
+          "word": "now,",
+          "p": 0.981
+        },
+        {
+          "start": 44.98,
+          "end": 45.24,
+          "word": "because",
+          "p": 0.97
+        },
+        {
+          "start": 45.24,
+          "end": 45.42,
+          "word": "you",
+          "p": 0.992
+        },
+        {
+          "start": 45.42,
+          "end": 45.64,
+          "word": "asked",
+          "p": 0.936
+        },
+        {
+          "start": 45.64,
+          "end": 45.94,
+          "word": "me,",
+          "p": 0.941
+        },
+        {
+          "start": 46.14,
+          "end": 46.3,
+          "word": "I'll",
+          "p": 0.964
+        },
+        {
+          "start": 46.3,
+          "end": 46.42,
+          "word": "be",
+          "p": 0.998
+        },
+        {
+          "start": 46.42,
+          "end": 46.76,
+          "word": "forced",
+          "p": 0.998
+        },
+        {
+          "start": 46.76,
+          "end": 47.12,
+          "word": "to",
+          "p": 0.992
+        },
+        {
+          "start": 47.12,
+          "end": 47.28,
+          "word": "bear",
+          "p": 0.963
+        },
+        {
+          "start": 47.28,
+          "end": 47.52,
+          "word": "witness.",
+          "p": 1.0
+        }
+      ]
+    },
+    {
+      "start": 47.56,
+      "end": 48.26,
+      "text": "He's gotta see it.",
+      "words": [
+        {
+          "start": 47.56,
+          "end": 47.68,
+          "word": "He's",
+          "p": 0.877
+        },
+        {
+          "start": 47.68,
+          "end": 47.76,
+          "word": "gotta",
+          "p": 0.978
+        },
+        {
+          "start": 47.76,
+          "end": 48.1,
+          "word": "see",
+          "p": 0.996
+        },
+        {
+          "start": 48.1,
+          "end": 48.26,
+          "word": "it.",
+          "p": 0.993
+        }
+      ]
+    },
+    {
+      "start": 50.56,
+      "end": 54.66,
+      "text": "Okay. I've done it, sir. I shit my pants.",
+      "words": [
+        {
+          "start": 50.56,
+          "end": 50.92,
+          "word": "Okay.",
+          "p": 0.565
+        },
+        {
+          "start": 52.2,
+          "end": 52.4,
+          "word": "I've",
+          "p": 0.996
+        },
+        {
+          "start": 52.4,
+          "end": 52.48,
+          "word": "done",
+          "p": 0.999
+        },
+        {
+          "start": 52.48,
+          "end": 52.66,
+          "word": "it,",
+          "p": 0.999
+        },
+        {
+          "start": 52.74,
+          "end": 52.82,
+          "word": "sir.",
+          "p": 0.982
+        },
+        {
+          "start": 53.88,
+          "end": 54.08,
+          "word": "I",
+          "p": 0.995
+        },
+        {
+          "start": 54.08,
+          "end": 54.2,
+          "word": "shit",
+          "p": 0.939
+        },
+        {
+          "start": 54.2,
+          "end": 54.36,
+          "word": "my",
+          "p": 0.928
+        },
+        {
+          "start": 54.36,
+          "end": 54.66,
+          "word": "pants.",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 55.34,
+      "end": 55.42,
+      "text": "Ugh!",
+      "words": [
+        {
+          "start": 55.34,
+          "end": 55.42,
+          "word": "Ugh!",
+          "p": 0.465
+        }
+      ]
+    },
+    {
+      "start": 55.56,
+      "end": 56.62,
+      "text": "Bro, what the fuck?",
+      "words": [
+        {
+          "start": 55.56,
+          "end": 55.74,
+          "word": "Bro,",
+          "p": 0.943
+        },
+        {
+          "start": 55.92,
+          "end": 56.08,
+          "word": "what",
+          "p": 0.996
+        },
+        {
+          "start": 56.08,
+          "end": 56.26,
+          "word": "the",
+          "p": 0.999
+        },
+        {
+          "start": 56.26,
+          "end": 56.62,
+          "word": "fuck?",
+          "p": 0.956
+        }
+      ]
+    },
+    {
+      "start": 56.62,
+      "end": 57.2,
+      "text": "What the fuck did you eat?",
+      "words": [
+        {
+          "start": 56.62,
+          "end": 56.7,
+          "word": "What",
+          "p": 0.058
+        },
+        {
+          "start": 56.7,
+          "end": 56.7,
+          "word": "the",
+          "p": 0.584
+        },
+        {
+          "start": 56.7,
+          "end": 56.7,
+          "word": "fuck",
+          "p": 0.821
+        },
+        {
+          "start": 56.7,
+          "end": 56.84,
+          "word": "did",
+          "p": 0.855
+        },
+        {
+          "start": 56.84,
+          "end": 56.96,
+          "word": "you",
+          "p": 0.982
+        },
+        {
+          "start": 56.96,
+          "end": 57.2,
+          "word": "eat?",
+          "p": 0.987
+        }
+      ]
+    },
+    {
+      "start": 57.76,
+      "end": 59.12,
+      "text": "Bro, what the fuck did you eat?",
+      "words": [
+        {
+          "start": 57.76,
+          "end": 57.78,
+          "word": "Bro,",
+          "p": 0.214
+        },
+        {
+          "start": 57.84,
+          "end": 58.0,
+          "word": "what",
+          "p": 0.984
+        },
+        {
+          "start": 58.0,
+          "end": 58.12,
+          "word": "the",
+          "p": 0.964
+        },
+        {
+          "start": 58.12,
+          "end": 58.5,
+          "word": "fuck",
+          "p": 0.976
+        },
+        {
+          "start": 58.5,
+          "end": 58.72,
+          "word": "did",
+          "p": 0.979
+        },
+        {
+          "start": 58.72,
+          "end": 58.92,
+          "word": "you",
+          "p": 0.998
+        },
+        {
+          "start": 58.92,
+          "end": 59.12,
+          "word": "eat?",
+          "p": 0.991
+        }
+      ]
+    },
+    {
+      "start": 59.4,
+      "end": 60.18,
+      "text": "God, what is that?",
+      "words": [
+        {
+          "start": 59.4,
+          "end": 59.44,
+          "word": "God,",
+          "p": 0.158
+        },
+        {
+          "start": 59.56,
+          "end": 59.56,
+          "word": "what",
+          "p": 0.982
+        },
+        {
+          "start": 59.56,
+          "end": 59.94,
+          "word": "is",
+          "p": 0.99
+        },
+        {
+          "start": 59.94,
+          "end": 60.18,
+          "word": "that?",
+          "p": 0.995
+        }
+      ]
+    },
+    {
+      "start": 60.3,
+      "end": 60.8,
+      "text": "What is that?",
+      "words": [
+        {
+          "start": 60.3,
+          "end": 60.36,
+          "word": "What",
+          "p": 0.446
+        },
+        {
+          "start": 60.36,
+          "end": 60.56,
+          "word": "is",
+          "p": 0.986
+        },
+        {
+          "start": 60.56,
+          "end": 60.8,
+          "word": "that?",
+          "p": 0.996
+        }
+      ]
+    },
+    {
+      "start": 60.86,
+      "end": 61.56,
+      "text": "May I be excused?",
+      "words": [
+        {
+          "start": 60.86,
+          "end": 60.9,
+          "word": "May",
+          "p": 0.791
+        },
+        {
+          "start": 60.9,
+          "end": 60.98,
+          "word": "I",
+          "p": 0.993
+        },
+        {
+          "start": 60.98,
+          "end": 61.12,
+          "word": "be",
+          "p": 0.996
+        },
+        {
+          "start": 61.12,
+          "end": 61.56,
+          "word": "excused?",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 61.98,
+      "end": 62.1,
+      "text": "Nah.",
+      "words": [
+        {
+          "start": 61.98,
+          "end": 62.1,
+          "word": "Nah.",
+          "p": 0.639
+        }
+      ]
+    },
+    {
+      "start": 62.24,
+      "end": 62.84,
+      "text": "What is that?",
+      "words": [
+        {
+          "start": 62.24,
+          "end": 62.36,
+          "word": "What",
+          "p": 0.894
+        },
+        {
+          "start": 62.36,
+          "end": 62.62,
+          "word": "is",
+          "p": 0.985
+        },
+        {
+          "start": 62.62,
+          "end": 62.84,
+          "word": "that?",
+          "p": 0.994
+        }
+      ]
+    },
+    {
+      "start": 62.84,
+      "end": 63.16,
+      "text": "Nah.",
+      "words": [
+        {
+          "start": 62.84,
+          "end": 63.16,
+          "word": "Nah.",
+          "p": 0.914
+        }
+      ]
+    },
+    {
+      "start": 63.34,
+      "end": 63.86,
+      "text": "Nah, you get back to work.",
+      "words": [
+        {
+          "start": 63.34,
+          "end": 63.48,
+          "word": "Nah,",
+          "p": 0.773
+        },
+        {
+          "start": 63.58,
+          "end": 63.62,
+          "word": "you",
+          "p": 0.967
+        },
+        {
+          "start": 63.62,
+          "end": 63.8,
+          "word": "get",
+          "p": 0.97
+        },
+        {
+          "start": 63.8,
+          "end": 63.86,
+          "word": "back",
+          "p": 0.994
+        },
+        {
+          "start": 63.86,
+          "end": 63.86,
+          "word": "to",
+          "p": 0.996
+        },
+        {
+          "start": 63.86,
+          "end": 63.86,
+          "word": "work.",
+          "p": 0.994
+        }
+      ]
+    },
+    {
+      "start": 63.88,
+      "end": 65.62,
+      "text": "See, that's worse than when they cooked fish in the office.",
+      "words": [
+        {
+          "start": 63.88,
+          "end": 63.88,
+          "word": "See,",
+          "p": 0.648
+        },
+        {
+          "start": 63.96,
+          "end": 64.2,
+          "word": "that's",
+          "p": 0.98
+        },
+        {
+          "start": 64.2,
+          "end": 64.32,
+          "word": "worse",
+          "p": 0.983
+        },
+        {
+          "start": 64.32,
+          "end": 64.48,
+          "word": "than",
+          "p": 0.841
+        },
+        {
+          "start": 64.48,
+          "end": 64.54,
+          "word": "when",
+          "p": 0.938
+        },
+        {
+          "start": 64.54,
+          "end": 64.68,
+          "word": "they",
+          "p": 0.978
+        },
+        {
+          "start": 64.68,
+          "end": 64.88,
+          "word": "cooked",
+          "p": 0.698
+        },
+        {
+          "start": 64.88,
+          "end": 65.1,
+          "word": "fish",
+          "p": 0.997
+        },
+        {
+          "start": 65.1,
+          "end": 65.28,
+          "word": "in",
+          "p": 0.989
+        },
+        {
+          "start": 65.28,
+          "end": 65.4,
+          "word": "the",
+          "p": 0.992
+        },
+        {
+          "start": 65.4,
+          "end": 65.62,
+          "word": "office.",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 65.76,
+      "end": 66.3,
+      "text": "What is that?",
+      "words": [
+        {
+          "start": 65.76,
+          "end": 65.9,
+          "word": "What",
+          "p": 0.953
+        },
+        {
+          "start": 65.9,
+          "end": 66.12,
+          "word": "is",
+          "p": 0.995
+        },
+        {
+          "start": 66.12,
+          "end": 66.3,
+          "word": "that?",
+          "p": 0.997
+        }
+      ]
+    },
+    {
+      "start": 66.4,
+      "end": 66.6,
+      "text": "Get back to work.",
+      "words": [
+        {
+          "start": 66.4,
+          "end": 66.4,
+          "word": "Get",
+          "p": 0.71
+        },
+        {
+          "start": 66.4,
+          "end": 66.4,
+          "word": "back",
+          "p": 0.998
+        },
+        {
+          "start": 66.4,
+          "end": 66.4,
+          "word": "to",
+          "p": 0.999
+        },
+        {
+          "start": 66.4,
+          "end": 66.6,
+          "word": "work.",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 66.68,
+      "end": 68.02,
+      "text": "I got extra khakis in the printer room.",
+      "words": [
+        {
+          "start": 66.68,
+          "end": 66.76,
+          "word": "I",
+          "p": 0.992
+        },
+        {
+          "start": 66.76,
+          "end": 66.88,
+          "word": "got",
+          "p": 0.895
+        },
+        {
+          "start": 66.88,
+          "end": 67.2,
+          "word": "extra",
+          "p": 0.99
+        },
+        {
+          "start": 67.2,
+          "end": 67.5,
+          "word": "khakis",
+          "p": 0.931
+        },
+        {
+          "start": 67.5,
+          "end": 67.66,
+          "word": "in",
+          "p": 0.991
+        },
+        {
+          "start": 67.66,
+          "end": 67.78,
+          "word": "the",
+          "p": 0.995
+        },
+        {
+          "start": 67.78,
+          "end": 67.96,
+          "word": "printer",
+          "p": 0.97
+        },
+        {
+          "start": 67.96,
+          "end": 68.02,
+          "word": "room.",
+          "p": 0.984
+        }
+      ]
+    },
+    {
+      "start": 68.02,
+      "end": 69.32,
+      "text": "Why do you have an extra pair of khakis?",
+      "words": [
+        {
+          "start": 68.02,
+          "end": 68.14,
+          "word": "Why",
+          "p": 0.767
+        },
+        {
+          "start": 68.14,
+          "end": 68.2,
+          "word": "do",
+          "p": 0.97
+        },
+        {
+          "start": 68.2,
+          "end": 68.26,
+          "word": "you",
+          "p": 0.996
+        },
+        {
+          "start": 68.26,
+          "end": 68.34,
+          "word": "have",
+          "p": 0.993
+        },
+        {
+          "start": 68.34,
+          "end": 68.44,
+          "word": "an",
+          "p": 0.978
+        },
+        {
+          "start": 68.44,
+          "end": 68.64,
+          "word": "extra",
+          "p": 0.997
+        },
+        {
+          "start": 68.64,
+          "end": 68.78,
+          "word": "pair",
+          "p": 0.993
+        },
+        {
+          "start": 68.78,
+          "end": 69.06,
+          "word": "of",
+          "p": 0.994
+        },
+        {
+          "start": 69.06,
+          "end": 69.32,
+          "word": "khakis?",
+          "p": 0.996
+        }
+      ]
+    },
+    {
+      "start": 69.6,
+      "end": 72.2,
+      "text": "Because of worthless employees that think they can shit their pants and leave early.",
+      "words": [
+        {
+          "start": 69.6,
+          "end": 69.64,
+          "word": "Because",
+          "p": 0.96
+        },
+        {
+          "start": 69.64,
+          "end": 69.9,
+          "word": "of",
+          "p": 0.992
+        },
+        {
+          "start": 69.9,
+          "end": 70.2,
+          "word": "worthless",
+          "p": 0.977
+        },
+        {
+          "start": 70.2,
+          "end": 70.72,
+          "word": "employees",
+          "p": 0.99
+        },
+        {
+          "start": 70.72,
+          "end": 70.88,
+          "word": "that",
+          "p": 0.968
+        },
+        {
+          "start": 70.88,
+          "end": 70.98,
+          "word": "think",
+          "p": 0.991
+        },
+        {
+          "start": 70.98,
+          "end": 71.1,
+          "word": "they",
+          "p": 0.98
+        },
+        {
+          "start": 71.1,
+          "end": 71.32,
+          "word": "can",
+          "p": 0.995
+        },
+        {
+          "start": 71.32,
+          "end": 71.52,
+          "word": "shit",
+          "p": 0.997
+        },
+        {
+          "start": 71.52,
+          "end": 71.74,
+          "word": "their",
+          "p": 0.971
+        },
+        {
+          "start": 71.74,
+          "end": 71.94,
+          "word": "pants",
+          "p": 0.997
+        },
+        {
+          "start": 71.94,
+          "end": 72.16,
+          "word": "and",
+          "p": 0.777
+        },
+        {
+          "start": 72.16,
+          "end": 72.2,
+          "word": "leave",
+          "p": 0.997
+        },
+        {
+          "start": 72.2,
+          "end": 72.2,
+          "word": "early.",
+          "p": 0.969
+        }
+      ]
+    },
+    {
+      "start": 72.2,
+      "end": 73.44,
+      "text": "I didn't want to shit my pants.",
+      "words": [
+        {
+          "start": 72.2,
+          "end": 72.32,
+          "word": "I",
+          "p": 0.954
+        },
+        {
+          "start": 72.32,
+          "end": 72.42,
+          "word": "didn't",
+          "p": 0.935
+        },
+        {
+          "start": 72.42,
+          "end": 72.58,
+          "word": "want",
+          "p": 0.766
+        },
+        {
+          "start": 72.58,
+          "end": 72.74,
+          "word": "to",
+          "p": 0.998
+        },
+        {
+          "start": 72.74,
+          "end": 72.9,
+          "word": "shit",
+          "p": 0.998
+        },
+        {
+          "start": 72.9,
+          "end": 73.08,
+          "word": "my",
+          "p": 0.997
+        },
+        {
+          "start": 73.08,
+          "end": 73.44,
+          "word": "pants.",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 73.6,
+      "end": 73.82,
+      "text": "But you did.",
+      "words": [
+        {
+          "start": 73.6,
+          "end": 73.6,
+          "word": "But",
+          "p": 0.958
+        },
+        {
+          "start": 73.6,
+          "end": 73.6,
+          "word": "you",
+          "p": 0.984
+        },
+        {
+          "start": 73.6,
+          "end": 73.82,
+          "word": "did.",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 74.2,
+      "end": 74.96,
+      "text": "You did shit your pants.",
+      "words": [
+        {
+          "start": 74.2,
+          "end": 74.42,
+          "word": "You",
+          "p": 0.993
+        },
+        {
+          "start": 74.42,
+          "end": 74.64,
+          "word": "did",
+          "p": 0.984
+        },
+        {
+          "start": 74.64,
+          "end": 74.9,
+          "word": "shit",
+          "p": 0.992
+        },
+        {
+          "start": 74.9,
+          "end": 74.96,
+          "word": "your",
+          "p": 0.969
+        },
+        {
+          "start": 74.96,
+          "end": 74.96,
+          "word": "pants.",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 74.96,
+      "end": 76.14,
+      "text": "You shut those pants.",
+      "words": [
+        {
+          "start": 74.96,
+          "end": 75.18,
+          "word": "You",
+          "p": 0.982
+        },
+        {
+          "start": 75.18,
+          "end": 75.52,
+          "word": "shut",
+          "p": 0.502
+        },
+        {
+          "start": 75.52,
+          "end": 75.8,
+          "word": "those",
+          "p": 0.992
+        },
+        {
+          "start": 75.8,
+          "end": 76.14,
+          "word": "pants.",
+          "p": 0.992
+        }
+      ]
+    },
+    {
+      "start": 76.16,
+      "end": 76.76,
+      "text": "You made me.",
+      "words": [
+        {
+          "start": 76.16,
+          "end": 76.34,
+          "word": "You",
+          "p": 0.963
+        },
+        {
+          "start": 76.34,
+          "end": 76.6,
+          "word": "made",
+          "p": 0.993
+        },
+        {
+          "start": 76.6,
+          "end": 76.76,
+          "word": "me.",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 76.76,
+      "end": 78.0,
+      "text": "I didn't make you actually shit yourself.",
+      "words": [
+        {
+          "start": 76.76,
+          "end": 76.88,
+          "word": "I",
+          "p": 0.936
+        },
+        {
+          "start": 76.88,
+          "end": 77.0,
+          "word": "didn't",
+          "p": 0.993
+        },
+        {
+          "start": 77.0,
+          "end": 77.14,
+          "word": "make",
+          "p": 0.984
+        },
+        {
+          "start": 77.14,
+          "end": 77.3,
+          "word": "you",
+          "p": 0.995
+        },
+        {
+          "start": 77.3,
+          "end": 77.54,
+          "word": "actually",
+          "p": 0.694
+        },
+        {
+          "start": 77.54,
+          "end": 77.92,
+          "word": "shit",
+          "p": 0.944
+        },
+        {
+          "start": 77.92,
+          "end": 78.0,
+          "word": "yourself.",
+          "p": 0.938
+        }
+      ]
+    },
+    {
+      "start": 78.0,
+      "end": 78.76,
+      "text": "I didn't make you do shit to do that shit.",
+      "words": [
+        {
+          "start": 78.0,
+          "end": 78.0,
+          "word": "I",
+          "p": 0.505
+        },
+        {
+          "start": 78.0,
+          "end": 78.0,
+          "word": "didn't",
+          "p": 0.79
+        },
+        {
+          "start": 78.0,
+          "end": 78.0,
+          "word": "make",
+          "p": 0.936
+        },
+        {
+          "start": 78.0,
+          "end": 78.0,
+          "word": "you",
+          "p": 0.994
+        },
+        {
+          "start": 78.0,
+          "end": 78.0,
+          "word": "do",
+          "p": 0.768
+        },
+        {
+          "start": 78.0,
+          "end": 78.0,
+          "word": "shit",
+          "p": 0.939
+        },
+        {
+          "start": 78.0,
+          "end": 78.14,
+          "word": "to",
+          "p": 0.984
+        },
+        {
+          "start": 78.14,
+          "end": 78.32,
+          "word": "do",
+          "p": 0.992
+        },
+        {
+          "start": 78.32,
+          "end": 78.5,
+          "word": "that",
+          "p": 0.99
+        },
+        {
+          "start": 78.5,
+          "end": 78.76,
+          "word": "shit.",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 78.76,
+      "end": 79.7,
+      "text": "I can't believe you.",
+      "words": [
+        {
+          "start": 78.76,
+          "end": 78.84,
+          "word": "I",
+          "p": 0.981
+        },
+        {
+          "start": 78.84,
+          "end": 79.1,
+          "word": "can't",
+          "p": 0.993
+        },
+        {
+          "start": 79.1,
+          "end": 79.48,
+          "word": "believe",
+          "p": 0.997
+        },
+        {
+          "start": 79.48,
+          "end": 79.7,
+          "word": "you.",
+          "p": 0.571
+        }
+      ]
+    },
+    {
+      "start": 79.7,
+      "end": 83.3,
+      "text": "Now, if you shit your pants twice, I'll be forced to let you go home.",
+      "words": [
+        {
+          "start": 79.7,
+          "end": 79.8,
+          "word": "Now,",
+          "p": 0.383
+        },
+        {
+          "start": 79.94,
+          "end": 80.14,
+          "word": "if",
+          "p": 0.965
+        },
+        {
+          "start": 80.14,
+          "end": 80.34,
+          "word": "you",
+          "p": 0.994
+        },
+        {
+          "start": 80.34,
+          "end": 80.48,
+          "word": "shit",
+          "p": 0.991
+        },
+        {
+          "start": 80.48,
+          "end": 80.64,
+          "word": "your",
+          "p": 0.984
+        },
+        {
+          "start": 80.64,
+          "end": 80.82,
+          "word": "pants",
+          "p": 0.981
+        },
+        {
+          "start": 80.82,
+          "end": 81.24,
+          "word": "twice,",
+          "p": 0.986
+        },
+        {
+          "start": 81.44,
+          "end": 81.7,
+          "word": "I'll",
+          "p": 0.927
+        },
+        {
+          "start": 81.7,
+          "end": 81.96,
+          "word": "be",
+          "p": 0.984
+        },
+        {
+          "start": 81.96,
+          "end": 82.16,
+          "word": "forced",
+          "p": 0.988
+        },
+        {
+          "start": 82.16,
+          "end": 82.42,
+          "word": "to",
+          "p": 0.999
+        },
+        {
+          "start": 82.42,
+          "end": 82.54,
+          "word": "let",
+          "p": 0.998
+        },
+        {
+          "start": 82.54,
+          "end": 82.7,
+          "word": "you",
+          "p": 0.999
+        },
+        {
+          "start": 82.7,
+          "end": 82.86,
+          "word": "go",
+          "p": 0.995
+        },
+        {
+          "start": 82.86,
+          "end": 83.3,
+          "word": "home.",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 86.28,
+      "end": 86.4,
+      "text": "Really?",
+      "words": [
+        {
+          "start": 86.28,
+          "end": 86.4,
+          "word": "Really?",
+          "p": 0.758
+        }
+      ]
+    },
+    {
+      "start": 86.62,
+      "end": 88.34,
+      "text": "No! What the fuck is wrong with you?",
+      "words": [
+        {
+          "start": 86.62,
+          "end": 86.76,
+          "word": "No!",
+          "p": 0.528
+        },
+        {
+          "start": 86.86,
+          "end": 86.92,
+          "word": "What",
+          "p": 0.916
+        },
+        {
+          "start": 86.92,
+          "end": 87.04,
+          "word": "the",
+          "p": 0.994
+        },
+        {
+          "start": 87.04,
+          "end": 87.28,
+          "word": "fuck",
+          "p": 0.948
+        },
+        {
+          "start": 87.28,
+          "end": 87.56,
+          "word": "is",
+          "p": 0.946
+        },
+        {
+          "start": 87.56,
+          "end": 87.76,
+          "word": "wrong",
+          "p": 0.984
+        },
+        {
+          "start": 87.76,
+          "end": 88.04,
+          "word": "with",
+          "p": 0.989
+        },
+        {
+          "start": 88.04,
+          "end": 88.34,
+          "word": "you?",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 89.08,
+      "end": 90.46,
+      "text": "I cannot believe this psychopath!",
+      "words": [
+        {
+          "start": 89.08,
+          "end": 89.08,
+          "word": "I",
+          "p": 0.41
+        },
+        {
+          "start": 89.08,
+          "end": 89.28,
+          "word": "cannot",
+          "p": 0.932
+        },
+        {
+          "start": 89.28,
+          "end": 89.78,
+          "word": "believe",
+          "p": 0.996
+        },
+        {
+          "start": 89.78,
+          "end": 90.04,
+          "word": "this",
+          "p": 0.985
+        },
+        {
+          "start": 90.04,
+          "end": 90.46,
+          "word": "psychopath!",
+          "p": 0.757
+        }
+      ]
+    }
+  ]
+}

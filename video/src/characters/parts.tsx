@@ -24,6 +24,24 @@ export const DLine: React.FC<{ d: string; w: number; color: string; outline?: st
 
 export const polyline = (pts: Pt[]) => smoothPath(pts, false);
 
+/** Closed outline of a stroke that tapers from width w0 at the first point to w1 at the last (tails, feathers). */
+export function taperPath(pts: Pt[], w0: number, w1: number): string {
+  const n = pts.length;
+  const left: Pt[] = [];
+  const right: Pt[] = [];
+  for (let i = 0; i < n; i++) {
+    const a = pts[Math.max(0, i - 1)];
+    const b = pts[Math.min(n - 1, i + 1)];
+    const dx = b[0] - a[0];
+    const dy = b[1] - a[1];
+    const l = Math.hypot(dx, dy) || 1;
+    const w = (w0 + (w1 - w0) * (i / (n - 1))) / 2;
+    left.push([pts[i][0] - (dy / l) * w, pts[i][1] + (dx / l) * w]);
+    right.push([pts[i][0] + (dy / l) * w, pts[i][1] - (dx / l) * w]);
+  }
+  return smoothPath([...left, ...right.reverse()], true, 0.8);
+}
+
 /* ------------------------------------------------------------------ */
 /* Blinks and eye darts                                                */
 /* ------------------------------------------------------------------ */

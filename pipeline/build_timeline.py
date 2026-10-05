@@ -34,6 +34,11 @@ def find_phrase(words: list[dict], phrase: str, start_idx: int = 0, window: int 
     tj = " ".join(target)
     best = (min(start_idx, len(words) - 1), 0.0)
     end = min(len(words) - n + 1, start_idx + window)
+    # an exact (or near-exact) match soon after the previous turn wins over an earlier look-alike phrase
+    for i in range(start_idx, min(end, start_idx + 60)):
+        cand = " ".join(norm(w["word"]) for w in words[i : i + n])
+        if difflib.SequenceMatcher(None, tj, cand).ratio() >= 0.95:
+            return i, 1.0
     for i in range(start_idx, max(start_idx + 1, end)):
         cand = " ".join(norm(w["word"]) for w in words[i : i + n])
         r = difflib.SequenceMatcher(None, tj, cand).ratio()
@@ -67,7 +72,9 @@ def synth_mouth(words: list[dict]) -> list[dict]:
 
 
 def resolve_turns(turns: list[dict], words: list[dict]) -> list[dict]:
-    """Turns may give a start time ("from") or the opening words ("at"); return [{from, speaker}]."""
+    """Turns may give a start time ("from") or the opening words ("at").
+    Returns [{from, speaker, idx}] where idx is the first word of the turn (words are assigned by order,
+    so two words Whisper stamped with the same start time still land on the right speaker)."""
     out, idx = [], 0
     for t in turns:
         if "at" in t:
@@ -75,10 +82,12 @@ def resolve_turns(turns: list[dict], words: list[dict]) -> list[dict]:
             if score < 0.6:
                 ctx = " ".join(w["word"] for w in words[i : i + 6])
                 print(f"WARNING: weak match ({score:.2f}) for turn '{t['at']}' -> '{ctx}' @ {words[i]['start']:.2f}")
-            out.append({"from": max(0.0, words[i]["start"] - 0.05), "speaker": t["speaker"]})
+            out.append({"from": max(0.0, words[i]["start"] - 0.05), "speaker": t["speaker"], "idx": i})
             idx = min(i + 1, len(words) - 1)
         else:
-            out.append({"from": float(t["from"]), "speaker": t["speaker"]})
+            frm = float(t["from"])
+            i = next((k for k, w in enumerate(words) if w["start"] >= frm), len(words))
+            out.append({"from": frm, "speaker": t["speaker"], "idx": i})
     return out
 
 
@@ -107,15 +116,15 @@ def main() -> None:
         duration = len(audio) / sr
 
     turns = resolve_turns(spk_cfg["turns"], words)
-    turn_starts = [t["from"] for t in turns]
+    turn_idx = [t["idx"] for t in turns]
 
-    def speaker_at(t: float) -> str:
-        return turns[max(0, bisect.bisect_right(turn_starts, t) - 1)]["speaker"]
+    def speaker_of(k: int) -> str:
+        return turns[max(0, bisect.bisect_right(turn_idx, k) - 1)]["speaker"]
 
     # Group consecutive words of the same speaker into lines.
     lines = []
-    for w in words:
-        spk = speaker_at(w["start"])
+    for k, w in enumerate(words):
+        spk = speaker_of(k)
         word = {"start": w["start"], "end": w["end"], "word": w["word"]}
         if lines and lines[-1]["speaker"] == spk:
             lines[-1]["words"].append(word)

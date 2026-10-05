@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill, Img, staticFile, useVideoConfig } from "remotion";
 import { clamp, onN, rnd } from "./util";
 
-export type Grade = "night" | "memory" | "hell" | "heaven" | "cave" | "none";
+export type Grade = "night" | "memory" | "hell" | "heaven" | "cave" | "fluoro" | "none";
 
 /** CSS colour grade per scene mood. */
 export const gradeFilter = (g: Grade): string => {
@@ -17,6 +17,9 @@ export const gradeFilter = (g: Grade): string => {
       return "saturate(1.2) brightness(1.08) contrast(1.05)";
     case "cave":
       return "saturate(0.7) contrast(1.15) brightness(0.9)";
+    case "fluoro":
+      // 3 AM fast-food fluorescents: a little sickly green, a little harsh
+      return "saturate(0.92) contrast(1.12) brightness(0.96) hue-rotate(7deg)";
     default:
       return "none";
   }
