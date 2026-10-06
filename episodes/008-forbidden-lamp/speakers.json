@@ -1,0 +1,25 @@
+{
+  "_comment": "Turns from the script's meaning, checked line by line against a timbre model (one performer voices both moths; evidence and close calls in README 'Speakers').",
+  "cast": {
+    "wick": "Brother Wick - the young, twitchy, wide-eyed moth who craves the forbidden lamp",
+    "tatter": "Brother Tatter - the scarred elder moth (torn wing, cloudy eye, a burnt match for a leg) who survived his own flight"
+  },
+  "turns": [
+    { "at": "Brother I crave the forbidden", "speaker": "wick" },
+    { "at": "Seek not the lamp", "speaker": "tatter" },
+    { "at": "Brother the light calls to me", "speaker": "wick" },
+    { "at": "You must resist it", "speaker": "tatter" },
+    { "at": "I know brother and yet", "speaker": "wick" },
+    { "at": "You cannot touch it", "speaker": "tatter" },
+    { "at": "Indeed And yet you live", "speaker": "wick" },
+    { "at": "Hear me brother I did not", "speaker": "tatter" },
+    { "at": "Your story reveals your weakness", "speaker": "wick" },
+    { "at": "No brother Please reconsider", "speaker": "tatter" },
+    { "at": "even so I can no longer", "speaker": "wick" },
+    { "at": "if you love me brother", "speaker": "tatter" },
+    { "at": "I cannot Remember me", "speaker": "wick" },
+    { "at": "no No Fly", "speaker": "tatter" },
+    { "at": "No Fly then", "speaker": "wick" },
+    { "at": "Fly then out of brotherhood", "speaker": "tatter" }
+  ]
+}
