@@ -52,8 +52,11 @@ Close calls:
 - **"Ooh," / "What's the move?" (49.7–51.3 s)** → "Ooh" is Lyle (the tail of his laughing fit, same ~335 Hz as the
   ah-hyuks); "What's the move?" is Duane, oblivious, at ~120 Hz — answered by "Move out of my way so I can go home and sleep!"
 
-Not yet cross-checked against the reference video frame by frame; if anything sounds off, the spots to look at are 9–16 s,
-23–27 s, 36–39 s and 49.7–51.3 s. Edit `speakers.json` and rebuild (below) if you hear it differently.
+Cross-checked against the reference video at the four close spots (frames at up to 10 fps): the goat-equivalent is on
+camera gesturing with open palms on "like what" (≈10 s); his extreme close-up has the mouth moving through "Oh dear… You!"
+(24–26 s); he is on camera talking through the "you old at 3 a.m." impression (37–39 s); and on "what's the move?"
+(50.4–51.3 s) he is on camera with his **mouth closed** while the line plays at ~120 Hz — so that one is the couch guy,
+off-camera, as assigned. Edit `speakers.json` and rebuild (below) if you hear anything differently.
 
 **Transcript fixes:** `analysis/transcript.json` is whisper's output, untouched. `analysis/transcript_fixed.json` is the one
 the timeline uses: word boundaries re-timed against the loudness/pitch envelope (the 2nd "what's", "it's", "come",
