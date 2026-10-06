@@ -11,14 +11,18 @@
 | **Code** | `video/src/episodes/010-politics/` — `studio.tsx` (2016 podcast set), `cutaways.tsx` (2016 gags), `hall.tsx` (the underground hall, journal, the deep, the tail), `cast/Frog.tsx`, `cast/Mascots.tsx`, `shots.tsx`, `tl.ts` (timeline + extras), `timeline.json`, `audio_fx.json` |
 
 **Cast (new, in `video/src/episodes/010-politics/cast/`):**
-- **Wendell** (`Frog.tsx`) — an earnest bespectacled frog. *Then:* bright green, round tortoiseshell glasses over bulging
-  gold eyes, braces, an oxford shirt, a mustard-and-teal argyle sweater vest, a red bow tie, khakis, webbed bare feet, a
-  pocket constitution in his vest pocket and a vocal sac that swells when he gets going. *Now:* the same frog after
-  months underground — grey-olive cracked skin and grime, hollow bloodshot eyes with pinprick pupils, one lens
-  spider-webbed, a matted moss beard, mushrooms sprouting from his scalp, a bloodied bandage, the vest in rags, the bow
-  tie hanging undone. Rig: 14 expressions, blinks, paranoid eye darts (now), tremble, IK arms, poses (stand / sit at the
-  desk / cross-legged on the floor / float), props (the title sign, LIBERTY mug, pocket constitution, journal + pencil,
-  leash), halo, glints, sweat and tears.
+- **Wendell** (`Frog.tsx`) — an earnest bespectacled frog: a cobalt-blue poison-dart frog. *Then:* cobalt blue with black
+  spots, a pale-blue belly and throat sac, round tortoiseshell glasses over bulging gold eyes, braces, a white oxford
+  shirt, a mustard / burnt-orange argyle sweater vest, a red bow tie, khakis, webbed bare feet, a pocket constitution in
+  his vest pocket and a vocal sac that swells when he gets going; always wide-eyed and earnest, with a thin ink-line
+  mouth. *Now:* the same frog after months underground — slate-grey cracked skin and grime, hollow bloodshot eyes with
+  pinprick pupils, one lens spider-webbed, a matted (sickly green) moss beard, mushrooms sprouting from his scalp, a
+  bloodied bandage, the vest in rags, the bow tie hanging undone. Rig: 14 expressions, blinks, paranoid eye darts (now),
+  tremble, IK arms, poses (stand / sit at the desk / cross-legged on the floor / float), props (the title sign, LIBERTY
+  mug, pocket constitution, journal + pencil, leash), halo, glints, sweat and tears.
+  *Why blue:* a bright green frog with heavy lips and half-lidded smug looks on a "my politics in 2016" title reads as a
+  well-known meme frog that some contexts list as a hate symbol. Wendell is deliberately a blue poison-dart frog with no
+  lips and no heavy-lidded / smirking expressions in the 2016 half.
 - **The foul binary system** (`Mascots.tsx`) — two invented, equally grotesque party mascots: the **Tusker** (a bloated
   red, wrinkled, elephant-ish blob with a snotty trunk and broken tusks) and the **Brayer** (a saggy blue, donkey-ish
   blob with floppy ears, mismatched bulging eyes and enormous buck teeth). Mud, drool, flies, campaign rosettes.

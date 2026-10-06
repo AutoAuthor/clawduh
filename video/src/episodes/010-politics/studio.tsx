@@ -157,8 +157,8 @@ export const TadpoleFlag: React.FC<{ x: number; y: number; w?: number; t: number
       {/* coiled tadpole */}
       <g transform={`translate(${w * 0.5} ${h * 0.46}) scale(${w / 330})`}>
         <path d="M-60,30 C-90,0 -50,-50 0,-40 C50,-30 40,30 0,24 C-30,20 -24,-10 0,-8 C14,-6 14,8 4,8" stroke={INK} strokeWidth={14} fill="none" strokeLinecap="round" />
-        <path d="M-60,30 C-90,0 -50,-50 0,-40 C50,-30 40,30 0,24 C-30,20 -24,-10 0,-8 C14,-6 14,8 4,8" stroke="#3e6a2a" strokeWidth={8} fill="none" strokeLinecap="round" />
-        <ellipse cx={-62} cy={34} rx={26} ry={20} fill="#3e6a2a" stroke={INK} strokeWidth={5} />
+        <path d="M-60,30 C-90,0 -50,-50 0,-40 C50,-30 40,30 0,24 C-30,20 -24,-10 0,-8 C14,-6 14,8 4,8" stroke="#1f4f9a" strokeWidth={8} fill="none" strokeLinecap="round" />
+        <ellipse cx={-62} cy={34} rx={26} ry={20} fill="#1f4f9a" stroke={INK} strokeWidth={5} />
         <circle cx={-52} cy={28} r={5} fill="#f2cf3a" />
         <circle cx={-51} cy={28} r={2.5} fill={INK} />
       </g>
@@ -235,7 +235,7 @@ const Posters: React.FC<{ t: number }> = ({ t }) => (
       <rect x={14} y={14} width={222} height={170} fill="#5cb6ee" />
       <path d="M14,184 L80,120 L130,160 L180,100 L236,170 L236,184 Z" fill="#3e6a2a" stroke={INK} strokeWidth={3} />
       {/* a frog on a mountain top, arms raised */}
-      <circle cx={180} cy={84} r={14} fill="#7ab648" stroke={INK} strokeWidth={3} />
+      <circle cx={180} cy={84} r={14} fill="#3a8ddb" stroke={INK} strokeWidth={3} />
       <path d="M170,96 l-12,-20 M190,96 l12,-20" stroke={INK} strokeWidth={4} />
       <text x={125} y={226} textAnchor="middle" fontFamily={FONT} fontWeight={900} fontSize={30} fill="#f6efd8">
         FREEDOM

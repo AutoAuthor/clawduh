@@ -96,12 +96,12 @@ const TSign = () => {
 const TCuClassical = () => {
   const { shot } = useEpisode();
   const tilt = shot.t > T.classical - 0.1 ? Math.sin(P(shot.t, T.classical - 0.1, T.libEnd) * Math.PI) * -10 : 0;
-  return <StudioScene from={CAM_T.cu} to={{ ...CAM_T.cu, zoom: 2.7 }} frog={{ expr: shot.t < T.classical ? "earnest" : "smug", look: [0.3, 0.1], headTilt: tilt }} st={{ listeners: listenersAt(shot.t) }} />;
+  return <StudioScene from={CAM_T.cu} to={{ ...CAM_T.cu, zoom: 2.7 }} frog={{ expr: shot.t < T.classical ? "earnest" : "lecture", look: [0.3, 0.1], headTilt: tilt }} st={{ listeners: listenersAt(shot.t) }} />;
 };
 
 const TMonitor = () => {
   const { shot } = useEpisode();
-  return <StudioScene from={CAM_T.monitor} to={{ ...CAM_T.monitor, zoom: 3.4 }} frog={{ expr: "smug" }} st={{ listeners: listenersAt(shot.t) }} />;
+  return <StudioScene from={CAM_T.monitor} to={{ ...CAM_T.monitor, zoom: 3.4 }} frog={{ expr: "earnest" }} st={{ listeners: listenersAt(shot.t) }} />;
 };
 
 const PLeashWide = () => {
@@ -114,19 +114,19 @@ const PLeashClose = () => {
   const { shot } = useEpisode();
   const lick = easeOut(P(shot.t, T.violating - 0.1, T.violating + 0.5)) * (1 - easeInOut(P(shot.t, T.liberties, T.liberties + 0.3)));
   const yank = easeOut(P(shot.t, T.liberties - 0.05, T.liberties + 0.2));
-  return <LeashPark from={{ x: 1320, y: 700, zoom: 1.45 }} to={{ x: 1340, y: 700, zoom: 1.55 }} lunge={1 - yank * 0.7} lick={lick} yank={yank} frog={{ expr: yank > 0.3 ? "disgust" : "shock" }} />;
+  return <LeashPark from={{ x: 1320, y: 700, zoom: 1.45 }} to={{ x: 1340, y: 700, zoom: 1.55 }} lunge={1 - yank * 0.7} lick={lick} yank={yank} frog={{ expr: yank > 0.3 ? "stern" : "shock" }} />;
 };
 
 const TMsSip = () => {
   const { shot } = useEpisode();
   const sip = easeInOut(P(shot.local, 0.05, 0.3)) * (1 - easeInOut(P(shot.local, 0.45, 0.58)));
-  return <StudioScene from={CAM_T.ms} to={{ ...CAM_T.ms, zoom: 1.65 }} frog={{ hold: "mug", sip, expr: "smug", look: [0.5, 0.2] }} st={{ listeners: listenersAt(shot.t), mugOnDesk: false }} />;
+  return <StudioScene from={CAM_T.ms} to={{ ...CAM_T.ms, zoom: 1.65 }} frog={{ hold: "mug", sip, expr: "earnest", look: [0.55, 0.15] }} st={{ listeners: listenersAt(shot.t), mugOnDesk: false }} />;
 };
 
 const TCuUnjust = () => {
   const { shot } = useEpisode();
   const shakeHead = Math.sin(P(shot.t, T.unjust, T.unjustEnd + 0.2) * Math.PI * 4) * 9;
-  return <StudioScene from={CAM_T.cu} to={{ ...CAM_T.cu, zoom: 2.6 }} frog={{ hold: "constitution", expr: "disgust", headTilt: shakeHead, look: [0.4, 0.1] }} st={{ listeners: listenersAt(shot.t) }} />;
+  return <StudioScene from={CAM_T.cu} to={{ ...CAM_T.cu, zoom: 2.6 }} frog={{ hold: "constitution", expr: "stern", headTilt: shakeHead, look: [0.4, 0.1] }} st={{ listeners: listenersAt(shot.t) }} />;
 };
 
 const TCuAscend = () => {

@@ -714,7 +714,7 @@ export const JournalInsert: React.FC<{ lines: number; from?: Cam; to?: Cam; shak
           <path d="M0,0 L5,-2 L4,4 Z" fill={INK} />
           <path d="M122,80 L138,92 L126,110 L110,98 Z" fill="#e08aa0" stroke={INK} strokeWidth={4} />
           {/* grey-green frog hand: palm, three fingers wrapped over the pencil, thumb under */}
-          <ellipse cx={92} cy={86} rx={52} ry={42} fill="#6f7a50" stroke={INK} strokeWidth={6} transform="rotate(32 92 86)" />
+          <ellipse cx={92} cy={86} rx={52} ry={42} fill="#5d6c7a" stroke={INK} strokeWidth={6} transform="rotate(32 92 86)" />
           {[
             [26, 2],
             [44, -8],
@@ -722,13 +722,13 @@ export const JournalInsert: React.FC<{ lines: number; from?: Cam; to?: Cam; shak
           ].map(([fx, fy], i) => (
             <g key={i}>
               <path d={`M84,${60 + i * 6} Q${fx + 20},${fy - 10} ${fx},${fy}`} stroke={INK} strokeWidth={24} strokeLinecap="round" fill="none" />
-              <path d={`M84,${60 + i * 6} Q${fx + 20},${fy - 10} ${fx},${fy}`} stroke="#6f7a50" strokeWidth={13} strokeLinecap="round" fill="none" />
-              <circle cx={fx} cy={fy} r={11} fill="#7c8858" stroke={INK} strokeWidth={4} />
+              <path d={`M84,${60 + i * 6} Q${fx + 20},${fy - 10} ${fx},${fy}`} stroke="#5d6c7a" strokeWidth={13} strokeLinecap="round" fill="none" />
+              <circle cx={fx} cy={fy} r={11} fill="#6b7a88" stroke={INK} strokeWidth={4} />
             </g>
           ))}
           <path d="M70,110 Q40,90 28,40" stroke={INK} strokeWidth={24} strokeLinecap="round" fill="none" />
-          <path d="M70,110 Q40,90 28,40" stroke="#5a6440" strokeWidth={13} strokeLinecap="round" fill="none" />
-          <circle cx={28} cy={40} r={11} fill="#6a7450" stroke={INK} strokeWidth={4} />
+          <path d="M70,110 Q40,90 28,40" stroke="#4a5866" strokeWidth={13} strokeLinecap="round" fill="none" />
+          <circle cx={28} cy={40} r={11} fill="#566572" stroke={INK} strokeWidth={4} />
           <path d={blob(100, 96, 18, 10, 7, 0.4, "handgrime")} fill="#2c2618" opacity={0.4} />
         </g>
       ) : null}
@@ -837,11 +837,11 @@ export const HallReverse: React.FC<{ eyes: number; near?: number; claws?: number
       <Claws t={t} amount={claws} />
       {/* the frog from behind: hunched back, eye bumps, mushrooms; lit by the torch on his right */}
       <g transform="translate(560 1080) scale(1.5)">
-        <path d="M-170,0 C-180,-120 -120,-200 -40,-210 L40,-210 C120,-200 180,-120 170,0 Z" fill="#3c4a3a" stroke={INK} strokeWidth={6} />
+        <path d="M-170,0 C-180,-120 -120,-200 -40,-210 L40,-210 C120,-200 180,-120 170,0 Z" fill="#5e5030" stroke={INK} strokeWidth={6} />
         <path d="M-150,-40 l20,-30 l20,24 l18,-30 l16,26 l20,-32 l18,28 l20,-26 l16,30 l20,-24" stroke={INK} strokeWidth={3} fill="none" opacity={0.6} />
-        <path d="M-120,-320 C-140,-240 -80,-200 0,-200 C80,-200 140,-240 120,-320 C100,-370 -100,-370 -120,-320 Z" fill="#4a5634" stroke={INK} strokeWidth={6} />
-        <circle cx={-64} cy={-356} r={44} fill="#4a5634" stroke={INK} strokeWidth={6} />
-        <circle cx={64} cy={-360} r={48} fill="#4a5634" stroke={INK} strokeWidth={6} />
+        <path d="M-120,-320 C-140,-240 -80,-200 0,-200 C80,-200 140,-240 120,-320 C100,-370 -100,-370 -120,-320 Z" fill="#4f5d6a" stroke={INK} strokeWidth={6} />
+        <circle cx={-64} cy={-356} r={44} fill="#4f5d6a" stroke={INK} strokeWidth={6} />
+        <circle cx={64} cy={-360} r={48} fill="#4f5d6a" stroke={INK} strokeWidth={6} />
         <path d="M-130,-300 C-90,-330 90,-334 132,-296" stroke="#c8bea4" strokeWidth={14} fill="none" />
         <g transform="translate(-100 -330) rotate(-30)">
           <path d="M-3,0 L-4,-20 L4,-20 L3,0 Z" fill="#c8bca0" stroke={INK} strokeWidth={3} />
