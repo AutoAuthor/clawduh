@@ -1,0 +1,807 @@
+{
+  "language": "en",
+  "duration": 102.1445625,
+  "segments": [
+    {
+      "start": 5.7,
+      "end": 15.74,
+      "text": "I once saw the face of God, a vast and sudden silence among the noisy heavens.",
+      "words": [
+        {
+          "start": 5.7,
+          "end": 6.54,
+          "word": "I",
+          "p": 0.038
+        },
+        {
+          "start": 6.54,
+          "end": 6.82,
+          "word": "once",
+          "p": 0.827
+        },
+        {
+          "start": 6.82,
+          "end": 7.24,
+          "word": "saw",
+          "p": 0.995
+        },
+        {
+          "start": 7.24,
+          "end": 7.66,
+          "word": "the",
+          "p": 0.972
+        },
+        {
+          "start": 7.66,
+          "end": 7.66,
+          "word": "face",
+          "p": 0.994
+        },
+        {
+          "start": 7.66,
+          "end": 7.98,
+          "word": "of",
+          "p": 0.98
+        },
+        {
+          "start": 7.98,
+          "end": 8.74,
+          "word": "God,",
+          "p": 0.483
+        },
+        {
+          "start": 10.66,
+          "end": 11.02,
+          "word": "a",
+          "p": 0.246
+        },
+        {
+          "start": 11.02,
+          "end": 11.36,
+          "word": "vast",
+          "p": 0.9
+        },
+        {
+          "start": 11.36,
+          "end": 11.92,
+          "word": "and",
+          "p": 0.93
+        },
+        {
+          "start": 11.92,
+          "end": 12.56,
+          "word": "sudden",
+          "p": 0.967
+        },
+        {
+          "start": 12.56,
+          "end": 13.38,
+          "word": "silence",
+          "p": 0.998
+        },
+        {
+          "start": 13.38,
+          "end": 14.36,
+          "word": "among",
+          "p": 0.969
+        },
+        {
+          "start": 14.36,
+          "end": 14.8,
+          "word": "the",
+          "p": 0.612
+        },
+        {
+          "start": 14.8,
+          "end": 15.22,
+          "word": "noisy",
+          "p": 0.979
+        },
+        {
+          "start": 15.22,
+          "end": 15.74,
+          "word": "heavens.",
+          "p": 0.977
+        }
+      ]
+    },
+    {
+      "start": 17.38,
+      "end": 23.18,
+      "text": "That evening I dreamed I listened to one side of a conversation I should not have",
+      "words": [
+        {
+          "start": 17.38,
+          "end": 17.74,
+          "word": "That",
+          "p": 0.933
+        },
+        {
+          "start": 17.74,
+          "end": 18.12,
+          "word": "evening",
+          "p": 0.999
+        },
+        {
+          "start": 18.12,
+          "end": 18.68,
+          "word": "I",
+          "p": 0.735
+        },
+        {
+          "start": 18.68,
+          "end": 19.12,
+          "word": "dreamed",
+          "p": 0.926
+        },
+        {
+          "start": 19.12,
+          "end": 19.38,
+          "word": "I",
+          "p": 0.963
+        },
+        {
+          "start": 19.38,
+          "end": 19.7,
+          "word": "listened",
+          "p": 0.884
+        },
+        {
+          "start": 19.7,
+          "end": 19.98,
+          "word": "to",
+          "p": 0.997
+        },
+        {
+          "start": 19.98,
+          "end": 20.18,
+          "word": "one",
+          "p": 0.992
+        },
+        {
+          "start": 20.18,
+          "end": 20.62,
+          "word": "side",
+          "p": 0.987
+        },
+        {
+          "start": 20.62,
+          "end": 20.78,
+          "word": "of",
+          "p": 0.999
+        },
+        {
+          "start": 20.78,
+          "end": 21.0,
+          "word": "a",
+          "p": 0.986
+        },
+        {
+          "start": 21.0,
+          "end": 21.66,
+          "word": "conversation",
+          "p": 0.998
+        },
+        {
+          "start": 21.66,
+          "end": 22.56,
+          "word": "I",
+          "p": 0.968
+        },
+        {
+          "start": 22.56,
+          "end": 22.74,
+          "word": "should",
+          "p": 0.996
+        },
+        {
+          "start": 22.74,
+          "end": 23.0,
+          "word": "not",
+          "p": 0.984
+        },
+        {
+          "start": 23.0,
+          "end": 23.18,
+          "word": "have",
+          "p": 0.995
+        }
+      ]
+    },
+    {
+      "start": 23.18,
+      "end": 23.66,
+      "text": "overheard.",
+      "words": [
+        {
+          "start": 23.18,
+          "end": 23.66,
+          "word": "overheard.",
+          "p": 0.941
+        }
+      ]
+    },
+    {
+      "start": 25.0,
+      "end": 27.74,
+      "text": "I do not watch the skies anymore.",
+      "words": [
+        {
+          "start": 25.0,
+          "end": 25.84,
+          "word": "I",
+          "p": 0.99
+        },
+        {
+          "start": 25.84,
+          "end": 26.02,
+          "word": "do",
+          "p": 0.996
+        },
+        {
+          "start": 26.02,
+          "end": 26.24,
+          "word": "not",
+          "p": 0.999
+        },
+        {
+          "start": 26.24,
+          "end": 26.58,
+          "word": "watch",
+          "p": 0.997
+        },
+        {
+          "start": 26.58,
+          "end": 26.86,
+          "word": "the",
+          "p": 0.997
+        },
+        {
+          "start": 26.86,
+          "end": 27.22,
+          "word": "skies",
+          "p": 0.995
+        },
+        {
+          "start": 27.22,
+          "end": 27.74,
+          "word": "anymore.",
+          "p": 0.912
+        }
+      ]
+    },
+    {
+      "start": 28.74,
+      "end": 30.74,
+      "text": "I do not look up.",
+      "words": [
+        {
+          "start": 28.72,
+          "end": 29.42,
+          "word": "I",
+          "p": 0.803
+        },
+        {
+          "start": 29.42,
+          "end": 29.56,
+          "word": "do",
+          "p": 0.95
+        },
+        {
+          "start": 29.56,
+          "end": 29.78,
+          "word": "not",
+          "p": 0.992
+        },
+        {
+          "start": 29.78,
+          "end": 30.02,
+          "word": "look",
+          "p": 0.985
+        },
+        {
+          "start": 30.02,
+          "end": 30.74,
+          "word": "up.",
+          "p": 0.979
+        }
+      ]
+    },
+    {
+      "start": 50.28,
+      "end": 51.74,
+      "text": "Some nights...",
+      "words": [
+        {
+          "start": 50.28,
+          "end": 51.68,
+          "word": "Some",
+          "p": 0.625
+        },
+        {
+          "start": 51.68,
+          "end": 52.38,
+          "word": "nights...",
+          "p": 0.605
+        }
+      ]
+    },
+    {
+      "start": 53.08,
+      "end": 54.88,
+      "text": "Some nights are darker.",
+      "words": [
+        {
+          "start": 53.08,
+          "end": 53.78,
+          "word": "Some",
+          "p": 0.684
+        },
+        {
+          "start": 53.78,
+          "end": 54.06,
+          "word": "nights",
+          "p": 0.991
+        },
+        {
+          "start": 54.06,
+          "end": 54.42,
+          "word": "are",
+          "p": 0.971
+        },
+        {
+          "start": 54.42,
+          "end": 54.88,
+          "word": "darker.",
+          "p": 0.515
+        }
+      ]
+    },
+    {
+      "start": 56.04,
+      "end": 58.6,
+      "text": "Some are almost black, Rachel.",
+      "words": [
+        {
+          "start": 56.04,
+          "end": 56.84,
+          "word": "Some",
+          "p": 0.183
+        },
+        {
+          "start": 56.84,
+          "end": 57.04,
+          "word": "are",
+          "p": 0.791
+        },
+        {
+          "start": 57.04,
+          "end": 57.5,
+          "word": "almost",
+          "p": 0.868
+        },
+        {
+          "start": 57.5,
+          "end": 57.98,
+          "word": "black,",
+          "p": 0.709
+        },
+        {
+          "start": 58.34,
+          "end": 58.6,
+          "word": "Rachel.",
+          "p": 0.897
+        }
+      ]
+    },
+    {
+      "start": 60.2,
+      "end": 63.24,
+      "text": "Like tonight, it seems so dark.",
+      "words": [
+        {
+          "start": 60.2,
+          "end": 60.44,
+          "word": "Like",
+          "p": 0.888
+        },
+        {
+          "start": 60.44,
+          "end": 60.92,
+          "word": "tonight,",
+          "p": 0.912
+        },
+        {
+          "start": 61.7,
+          "end": 61.88,
+          "word": "it",
+          "p": 0.973
+        },
+        {
+          "start": 61.88,
+          "end": 62.2,
+          "word": "seems",
+          "p": 0.981
+        },
+        {
+          "start": 62.2,
+          "end": 62.6,
+          "word": "so",
+          "p": 0.994
+        },
+        {
+          "start": 62.6,
+          "end": 63.24,
+          "word": "dark.",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 64.58,
+      "end": 66.16,
+      "text": "Scared of being alone.",
+      "words": [
+        {
+          "start": 64.58,
+          "end": 65.1,
+          "word": "Scared",
+          "p": 0.856
+        },
+        {
+          "start": 65.1,
+          "end": 65.32,
+          "word": "of",
+          "p": 0.997
+        },
+        {
+          "start": 65.32,
+          "end": 65.56,
+          "word": "being",
+          "p": 0.998
+        },
+        {
+          "start": 65.56,
+          "end": 66.16,
+          "word": "alone.",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 67.0,
+      "end": 68.86,
+      "text": "You know you're not alone.",
+      "words": [
+        {
+          "start": 67.0,
+          "end": 67.2,
+          "word": "You",
+          "p": 0.317
+        },
+        {
+          "start": 67.2,
+          "end": 67.96,
+          "word": "know",
+          "p": 0.985
+        },
+        {
+          "start": 67.96,
+          "end": 68.2,
+          "word": "you're",
+          "p": 0.974
+        },
+        {
+          "start": 68.2,
+          "end": 68.36,
+          "word": "not",
+          "p": 0.999
+        },
+        {
+          "start": 68.36,
+          "end": 68.86,
+          "word": "alone.",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 69.9,
+      "end": 70.14,
+      "text": "No.",
+      "words": [
+        {
+          "start": 69.9,
+          "end": 70.14,
+          "word": "No.",
+          "p": 0.642
+        }
+      ]
+    },
+    {
+      "start": 71.58,
+      "end": 72.2,
+      "text": "What?",
+      "words": [
+        {
+          "start": 71.58,
+          "end": 72.2,
+          "word": "What?",
+          "p": 0.53
+        }
+      ]
+    },
+    {
+      "start": 74.0,
+      "end": 75.8,
+      "text": "What was that?",
+      "words": [
+        {
+          "start": 74.0,
+          "end": 74.38,
+          "word": "What",
+          "p": 0.563
+        },
+        {
+          "start": 74.38,
+          "end": 75.44,
+          "word": "was",
+          "p": 0.412
+        },
+        {
+          "start": 75.44,
+          "end": 75.8,
+          "word": "that?",
+          "p": 0.997
+        }
+      ]
+    },
+    {
+      "start": 76.9,
+      "end": 78.2,
+      "text": "It's just the dogs.",
+      "words": [
+        {
+          "start": 76.9,
+          "end": 77.2,
+          "word": "It's",
+          "p": 0.778
+        },
+        {
+          "start": 77.2,
+          "end": 77.54,
+          "word": "just",
+          "p": 0.973
+        },
+        {
+          "start": 77.54,
+          "end": 77.78,
+          "word": "the",
+          "p": 0.977
+        },
+        {
+          "start": 77.78,
+          "end": 78.2,
+          "word": "dogs.",
+          "p": 0.992
+        }
+      ]
+    },
+    {
+      "start": 78.96,
+      "end": 79.3,
+      "text": "No.",
+      "words": [
+        {
+          "start": 78.96,
+          "end": 79.3,
+          "word": "No.",
+          "p": 0.937
+        }
+      ]
+    },
+    {
+      "start": 80.24,
+      "end": 81.46,
+      "text": "I mean at the window.",
+      "words": [
+        {
+          "start": 80.24,
+          "end": 80.5,
+          "word": "I",
+          "p": 0.979
+        },
+        {
+          "start": 80.5,
+          "end": 80.72,
+          "word": "mean",
+          "p": 0.993
+        },
+        {
+          "start": 80.72,
+          "end": 80.86,
+          "word": "at",
+          "p": 0.447
+        },
+        {
+          "start": 80.86,
+          "end": 81.02,
+          "word": "the",
+          "p": 0.998
+        },
+        {
+          "start": 81.02,
+          "end": 81.46,
+          "word": "window.",
+          "p": 0.988
+        }
+      ]
+    },
+    {
+      "start": 81.9,
+      "end": 82.46,
+      "text": "At the window?",
+      "words": [
+        {
+          "start": 81.9,
+          "end": 81.98,
+          "word": "At",
+          "p": 0.689
+        },
+        {
+          "start": 81.98,
+          "end": 82.14,
+          "word": "the",
+          "p": 0.999
+        },
+        {
+          "start": 82.14,
+          "end": 82.46,
+          "word": "window?",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 85.18,
+      "end": 88.38,
+      "text": "The wind's blowing, that's all. I'll lower it a little.",
+      "words": [
+        {
+          "start": 85.18,
+          "end": 85.78,
+          "word": "The",
+          "p": 0.327
+        },
+        {
+          "start": 85.78,
+          "end": 86.24,
+          "word": "wind's",
+          "p": 0.83
+        },
+        {
+          "start": 86.24,
+          "end": 86.5,
+          "word": "blowing,",
+          "p": 0.994
+        },
+        {
+          "start": 86.7,
+          "end": 86.98,
+          "word": "that's",
+          "p": 0.959
+        },
+        {
+          "start": 86.98,
+          "end": 87.12,
+          "word": "all.",
+          "p": 0.981
+        },
+        {
+          "start": 87.44,
+          "end": 87.46,
+          "word": "I'll",
+          "p": 0.945
+        },
+        {
+          "start": 87.46,
+          "end": 87.64,
+          "word": "lower",
+          "p": 0.938
+        },
+        {
+          "start": 87.64,
+          "end": 87.88,
+          "word": "it",
+          "p": 0.915
+        },
+        {
+          "start": 87.88,
+          "end": 88.38,
+          "word": "a",
+          "p": 0.913
+        },
+        {
+          "start": 88.38,
+          "end": 88.38,
+          "word": "little.",
+          "p": 0.985
+        }
+      ]
+    },
+    {
+      "start": 89.58,
+      "end": 94.5,
+      "text": "Oh, I thought I heard something.",
+      "words": [
+        {
+          "start": 89.58,
+          "end": 90.18,
+          "word": "Oh,",
+          "p": 0.802
+        },
+        {
+          "start": 91.54,
+          "end": 91.8,
+          "word": "I",
+          "p": 0.978
+        },
+        {
+          "start": 91.8,
+          "end": 91.98,
+          "word": "thought",
+          "p": 0.983
+        },
+        {
+          "start": 91.98,
+          "end": 92.18,
+          "word": "I",
+          "p": 0.986
+        },
+        {
+          "start": 92.18,
+          "end": 92.56,
+          "word": "heard",
+          "p": 0.988
+        },
+        {
+          "start": 92.56,
+          "end": 94.5,
+          "word": "something.",
+          "p": 0.643
+        }
+      ]
+    },
+    {
+      "start": 96.34,
+      "end": 97.54,
+      "text": "It's just the wind.",
+      "words": [
+        {
+          "start": 96.34,
+          "end": 96.6,
+          "word": "It's",
+          "p": 0.779
+        },
+        {
+          "start": 96.6,
+          "end": 96.96,
+          "word": "just",
+          "p": 0.99
+        },
+        {
+          "start": 96.96,
+          "end": 97.28,
+          "word": "the",
+          "p": 0.993
+        },
+        {
+          "start": 97.28,
+          "end": 97.54,
+          "word": "wind.",
+          "p": 0.999
+        }
+      ]
+    }
+  ]
+}
