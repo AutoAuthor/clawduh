@@ -11,10 +11,22 @@ captions and a hand-drawn horror look. **Every episode is rendered twice: 16:9 (
 | 002 | Brother, I Am Troubled | burialgoods | ⚠️ built (101 shots, both formats); timing provisional until the audio is analysed | [episodes/002-troubled](episodes/002-troubled/README.md) |
 | 003 | You Wouldn't | burialgoods | ✅ final | [episodes/003-wouldnt](episodes/003-wouldnt/README.md) |
 | 004 | How To Leave Early | supplied (credit added on upload) | ✅ final | [episodes/004-leave-early](episodes/004-leave-early/README.md) |
+| 005 | Last Minute Orders | supplied (credit added on upload) | ✅ final | [episodes/005-last-orders](episodes/005-last-orders/README.md) |
+| 006 | Don't Steal HIS Package | supplied (credit added on upload) | ✅ final | [episodes/006-his-package](episodes/006-his-package/README.md) |
+| 007 | What's the Move? | supplied (credit added on upload) | ✅ final | [episodes/007-whats-the-move](episodes/007-whats-the-move/README.md) |
+| 008 | Brother, I Crave the Forbidden Lamp | supplied (credit added on upload) | ✅ final | [episodes/008-forbidden-lamp](episodes/008-forbidden-lamp/README.md) |
+| 009 | I Once Saw the Face of God | supplied (credit added on upload) | ✅ final | [episodes/009-face-of-god](episodes/009-face-of-god/README.md) |
+| 010 | My Politics: Then vs Now | supplied (credit added on upload) | ✅ final | [episodes/010-politics](episodes/010-politics/README.md) |
 
 001–003 share one farm universe: the Tall Skinny Ones (farmers, drawn as impossibly long silhouettes), the
 Shed of No Return, the roaring/great metal beast. 004 moves down the road to the Roadkill Grill (a possum, a raccoon
-and a vulture working the night shift).
+and a vulture working the night shift). From 005 on, every episode has its own cast and set: a late-night coffee bar
+(hedgehog, iguana, sloth), a mule's creepy living room (ferret thief), a hyena's mom's couch (goat), two moth brothers
+on a porch, an astral being and his inner voice, and a frog podcaster then and now.
+
+**Hard rule from 004 on:** no voice/audio credit text in the video or the repo; the uploader adds the credit on each
+platform. Production guide for new episodes (style, pipeline, speaker identification, review loop):
+[docs/EPISODE_GUIDE.md](docs/EPISODE_GUIDE.md).
 
 ## Render an episode (Windows / macOS / Linux)
 
@@ -44,7 +56,7 @@ video/src/episodes/index.ts    episode registry -> compositions ep<id> and ep<id
 video/src/engine/              shared: Stage/camera, FX, captions, shot player, cue() phrase timing
 video/src/characters/          shared cast: Gristle, Dumpling, TallFigure, Cat, Bull/Dennis/Pig/Crow, Possum, Raccoon, Vulture, extras
 pipeline/                      audio -> transcript -> lip-sync -> timeline (Python + Rhubarb)
-renders/                       local renders (git-ignored; episode 001/003 review masters are in Git LFS)
+renders/                       local renders (git-ignored; committed review masters are in Git LFS)
 ```
 
 ## Make a new episode
