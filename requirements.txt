@@ -1,5 +1,6 @@
 faster-whisper>=1.2
 librosa>=0.11
+scipy
 soundfile>=0.12
 numpy
 pillow

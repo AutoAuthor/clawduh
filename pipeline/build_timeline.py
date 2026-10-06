@@ -1,12 +1,19 @@
 """Merge transcript + speaker turns + Rhubarb mouth cues into a render timeline.
 
 Usage: python pipeline/build_timeline.py episodes/001-oats [--out video/src/episodes/001-oats/timeline.json] [--fps 24]
+       [--mouth rhubarb|auto|envelope] [--retime-words]
+
+--mouth auto (recommended for new episodes): Rhubarb where it can hear the voice; lines that sit on music, lines
+Rhubarb gave up on and words it left shut (whispers) get mouth shapes from the voice's own loudness instead
+(pipeline/voice.py). Default "rhubarb" = Rhubarb only, exactly as before.
+--retime-words: fix word spans whisper stretched over the silence before/after them (captions, cue(), talking).
 
 Inputs (inside the episode dir):
   analysis/transcript.json   word timestamps (pipeline/transcribe.py)
   analysis/mouth_cues.json   Rhubarb output (pipeline/lipsync.sh)
   speakers.json              speaker turns: {"from": seconds} or {"at": "first words of the turn"}
   source/audio_16k_mono.wav  for the loudness envelope
+  source/audio_full.wav      (--mouth auto|envelope, --retime-words) the voice level; stereo helps
 """
 import argparse
 import bisect
@@ -99,6 +106,14 @@ def main() -> None:
     ap.add_argument("--transcript", default="analysis/transcript.json", help="relative to the episode dir")
     ap.add_argument("--provisional", action="store_true", help="no audio yet: synthesize mouth shapes + loudness from words")
     ap.add_argument("--duration", type=float, default=None, help="clip length in seconds (provisional mode)")
+    ap.add_argument(
+        "--mouth",
+        choices=["rhubarb", "auto", "envelope"],
+        default="rhubarb",
+        help="rhubarb = Rhubarb only (default); auto = Rhubarb where it can hear the voice, the voice level where the "
+        "line sits on music / Rhubarb gave up / a word was whispered; envelope = the voice level everywhere",
+    )
+    ap.add_argument("--retime-words", action="store_true", help="fix word spans whisper stretched over silence")
     args = ap.parse_args()
     ep = args.episode
     out_path = args.out or Path(__file__).resolve().parent.parent / "video" / "src" / "episodes" / ep.resolve().name / "timeline.json"
@@ -114,6 +129,16 @@ def main() -> None:
         cues = json.loads((ep / "analysis/mouth_cues.json").read_text())["mouthCues"]
         audio, sr = sf.read(ep / "source/audio_16k_mono.wav")
         duration = len(audio) / sr
+
+    level = None
+    if audio is not None and (args.mouth != "rhubarb" or args.retime_words):
+        import voice  # pipeline/voice.py
+
+        level = voice.voice_level(ep)
+        if args.retime_words:
+            words, notes = voice.retime_words(words, level)
+            for n in notes:
+                print("retimed", n)
 
     turns = resolve_turns(spk_cfg["turns"], words)
     turn_idx = [t["idx"] for t in turns]
@@ -159,6 +184,17 @@ def main() -> None:
                     val = "B"  # mid-word rest: keep lips slightly apart
                 track.append({"start": round(cs, 3), "end": round(ce, 3), "value": val})
         tracks[spk] = track
+
+    if level is not None and args.mouth != "rhubarb":
+        tracks, st = voice.fix_tracks(tracks, talking, lines, level, args.mouth, args.fps)
+        why = ""
+        if args.mouth == "auto":
+            why = f" (music under the line: {st['why']['music']}, Rhubarb gave up: {st['why']['rate']})"
+        share = 100 * st["talk_voice"] / max(1e-9, st["talk"])
+        print(
+            f"mouth ({args.mouth}): {st['lines_voice']} of {st['lines']} talking stretches from the voice level{why}, "
+            f"{share:.0f}% of talking time; {st['words']} whispered words Rhubarb left shut opened from the voice"
+        )
 
     # Loudness envelope per video frame (0..1).
     n_frames = int(np.ceil(duration * args.fps))

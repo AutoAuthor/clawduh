@@ -55,7 +55,7 @@ video/src/episodes/<id>/       the Remotion side of the same episode
 video/src/episodes/index.ts    episode registry -> compositions ep<id> and ep<id>-vertical
 video/src/engine/              shared: Stage/camera, FX, captions, shot player, cue() phrase timing
 video/src/characters/          shared cast: Gristle, Dumpling, TallFigure, Cat, Bull/Dennis/Pig/Crow, Possum, Raccoon, Vulture, extras
-pipeline/                      audio -> transcript -> lip-sync -> timeline (Python + Rhubarb)
+pipeline/                      audio -> transcript -> lip-sync -> timeline (Python + Rhubarb; voice.py = music-proof mouths)
 renders/                       local renders (git-ignored; committed review masters are in Git LFS)
 ```
 
@@ -65,6 +65,7 @@ renders/                       local renders (git-ignored; committed review mast
 pipeline/fetch_audio.sh <url-or-file> episodes/005-name        # audio for analysis + Remotion
 python3 pipeline/transcribe.py episodes/005-name               # read the transcript, then write speakers.json
 pipeline/run_episode.sh episodes/005-name                      # -> video/src/episodes/005-name/timeline.json
+                                                               #    (mouths: --mouth auto, music/whisper-proof)
 ```
 Copy an existing `video/src/episodes/<id>/` as a template, write `shots.tsx` (use `cue(tl, "phrase")` for shot
 times so they follow the words), add it to `video/src/episodes/index.ts`, then `npm run render -- 005-name`.

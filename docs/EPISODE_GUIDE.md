@@ -20,7 +20,8 @@ implementation; read it before you start.
    (A title card at the end is fine.) Don't put audio credits in the repo either; the uploader adds them on the platform.
 2. **Never commit third-party audio or video.** `episodes/*/source/` and `video/public/episodes/*/audio.*` are git-ignored;
    keep it that way.
-3. Lip-sync must land on the character who is actually speaking (see §4).
+3. Lip-sync must land on the character who is actually speaking (see §4). Build timelines with `--mouth auto` (§3)
+   instead of hand-rolling per-episode mouth fixes.
 
 ## 2. Layout
 
@@ -44,8 +45,9 @@ pipeline/fetch_audio.sh <file-or-url> episodes/<id>      # source/ + video/publi
 python3 pipeline/transcribe.py episodes/<id>             # analysis/transcript.json (faster-whisper, word timings)
 pipeline/lipsync.sh episodes/<id>                        # analysis/mouth_cues.json (Rhubarb, mouth shapes A–H, X)
 # write episodes/<id>/speakers.json (see §4), then:
-python3 pipeline/build_timeline.py episodes/<id>         # -> video/src/episodes/<id>/timeline.json, prints every line
+python3 pipeline/build_timeline.py episodes/<id> --mouth auto   # -> video/src/episodes/<id>/timeline.json, prints every line
 ```
+(`pipeline/run_episode.sh episodes/<id>` runs the last three steps, with `--mouth auto`.)
 
 `speakers.json`:
 ```json
@@ -57,6 +59,33 @@ python3 pipeline/build_timeline.py episodes/<id>         # -> video/src/episodes
   the fallback for impossible cases.
 - **Read the printed line list after every build** and fix anchors until every line is on the right speaker.
 - One speaker? A single turn is enough.
+
+### Mouth shapes: `--mouth auto` (use it for every new episode)
+Rhubarb reads mouth shapes off the whole mix. On clean dialogue that's the most accurate source, but it fails when
+**music sits under the dialogue** (it finds ~2–3 mouth changes a second instead of 5–8, and opens the mouths on the
+music) and on **whispered words** (left shut). `--mouth auto` (`pipeline/voice.py`) measures the voice itself every
+10 ms (stereo centre minus sides, minus the music bed, 300–4000 Hz) and, per talking stretch:
+- keeps Rhubarb where the voice stands clear of the music and Rhubarb kept up;
+- rebuilds the stretch from the voice's loudness (how open) + the word's spelling (which shape) where the line sits on
+  music (less than 14.5 dB above the floor) or Rhubarb gave up (under 2.5 changes/s);
+- opens whispered words Rhubarb left shut (quiet but audible, at least 0.2 s) from the voice, moderately.
+
+The build prints what it did, e.g. `mouth (auto): 19 of 24 talking stretches from the voice level (music under the
+line: 18 ...)`. Default `--mouth rhubarb` reproduces old timelines byte for byte; `--mouth envelope` uses the voice
+everywhere. Measured on the episodes that needed per-episode fixes before this existed:
+
+| | Rhubarb only | `--mouth auto` | the episode's own fix |
+|---|---|---|---|
+| 010 "now" half, mouth changes/s | 2.5 | 4.3 | 7.8 (frame-by-frame) |
+| 010 "now" half, agreement with its hand-built track (correlation) | −0.11 | +0.62 | — |
+| 009, agreement with its voice-driven rig | +0.15 | +0.44 | — |
+| 005, whispered words opened | 0 | 21 | spelling for every shut word |
+| clean episodes (001/003/004/006/008), agreement with Rhubarb | — | 0.95–0.98 | — |
+
+`--retime-words` (optional): Whisper often stretches a word back over the silence before it (or a breath), so its
+caption and mouth start early. This moves such starts (and clearly over-long ends) to where the voice really is,
+walking back through s/sh/f hiss. It prints every change (`retimed The@48.18: start -> 50.14`); check them on long
+pauses or music-backed episodes, where it helps most.
 
 ## 4. Speaker identification (do this properly — it's the most important correctness step)
 
