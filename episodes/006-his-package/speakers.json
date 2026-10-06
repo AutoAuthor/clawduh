@@ -1,0 +1,19 @@
+{
+  "_comment": "Turns assigned from the script's meaning, checked against the reference video (1-6 fps around every ambiguous line) and a per-line pitch/timbre comparison. Close calls are explained in README.md (Speakers).",
+  "cast": {
+    "skeeter": "Skeeter - twitchy ferret porch pirate in a stained teal hoodie, came back for more",
+    "dobbins": "Mr. Dobbins - gangly mule homeowner with a too-wide buck-toothed grin, slicked mane, shirt and tie; creepy-polite goofy voice"
+  },
+  "turns": [
+    { "at": "Who are you", "speaker": "skeeter" },
+    { "at": "Who am I", "speaker": "dobbins" },
+    { "at": "What are you talking about", "speaker": "skeeter" },
+    { "at": "Caught you on my doorbell", "speaker": "dobbins" },
+    { "at": "Okay look I can explain", "speaker": "skeeter" },
+    { "at": "Ah ah ah ah", "speaker": "dobbins" },
+    { "at": "Baby oil", "speaker": "skeeter" },
+    { "at": "You're gonna learn today", "speaker": "dobbins" },
+    { "at": "Hey look I'm sorry", "speaker": "skeeter" },
+    { "at": "Oh no keep it", "speaker": "dobbins" }
+  ]
+}
