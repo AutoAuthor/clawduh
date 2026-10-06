@@ -5,10 +5,11 @@ import type { MouthShape } from "../../../engine/timeline";
 import { Pt, blob, onN, rnd, smoothPath } from "../../../engine/util";
 
 /**
- * WENDELL — an earnest bespectacled frog.
- * THEN (2016): bright green, round tortoiseshell glasses over bulging eyes, braces, an oxford shirt, a mustard-and-teal
- * argyle sweater vest, a red bow tie, khakis, webbed bare feet; a vocal sac that swells when he gets going.
- * NOW: the same frog after months underground — grey-olive dried-out skin, grime, hollow bloodshot eyes with pinprick
+ * WENDELL — an earnest bespectacled frog (a cobalt-blue poison-dart frog, on purpose not green).
+ * THEN (2016): cobalt blue with black spots, pale-blue belly and throat sac, round tortoiseshell glasses over bulging gold
+ * eyes, braces, a white oxford shirt, a mustard / burnt-orange argyle sweater vest, a red bow tie, khakis, webbed bare
+ * feet; a vocal sac that swells when he gets going. Wide-eyed and earnest, thin ink-line mouth (no lips).
+ * NOW: the same frog after months underground — dried-out slate-grey skin, grime, hollow bloodshot eyes with pinprick
  * pupils, one lens cracked, a matted moss beard, mushrooms sprouting from his scalp, a bandage, the vest in rags.
  * Faces right by default. Origin = floor between the feet (stand/float), the seat (sit), the floor under him (crouch:
  * sitting cross-legged).
@@ -17,10 +18,9 @@ import { Pt, blob, onN, rnd, smoothPath } from "../../../engine/util";
 export type FrogPose = "stand" | "sit" | "crouch" | "float";
 export type FrogExpr =
   | "earnest"
-  | "smug"
   | "proud"
   | "lecture"
-  | "disgust"
+  | "stern"
   | "serene"
   | "wink"
   | "shock"
@@ -76,41 +76,50 @@ export interface FrogProps {
 /* Palettes                                                            */
 /* ------------------------------------------------------------------ */
 
+// THEN: a cobalt-blue poison-dart frog with black spots and a pale-blue belly + throat sac (deliberately NOT green);
+// white oxford shirt, mustard / burnt-orange argyle. `lip: "none"` = no lip band, just a thin ink mouth line.
 const THEN = {
-  skin: "#7ab648",
-  skinDk: "#4e8a30",
-  belly: "#e1e8a6",
-  spot: "#5a9a36",
+  skin: "#3a8ddb",
+  skinDk: "#2160b2",
+  belly: "#b9dcf6",
+  spot: "#10151d",
+  sacLine: "#8cc0ea",
+  crack: "#1d4f8c",
   sclera: "#f7f2da",
   iris: "#e3aa28",
-  shirt: "#cfe1f2",
-  shirtDk: "#a5bcd4",
-  vest: "#e0b13c",
-  vestB: "#2e8c86",
-  vestLine: "#7a3a28",
+  shirt: "#f4f1e6",
+  shirtDk: "#d3cebd",
+  cuff: "#c4bfae",
+  vest: "#e2b443",
+  vestB: "#c8642a",
+  vestLine: "#5e3218",
   tie: "#cc3329",
   pants: "#c8b07c",
   pantsDk: "#a28a58",
   frame: "#5a3418",
-  lip: "#3d6e26",
+  lip: "none",
 };
+// NOW: the same frog gone desaturated slate / grey-blue (the moss beard stays a sickly green)
 const NOW = {
-  skin: "#6f7a50",
-  skinDk: "#475034",
-  belly: "#a6a682",
-  spot: "#535c38",
+  skin: "#5d6c7a",
+  skinDk: "#3d4956",
+  belly: "#98a4ae",
+  spot: "#232a32",
+  sacLine: "#7a8692",
+  crack: "#2a323b",
   sclera: "#f2e6b2",
   iris: "#8a6a2a",
   shirt: "#9c9d92",
   shirtDk: "#77786c",
+  cuff: "#6a6b60",
   vest: "#8c7838",
-  vestB: "#3c5a56",
+  vestB: "#7a4a2a",
   vestLine: "#4a2a1e",
   tie: "#6c2a22",
   pants: "#857452",
   pantsDk: "#65573c",
   frame: "#3a2412",
-  lip: "#353c26",
+  lip: "none",
 };
 
 interface ExprSpec {
@@ -125,12 +134,12 @@ interface ExprSpec {
   scream?: number;
 }
 
+// THEN expressions keep the eyes wide open (no heavy-lidded / smirking looks)
 const EXPR: Record<FrogExpr, ExprSpec> = {
-  earnest: { lidTop: 0.06, lidBottom: 0.04, lidAngle: 0, pupil: 1, smile: 0.4, brow: 0.8, browTilt: -6 },
-  smug: { lidTop: 0.46, lidBottom: 0.16, lidAngle: 8, pupil: 0.9, smile: 0.85, brow: 0.1, browTilt: 14 },
+  earnest: { lidTop: 0.04, lidBottom: 0.03, lidAngle: 0, pupil: 1, smile: 0.4, brow: 0.9, browTilt: -6 },
   proud: { lidTop: 0, lidBottom: 0, lidAngle: 0, pupil: 1, smile: 1.0, brow: 1.1, browTilt: -8, closed: "both" },
-  lecture: { lidTop: 0.24, lidBottom: 0.1, lidAngle: -6, pupil: 0.9, smile: 0.25, brow: 1.2, browTilt: -12 },
-  disgust: { lidTop: 0.42, lidBottom: 0.3, lidAngle: 16, pupil: 0.8, smile: -0.65, brow: -0.6, browTilt: 18 },
+  lecture: { lidTop: 0.04, lidBottom: 0.03, lidAngle: 0, pupil: 0.95, smile: 0.3, brow: 1.4, browTilt: -10 },
+  stern: { lidTop: 0.06, lidBottom: 0.05, lidAngle: 0, pupil: 0.9, smile: -0.45, brow: 0.4, browTilt: 16 },
   serene: { lidTop: 0, lidBottom: 0, lidAngle: 0, pupil: 1, smile: 0.6, brow: 1.0, browTilt: -6, closed: "both" },
   wink: { lidTop: 0.06, lidBottom: 0.04, lidAngle: 0, pupil: 1, smile: 0.95, brow: 0.9, browTilt: -4, closed: "near" },
   shock: { lidTop: 0, lidBottom: 0, lidAngle: 0, pupil: 0.45, smile: -0.4, brow: 1.7, browTilt: -6, scream: 1.15 },
@@ -395,7 +404,20 @@ export const Frog: React.FC<FrogProps> = ({
       lines.push(`M${-120 + k * 44},20 L${60 + k * 44},-200`);
       lines.push(`M${-120 + k * 44},-200 L${60 + k * 44},20`);
     }
-    const spots = Array.from({ length: 6 }).map((_, i) => blob(-74 + rnd(`${id}sp${i}`) * 110, -34 + rnd(`${id}spy${i}`) * 30, 6 + rnd(`${id}spr${i}`) * 7, 5 + rnd(`${id}spr2${i}`) * 5, 7, 0.25, `${id}spot${i}`));
+    // poison-dart spots: black, irregular, on the back of the head, the crown and the cheek (clear of eyes and mouth)
+    const spots = (
+      [
+        [-98, -12, 10, 8],
+        [-84, 14, 6, 5],
+        [-70, -34, 7, 6],
+        [-106, 24, 5, 4],
+        [0, -42, 6, 5],
+        [-22, -10, 5, 4],
+        [104, -4, 7, 6],
+        [114, 16, 4.5, 4],
+        [80, -38, 5, 4],
+      ] as Array<[number, number, number, number]>
+    ).map(([sx, sy, rx, ry], i) => blob(sx, sy, rx, ry, 7, 0.28, `${id}spot${i}`));
     const grime = Array.from({ length: 7 }).map((_, i) => blob(-90 + rnd(`${id}g${i}`) * 200, -40 + rnd(`${id}gy${i}`) * 90, 10 + rnd(`${id}gr${i}`) * 14, 7 + rnd(`${id}gr2${i}`) * 9, 8, 0.35, `${id}grime${i}`));
     const beard = (() => {
       const pts: Pt[] = [];
@@ -462,7 +484,11 @@ export const Frog: React.FC<FrogProps> = ({
       <g key={key}>
         <DLine d={`M${cuff0[0]},${cuff0[1]} L${h[0]},${h[1]}`} w={15} color={far ? C.skinDk : C.skin} ow={4} />
         <path d={taperPath([sh, el, cuff0], 40, 32)} fill={sleeve} stroke={INK} strokeWidth={5} strokeLinejoin="round" />
-        <path d={taperPath([cuff0, cuff], 36, 34)} fill={far ? "#8ea5bd" : C.shirtDk} stroke={INK} strokeWidth={4} />
+        <path d={taperPath([cuff0, cuff], 36, 34)} fill={far ? C.cuff : C.shirtDk} stroke={INK} strokeWidth={4} />
+        {/* two black spots on the bare forearm */}
+        {[0.4, 0.75].map((k, i) => (
+          <circle key={i} cx={cuff[0] + (h[0] - cuff[0]) * k} cy={cuff[1] + (h[1] - cuff[1]) * k} r={3.6} fill={C.spot} opacity={now ? 0.7 : 1} />
+        ))}
         {now ? <path d={`M${el[0] - 10},${el[1] - 4} l10,8 l-4,8 l12,4`} stroke={INK} strokeWidth={3} fill="none" /> : null}
       </g>
     );
@@ -481,6 +507,8 @@ export const Frog: React.FC<FrogProps> = ({
         ].map(([px, py], i) => (
           <circle key={i} cx={px} cy={py} r={5} fill={col} stroke={INK} strokeWidth={2.6} />
         ))}
+        <circle cx={12} cy={-2} r={4.5} fill={C.spot} opacity={now ? 0.7 : 1} />
+        <circle cx={28} cy={6} r={3} fill={C.spot} opacity={now ? 0.7 : 1} />
         {now ? <path d="M0,-6 q8,6 18,2" stroke="#2c2618" strokeWidth={4} fill="none" opacity={0.6} /> : null}
       </g>
     );
@@ -579,7 +607,7 @@ export const Frog: React.FC<FrogProps> = ({
     <g transform={headTr}>
       {/* vocal sac (behind the chin) */}
       <ellipse cx={14} cy={48 + sacIn * 16} rx={50 + sacIn * 22} ry={12 + sacIn * 24} fill={C.belly} stroke={INK} strokeWidth={4} />
-      {sacIn > 0.4 && !now ? <path d={`M-18,${62 + sacIn * 12} q32,${10 + sacIn * 6} 64,0`} stroke="#c7cf8a" strokeWidth={3} fill="none" /> : null}
+      {sacIn > 0.4 && !now ? <path d={`M-18,${62 + sacIn * 12} q32,${10 + sacIn * 6} 64,0`} stroke={C.sacLine} strokeWidth={3} fill="none" /> : null}
       {/* eye mounds */}
       <circle cx={-46} cy={-58} r={40} fill={C.skin} stroke={INK} strokeWidth={5} />
       <circle cx={48} cy={-62} r={46} fill={C.skin} stroke={INK} strokeWidth={5} />
@@ -590,14 +618,14 @@ export const Frog: React.FC<FrogProps> = ({
       {/* pale lower jaw + spots */}
       <path d="M-96,36 C-40,60 60,64 112,40 C100,58 60,72 10,72 C-40,72 -80,58 -96,36 Z" fill={C.belly} opacity={0.75} />
       {geo.spots.map((d, i) => (
-        <path key={i} d={d} fill={C.spot} opacity={0.75} />
+        <path key={i} d={d} fill={C.spot} opacity={now ? 0.75 : 1} />
       ))}
       {now ? (
         <g>
           {geo.grime.map((d, i) => (
             <path key={i} d={d} fill="#2c2618" opacity={0.3} />
           ))}
-          <path d="M-80,-6 l12,6 l-4,10 l12,4 M70,-24 l10,8 l-6,8 M-30,22 l8,-8 l10,4 M104,12 l-10,6 l4,10" stroke="#353c24" strokeWidth={2.5} fill="none" />
+          <path d="M-80,-6 l12,6 l-4,10 l12,4 M70,-24 l10,8 l-6,8 M-30,22 l8,-8 l10,4 M104,12 l-10,6 l4,10" stroke={C.crack} strokeWidth={2.5} fill="none" />
           {/* bandage band across the scalp, under the eyes */}
           <path d="M-116,-6 C-96,-46 -40,-66 0,-64 C40,-64 80,-54 112,-30 L108,-12 C80,-38 40,-48 0,-48 C-40,-48 -90,-28 -112,12 Z" fill="#d6ccb2" stroke={INK} strokeWidth={3.5} strokeLinejoin="round" />
           <path d={blob(-88, -14, 9, 7, 7, 0.3, `${id}blood`)} fill="#7a2a1e" opacity={0.85} />
@@ -665,7 +693,7 @@ export const Frog: React.FC<FrogProps> = ({
           seed={`${id}m${now ? "n" : "t"}`}
           x={22}
           y={28}
-          w={170}
+          w={158}
           maxOpen={70}
           shape={mouthShape}
           smile={e.smile}
