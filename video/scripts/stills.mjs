@@ -3,7 +3,7 @@
 //        LIST=1 COMP=ep002-troubled node scripts/stills.mjs     (print the resolved shot list)
 import { bundle } from "@remotion/bundler";
 import { renderStill, selectComposition } from "@remotion/renderer";
-import { existsSync, mkdirSync } from "node:fs";
+import { existsSync, mkdirSync, rmSync } from "node:fs";
 import path from "node:path";
 
 const HEADLESS = "/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell";
@@ -12,6 +12,9 @@ const out = path.resolve(process.env.OUT ?? "out/stills");
 mkdirSync(out, { recursive: true });
 
 const serveUrl = await bundle({ entryPoint: path.resolve("src/index.ts") });
+// bundle() copies the project (public/ audio included) to a temp folder and never deletes it; do it on exit
+process.on("exit", () => rmSync(serveUrl, { recursive: true, force: true }));
+process.on("SIGINT", () => process.exit(130)); // Ctrl-C: exit normally so the cleanup above runs
 const inputProps = { captions: true, debug: process.env.DEBUG !== "0" };
 const browserExecutable = existsSync(HEADLESS) ? HEADLESS : null;
 const composition = await selectComposition({ serveUrl, id: compId, inputProps, browserExecutable, chromiumOptions: { gl: "swiftshader" } });
