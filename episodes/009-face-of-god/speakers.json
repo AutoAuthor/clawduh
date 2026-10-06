@@ -1,0 +1,17 @@
+{
+  "_comment": "Three recorded voices: a dry, close-mic'd narrator and two reverberant dialogue voices (a breathy, half-whispered one and a calm, fully voiced one). Narration + the scared, whispering voice (the one who says 'Rachel') = Glim; the calm reassurer = Rachel, his inner consciousness. Evidence and close calls in README.md (Speakers); numbers from analysis/voice_analysis.py.",
+  "cast": {
+    "glim": "Glim - a humanoid astral being with a starry body, a hole in his chest full of night and a chipped ring orbiting his head; saw the face of God and no longer looks up",
+    "rachel": "Rachel - Glim's inner consciousness: a pale, glowing, inside-out double that unspools from a third eye on his forehead and grins too wide"
+  },
+  "turns": [
+    { "at": "I once saw the face of God", "speaker": "glim" },
+    { "at": "You know you're not alone", "speaker": "rachel" },
+    { "at": "No What", "speaker": "glim" },
+    { "at": "It's just the dogs", "speaker": "rachel" },
+    { "at": "No I mean at the window", "speaker": "glim" },
+    { "at": "At the window The wind's", "speaker": "rachel" },
+    { "at": "Oh I thought I heard", "speaker": "glim" },
+    { "at": "It's just the wind", "speaker": "rachel" }
+  ]
+}
