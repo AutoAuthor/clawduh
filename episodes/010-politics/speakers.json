@@ -1,0 +1,7 @@
+{
+  "_comment": "One speaker throughout (per the brief, confirmed by the audio check in the README): the two title read-outs, the 2016 lines and the 'now' lines are the same voice.",
+  "cast": {
+    "wendell": "Wendell - an earnest bespectacled frog in an argyle sweater vest (2016); the same frog, wrecked, trapped in a torch-lit underground hall (now)"
+  },
+  "turns": [{ "at": "My politics in 2016", "speaker": "wendell" }]
+}
