@@ -47,6 +47,8 @@ export interface ShotDef {
   end: number;
   name: string;
   grade?: Grade;
+  /** custom CSS filter for this shot (wins over `grade`), e.g. "hue-rotate(40deg) saturate(1.6)" */
+  filter?: string;
   transition?: TransitionIn;
   grain?: number;
   vignette?: number;
@@ -109,7 +111,7 @@ export const EpisodePlayer: React.FC<EpisodePlayerProps> = ({
     <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
       <FxContext.Provider value={fx}>
         <EpisodeContext.Provider value={ctx}>
-          <AbsoluteFill style={{ filter: fx.grade ? gradeFilter(shot.grade ?? "night") : undefined }}>{shot.render()}</AbsoluteFill>
+          <AbsoluteFill style={{ filter: fx.grade ? (shot.filter ?? gradeFilter(shot.grade ?? "night")) : undefined }}>{shot.render()}</AbsoluteFill>
         </EpisodeContext.Provider>
       </FxContext.Provider>
       <Vignette strength={shot.vignette ?? 0.85} />

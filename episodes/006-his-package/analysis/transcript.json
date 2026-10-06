@@ -1,0 +1,821 @@
+{
+  "language": "en",
+  "duration": 66.8270625,
+  "segments": [
+    {
+      "start": 5.34,
+      "end": 14.24,
+      "text": "Who are you? Who am I? I'm the guy you stole that package from. What are you talking about?",
+      "words": [
+        {
+          "start": 5.34,
+          "end": 5.82,
+          "word": "Who",
+          "p": 0.051
+        },
+        {
+          "start": 5.82,
+          "end": 6.3,
+          "word": "are",
+          "p": 0.907
+        },
+        {
+          "start": 6.3,
+          "end": 7.12,
+          "word": "you?",
+          "p": 0.995
+        },
+        {
+          "start": 7.68,
+          "end": 8.1,
+          "word": "Who",
+          "p": 0.696
+        },
+        {
+          "start": 8.1,
+          "end": 8.28,
+          "word": "am",
+          "p": 0.932
+        },
+        {
+          "start": 8.28,
+          "end": 8.96,
+          "word": "I?",
+          "p": 0.963
+        },
+        {
+          "start": 9.3,
+          "end": 9.48,
+          "word": "I'm",
+          "p": 0.933
+        },
+        {
+          "start": 9.48,
+          "end": 9.6,
+          "word": "the",
+          "p": 0.994
+        },
+        {
+          "start": 9.6,
+          "end": 9.8,
+          "word": "guy",
+          "p": 0.998
+        },
+        {
+          "start": 9.8,
+          "end": 9.96,
+          "word": "you",
+          "p": 0.858
+        },
+        {
+          "start": 9.96,
+          "end": 10.2,
+          "word": "stole",
+          "p": 0.999
+        },
+        {
+          "start": 10.2,
+          "end": 10.46,
+          "word": "that",
+          "p": 0.946
+        },
+        {
+          "start": 10.46,
+          "end": 10.92,
+          "word": "package",
+          "p": 0.99
+        },
+        {
+          "start": 10.92,
+          "end": 11.58,
+          "word": "from.",
+          "p": 0.993
+        },
+        {
+          "start": 13.02,
+          "end": 13.5,
+          "word": "What",
+          "p": 0.937
+        },
+        {
+          "start": 13.5,
+          "end": 13.58,
+          "word": "are",
+          "p": 0.979
+        },
+        {
+          "start": 13.58,
+          "end": 13.62,
+          "word": "you",
+          "p": 0.997
+        },
+        {
+          "start": 13.62,
+          "end": 13.82,
+          "word": "talking",
+          "p": 0.997
+        },
+        {
+          "start": 13.82,
+          "end": 14.24,
+          "word": "about?",
+          "p": 0.99
+        }
+      ]
+    },
+    {
+      "start": 14.84,
+      "end": 20.1,
+      "text": "Caught you on my doorbell camera, walked right up to my porch and took my package.",
+      "words": [
+        {
+          "start": 14.84,
+          "end": 14.94,
+          "word": "Caught",
+          "p": 0.904
+        },
+        {
+          "start": 14.94,
+          "end": 15.1,
+          "word": "you",
+          "p": 0.874
+        },
+        {
+          "start": 15.1,
+          "end": 15.24,
+          "word": "on",
+          "p": 0.683
+        },
+        {
+          "start": 15.24,
+          "end": 15.46,
+          "word": "my",
+          "p": 0.983
+        },
+        {
+          "start": 15.46,
+          "end": 15.84,
+          "word": "doorbell",
+          "p": 0.981
+        },
+        {
+          "start": 15.84,
+          "end": 16.36,
+          "word": "camera,",
+          "p": 0.827
+        },
+        {
+          "start": 16.88,
+          "end": 17.06,
+          "word": "walked",
+          "p": 0.905
+        },
+        {
+          "start": 17.06,
+          "end": 17.46,
+          "word": "right",
+          "p": 0.975
+        },
+        {
+          "start": 17.46,
+          "end": 17.66,
+          "word": "up",
+          "p": 0.995
+        },
+        {
+          "start": 17.66,
+          "end": 17.86,
+          "word": "to",
+          "p": 0.996
+        },
+        {
+          "start": 17.86,
+          "end": 18.08,
+          "word": "my",
+          "p": 0.998
+        },
+        {
+          "start": 18.08,
+          "end": 18.48,
+          "word": "porch",
+          "p": 0.995
+        },
+        {
+          "start": 18.48,
+          "end": 18.68,
+          "word": "and",
+          "p": 0.916
+        },
+        {
+          "start": 18.68,
+          "end": 18.86,
+          "word": "took",
+          "p": 0.997
+        },
+        {
+          "start": 18.86,
+          "end": 19.44,
+          "word": "my",
+          "p": 0.989
+        },
+        {
+          "start": 19.44,
+          "end": 20.1,
+          "word": "package.",
+          "p": 0.989
+        }
+      ]
+    },
+    {
+      "start": 21.02,
+      "end": 25.54,
+      "text": "That's not very nice. Okay, look, I can explain. I didn't mean",
+      "words": [
+        {
+          "start": 21.02,
+          "end": 21.5,
+          "word": "That's",
+          "p": 0.971
+        },
+        {
+          "start": 21.5,
+          "end": 21.7,
+          "word": "not",
+          "p": 0.972
+        },
+        {
+          "start": 21.7,
+          "end": 22.16,
+          "word": "very",
+          "p": 0.99
+        },
+        {
+          "start": 22.16,
+          "end": 22.78,
+          "word": "nice.",
+          "p": 0.997
+        },
+        {
+          "start": 23.94,
+          "end": 24.0,
+          "word": "Okay,",
+          "p": 0.918
+        },
+        {
+          "start": 24.0,
+          "end": 24.2,
+          "word": "look,",
+          "p": 0.972
+        },
+        {
+          "start": 24.28,
+          "end": 24.4,
+          "word": "I",
+          "p": 0.994
+        },
+        {
+          "start": 24.4,
+          "end": 24.54,
+          "word": "can",
+          "p": 0.979
+        },
+        {
+          "start": 24.54,
+          "end": 24.9,
+          "word": "explain.",
+          "p": 0.997
+        },
+        {
+          "start": 25.08,
+          "end": 25.08,
+          "word": "I",
+          "p": 0.926
+        },
+        {
+          "start": 25.08,
+          "end": 25.32,
+          "word": "didn't",
+          "p": 0.998
+        },
+        {
+          "start": 25.32,
+          "end": 25.54,
+          "word": "mean",
+          "p": 0.993
+        }
+      ]
+    },
+    {
+      "start": 25.54,
+      "end": 28.52,
+      "text": "Ah, ah, ah, ah! Too late for all that now!",
+      "words": [
+        {
+          "start": 25.54,
+          "end": 25.72,
+          "word": "Ah,",
+          "p": 0.036
+        },
+        {
+          "start": 26.04,
+          "end": 26.04,
+          "word": "ah,",
+          "p": 0.895
+        },
+        {
+          "start": 26.04,
+          "end": 26.22,
+          "word": "ah,",
+          "p": 0.977
+        },
+        {
+          "start": 26.22,
+          "end": 26.8,
+          "word": "ah!",
+          "p": 0.934
+        },
+        {
+          "start": 26.96,
+          "end": 27.1,
+          "word": "Too",
+          "p": 0.965
+        },
+        {
+          "start": 27.1,
+          "end": 27.34,
+          "word": "late",
+          "p": 0.987
+        },
+        {
+          "start": 27.34,
+          "end": 27.66,
+          "word": "for",
+          "p": 0.982
+        },
+        {
+          "start": 27.66,
+          "end": 27.86,
+          "word": "all",
+          "p": 0.987
+        },
+        {
+          "start": 27.86,
+          "end": 28.12,
+          "word": "that",
+          "p": 0.936
+        },
+        {
+          "start": 28.12,
+          "end": 28.52,
+          "word": "now!",
+          "p": 0.918
+        }
+      ]
+    },
+    {
+      "start": 29.44,
+      "end": 34.48,
+      "text": "Why don't you go ahead and open it, since you're so eager to take what's not yours!",
+      "words": [
+        {
+          "start": 29.44,
+          "end": 29.96,
+          "word": "Why",
+          "p": 0.353
+        },
+        {
+          "start": 29.96,
+          "end": 30.14,
+          "word": "don't",
+          "p": 0.993
+        },
+        {
+          "start": 30.14,
+          "end": 30.24,
+          "word": "you",
+          "p": 0.989
+        },
+        {
+          "start": 30.24,
+          "end": 30.42,
+          "word": "go",
+          "p": 0.981
+        },
+        {
+          "start": 30.42,
+          "end": 30.64,
+          "word": "ahead",
+          "p": 0.983
+        },
+        {
+          "start": 30.64,
+          "end": 30.96,
+          "word": "and",
+          "p": 0.981
+        },
+        {
+          "start": 30.96,
+          "end": 31.2,
+          "word": "open",
+          "p": 0.997
+        },
+        {
+          "start": 31.2,
+          "end": 31.64,
+          "word": "it,",
+          "p": 0.997
+        },
+        {
+          "start": 31.84,
+          "end": 31.92,
+          "word": "since",
+          "p": 0.872
+        },
+        {
+          "start": 31.92,
+          "end": 32.2,
+          "word": "you're",
+          "p": 0.964
+        },
+        {
+          "start": 32.2,
+          "end": 32.42,
+          "word": "so",
+          "p": 0.956
+        },
+        {
+          "start": 32.42,
+          "end": 32.8,
+          "word": "eager",
+          "p": 0.99
+        },
+        {
+          "start": 32.8,
+          "end": 33.06,
+          "word": "to",
+          "p": 0.994
+        },
+        {
+          "start": 33.06,
+          "end": 33.3,
+          "word": "take",
+          "p": 0.995
+        },
+        {
+          "start": 33.3,
+          "end": 33.66,
+          "word": "what's",
+          "p": 0.989
+        },
+        {
+          "start": 33.66,
+          "end": 33.86,
+          "word": "not",
+          "p": 0.995
+        },
+        {
+          "start": 33.86,
+          "end": 34.48,
+          "word": "yours!",
+          "p": 0.965
+        }
+      ]
+    },
+    {
+      "start": 40.08,
+      "end": 40.88,
+      "text": "Baby oil.",
+      "words": [
+        {
+          "start": 40.08,
+          "end": 40.6,
+          "word": "Baby",
+          "p": 0.746
+        },
+        {
+          "start": 40.6,
+          "end": 40.88,
+          "word": "oil.",
+          "p": 0.937
+        }
+      ]
+    },
+    {
+      "start": 42.56,
+      "end": 45.82,
+      "text": "Oh dear. You're gonna learn today?",
+      "words": [
+        {
+          "start": 42.56,
+          "end": 42.82,
+          "word": "Oh",
+          "p": 0.714
+        },
+        {
+          "start": 42.82,
+          "end": 43.26,
+          "word": "dear.",
+          "p": 0.565
+        },
+        {
+          "start": 44.24,
+          "end": 44.76,
+          "word": "You're",
+          "p": 0.947
+        },
+        {
+          "start": 44.76,
+          "end": 44.94,
+          "word": "gonna",
+          "p": 0.877
+        },
+        {
+          "start": 44.94,
+          "end": 45.34,
+          "word": "learn",
+          "p": 0.986
+        },
+        {
+          "start": 45.34,
+          "end": 45.82,
+          "word": "today?",
+          "p": 0.62
+        }
+      ]
+    },
+    {
+      "start": 46.34,
+      "end": 48.98,
+      "text": "Hey look, I'm sorry, you can actually take it back.",
+      "words": [
+        {
+          "start": 46.34,
+          "end": 46.48,
+          "word": "Hey",
+          "p": 0.773
+        },
+        {
+          "start": 46.48,
+          "end": 46.72,
+          "word": "look,",
+          "p": 0.719
+        },
+        {
+          "start": 46.84,
+          "end": 47.32,
+          "word": "I'm",
+          "p": 0.984
+        },
+        {
+          "start": 47.32,
+          "end": 47.62,
+          "word": "sorry,",
+          "p": 0.994
+        },
+        {
+          "start": 47.76,
+          "end": 47.88,
+          "word": "you",
+          "p": 0.993
+        },
+        {
+          "start": 47.88,
+          "end": 48.04,
+          "word": "can",
+          "p": 0.928
+        },
+        {
+          "start": 48.04,
+          "end": 48.32,
+          "word": "actually",
+          "p": 0.982
+        },
+        {
+          "start": 48.32,
+          "end": 48.58,
+          "word": "take",
+          "p": 0.997
+        },
+        {
+          "start": 48.58,
+          "end": 48.72,
+          "word": "it",
+          "p": 0.991
+        },
+        {
+          "start": 48.72,
+          "end": 48.98,
+          "word": "back.",
+          "p": 0.993
+        }
+      ]
+    },
+    {
+      "start": 49.28,
+      "end": 54.12,
+      "text": "Oh no, keep it! You're gonna need it for what happens next!",
+      "words": [
+        {
+          "start": 49.28,
+          "end": 49.46,
+          "word": "Oh",
+          "p": 0.979
+        },
+        {
+          "start": 49.46,
+          "end": 49.78,
+          "word": "no,",
+          "p": 0.92
+        },
+        {
+          "start": 50.08,
+          "end": 50.18,
+          "word": "keep",
+          "p": 0.77
+        },
+        {
+          "start": 50.18,
+          "end": 50.44,
+          "word": "it!",
+          "p": 0.865
+        },
+        {
+          "start": 51.36,
+          "end": 51.88,
+          "word": "You're",
+          "p": 0.979
+        },
+        {
+          "start": 51.88,
+          "end": 52.12,
+          "word": "gonna",
+          "p": 0.972
+        },
+        {
+          "start": 52.12,
+          "end": 52.46,
+          "word": "need",
+          "p": 0.807
+        },
+        {
+          "start": 52.46,
+          "end": 52.7,
+          "word": "it",
+          "p": 0.995
+        },
+        {
+          "start": 52.7,
+          "end": 52.9,
+          "word": "for",
+          "p": 0.972
+        },
+        {
+          "start": 52.9,
+          "end": 53.1,
+          "word": "what",
+          "p": 0.998
+        },
+        {
+          "start": 53.1,
+          "end": 53.58,
+          "word": "happens",
+          "p": 0.99
+        },
+        {
+          "start": 53.58,
+          "end": 54.12,
+          "word": "next!",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 54.12,
+      "end": 61.92,
+      "text": "you take something from me well I'm gonna take something from you ain't no",
+      "words": [
+        {
+          "start": 54.12,
+          "end": 54.84,
+          "word": "you",
+          "p": 0.169
+        },
+        {
+          "start": 54.84,
+          "end": 55.16,
+          "word": "take",
+          "p": 0.587
+        },
+        {
+          "start": 55.16,
+          "end": 55.58,
+          "word": "something",
+          "p": 0.943
+        },
+        {
+          "start": 55.58,
+          "end": 55.86,
+          "word": "from",
+          "p": 0.846
+        },
+        {
+          "start": 55.86,
+          "end": 56.4,
+          "word": "me",
+          "p": 0.968
+        },
+        {
+          "start": 56.4,
+          "end": 57.58,
+          "word": "well",
+          "p": 0.53
+        },
+        {
+          "start": 57.58,
+          "end": 57.9,
+          "word": "I'm",
+          "p": 0.701
+        },
+        {
+          "start": 57.9,
+          "end": 57.98,
+          "word": "gonna",
+          "p": 0.393
+        },
+        {
+          "start": 57.98,
+          "end": 58.28,
+          "word": "take",
+          "p": 0.964
+        },
+        {
+          "start": 58.28,
+          "end": 58.76,
+          "word": "something",
+          "p": 0.989
+        },
+        {
+          "start": 58.76,
+          "end": 59.12,
+          "word": "from",
+          "p": 0.924
+        },
+        {
+          "start": 59.12,
+          "end": 59.72,
+          "word": "you",
+          "p": 0.942
+        },
+        {
+          "start": 59.72,
+          "end": 61.78,
+          "word": "ain't",
+          "p": 0.665
+        },
+        {
+          "start": 61.78,
+          "end": 61.92,
+          "word": "no",
+          "p": 0.982
+        }
+      ]
+    },
+    {
+      "start": 61.92,
+      "end": 64.68,
+      "text": "party like a goofy party",
+      "words": [
+        {
+          "start": 61.92,
+          "end": 62.58,
+          "word": "party",
+          "p": 0.993
+        },
+        {
+          "start": 62.58,
+          "end": 63.46,
+          "word": "like",
+          "p": 0.945
+        },
+        {
+          "start": 63.46,
+          "end": 63.68,
+          "word": "a",
+          "p": 0.98
+        },
+        {
+          "start": 63.68,
+          "end": 64.1,
+          "word": "goofy",
+          "p": 0.995
+        },
+        {
+          "start": 64.1,
+          "end": 64.68,
+          "word": "party",
+          "p": 0.987
+        }
+      ]
+    }
+  ]
+}
