@@ -1,0 +1,2148 @@
+{
+  "language": "en",
+  "duration": 132.1911875,
+  "segments": [
+    {
+      "start": 0.96,
+      "end": 1.88,
+      "text": "What's wrong man?",
+      "words": [
+        {
+          "start": 0.96,
+          "end": 1.4,
+          "word": "What's",
+          "p": 0.619
+        },
+        {
+          "start": 1.4,
+          "end": 1.5,
+          "word": "wrong",
+          "p": 0.993
+        },
+        {
+          "start": 1.5,
+          "end": 1.88,
+          "word": "man?",
+          "p": 0.505
+        }
+      ]
+    },
+    {
+      "start": 2.52,
+      "end": 5.0,
+      "text": "This customer came in two minutes before closing and ordered a coffee.",
+      "words": [
+        {
+          "start": 2.52,
+          "end": 2.52,
+          "word": "This",
+          "p": 0.725
+        },
+        {
+          "start": 2.52,
+          "end": 2.8,
+          "word": "customer",
+          "p": 0.983
+        },
+        {
+          "start": 2.8,
+          "end": 3.0,
+          "word": "came",
+          "p": 0.994
+        },
+        {
+          "start": 3.0,
+          "end": 3.16,
+          "word": "in",
+          "p": 0.995
+        },
+        {
+          "start": 3.16,
+          "end": 3.3,
+          "word": "two",
+          "p": 0.793
+        },
+        {
+          "start": 3.3,
+          "end": 3.5,
+          "word": "minutes",
+          "p": 0.992
+        },
+        {
+          "start": 3.5,
+          "end": 3.72,
+          "word": "before",
+          "p": 0.997
+        },
+        {
+          "start": 3.72,
+          "end": 4.12,
+          "word": "closing",
+          "p": 0.995
+        },
+        {
+          "start": 4.12,
+          "end": 4.28,
+          "word": "and",
+          "p": 0.855
+        },
+        {
+          "start": 4.28,
+          "end": 4.52,
+          "word": "ordered",
+          "p": 0.99
+        },
+        {
+          "start": 4.52,
+          "end": 4.74,
+          "word": "a",
+          "p": 0.962
+        },
+        {
+          "start": 4.74,
+          "end": 5.0,
+          "word": "coffee.",
+          "p": 0.989
+        }
+      ]
+    },
+    {
+      "start": 5.34,
+      "end": 7.98,
+      "text": "Now I have to brew up a whole new pot even though I already cleaned the station.",
+      "words": [
+        {
+          "start": 5.34,
+          "end": 5.64,
+          "word": "Now",
+          "p": 0.973
+        },
+        {
+          "start": 5.64,
+          "end": 5.78,
+          "word": "I",
+          "p": 0.939
+        },
+        {
+          "start": 5.78,
+          "end": 5.9,
+          "word": "have",
+          "p": 0.993
+        },
+        {
+          "start": 5.9,
+          "end": 5.96,
+          "word": "to",
+          "p": 0.997
+        },
+        {
+          "start": 5.96,
+          "end": 6.06,
+          "word": "brew",
+          "p": 0.966
+        },
+        {
+          "start": 6.06,
+          "end": 6.14,
+          "word": "up",
+          "p": 0.969
+        },
+        {
+          "start": 6.14,
+          "end": 6.24,
+          "word": "a",
+          "p": 0.991
+        },
+        {
+          "start": 6.24,
+          "end": 6.32,
+          "word": "whole",
+          "p": 0.962
+        },
+        {
+          "start": 6.32,
+          "end": 6.52,
+          "word": "new",
+          "p": 0.987
+        },
+        {
+          "start": 6.52,
+          "end": 6.72,
+          "word": "pot",
+          "p": 0.986
+        },
+        {
+          "start": 6.72,
+          "end": 6.9,
+          "word": "even",
+          "p": 0.768
+        },
+        {
+          "start": 6.9,
+          "end": 7.04,
+          "word": "though",
+          "p": 0.988
+        },
+        {
+          "start": 7.04,
+          "end": 7.12,
+          "word": "I",
+          "p": 0.986
+        },
+        {
+          "start": 7.12,
+          "end": 7.26,
+          "word": "already",
+          "p": 0.804
+        },
+        {
+          "start": 7.26,
+          "end": 7.48,
+          "word": "cleaned",
+          "p": 0.975
+        },
+        {
+          "start": 7.48,
+          "end": 7.7,
+          "word": "the",
+          "p": 0.991
+        },
+        {
+          "start": 7.7,
+          "end": 7.98,
+          "word": "station.",
+          "p": 0.997
+        }
+      ]
+    },
+    {
+      "start": 9.0,
+      "end": 9.7,
+      "text": "Do you though?",
+      "words": [
+        {
+          "start": 9.0,
+          "end": 9.2,
+          "word": "Do",
+          "p": 0.943
+        },
+        {
+          "start": 9.2,
+          "end": 9.36,
+          "word": "you",
+          "p": 0.989
+        },
+        {
+          "start": 9.36,
+          "end": 9.7,
+          "word": "though?",
+          "p": 0.851
+        }
+      ]
+    },
+    {
+      "start": 10.72,
+      "end": 11.14,
+      "text": "Do you really?",
+      "words": [
+        {
+          "start": 10.72,
+          "end": 10.78,
+          "word": "Do",
+          "p": 0.956
+        },
+        {
+          "start": 10.78,
+          "end": 10.88,
+          "word": "you",
+          "p": 0.996
+        },
+        {
+          "start": 10.88,
+          "end": 11.14,
+          "word": "really?",
+          "p": 0.993
+        }
+      ]
+    },
+    {
+      "start": 12.06,
+      "end": 12.22,
+      "text": "What?",
+      "words": [
+        {
+          "start": 12.06,
+          "end": 12.22,
+          "word": "What?",
+          "p": 0.903
+        }
+      ]
+    },
+    {
+      "start": 12.78,
+      "end": 16.56,
+      "text": "Or, and hear me out, you give him decal.",
+      "words": [
+        {
+          "start": 12.78,
+          "end": 13.22,
+          "word": "Or,",
+          "p": 0.904
+        },
+        {
+          "start": 14.04,
+          "end": 14.16,
+          "word": "and",
+          "p": 0.607
+        },
+        {
+          "start": 14.16,
+          "end": 14.36,
+          "word": "hear",
+          "p": 0.989
+        },
+        {
+          "start": 14.36,
+          "end": 14.54,
+          "word": "me",
+          "p": 0.999
+        },
+        {
+          "start": 14.54,
+          "end": 15.32,
+          "word": "out,",
+          "p": 0.999
+        },
+        {
+          "start": 15.56,
+          "end": 15.64,
+          "word": "you",
+          "p": 0.621
+        },
+        {
+          "start": 15.64,
+          "end": 15.86,
+          "word": "give",
+          "p": 0.889
+        },
+        {
+          "start": 15.86,
+          "end": 16.06,
+          "word": "him",
+          "p": 0.891
+        },
+        {
+          "start": 16.06,
+          "end": 16.56,
+          "word": "decal.",
+          "p": 0.523
+        }
+      ]
+    },
+    {
+      "start": 17.22,
+      "end": 17.92,
+      "text": "Oh my god.",
+      "words": [
+        {
+          "start": 17.22,
+          "end": 17.4,
+          "word": "Oh",
+          "p": 0.959
+        },
+        {
+          "start": 17.4,
+          "end": 17.6,
+          "word": "my",
+          "p": 0.972
+        },
+        {
+          "start": 17.6,
+          "end": 17.92,
+          "word": "god.",
+          "p": 0.624
+        }
+      ]
+    },
+    {
+      "start": 18.1,
+      "end": 20.66,
+      "text": "You've got a whole pot, right there.",
+      "words": [
+        {
+          "start": 18.1,
+          "end": 18.34,
+          "word": "You've",
+          "p": 0.979
+        },
+        {
+          "start": 18.34,
+          "end": 18.46,
+          "word": "got",
+          "p": 0.996
+        },
+        {
+          "start": 18.46,
+          "end": 18.76,
+          "word": "a",
+          "p": 0.994
+        },
+        {
+          "start": 18.76,
+          "end": 19.04,
+          "word": "whole",
+          "p": 0.993
+        },
+        {
+          "start": 19.04,
+          "end": 19.64,
+          "word": "pot,",
+          "p": 0.995
+        },
+        {
+          "start": 20.04,
+          "end": 20.36,
+          "word": "right",
+          "p": 0.997
+        },
+        {
+          "start": 20.36,
+          "end": 20.66,
+          "word": "there.",
+          "p": 0.997
+        }
+      ]
+    },
+    {
+      "start": 21.48,
+      "end": 22.58,
+      "text": "And he can't tell the difference.",
+      "words": [
+        {
+          "start": 21.48,
+          "end": 21.62,
+          "word": "And",
+          "p": 0.963
+        },
+        {
+          "start": 21.62,
+          "end": 21.76,
+          "word": "he",
+          "p": 0.977
+        },
+        {
+          "start": 21.76,
+          "end": 22.0,
+          "word": "can't",
+          "p": 0.998
+        },
+        {
+          "start": 22.0,
+          "end": 22.1,
+          "word": "tell",
+          "p": 0.999
+        },
+        {
+          "start": 22.1,
+          "end": 22.26,
+          "word": "the",
+          "p": 0.997
+        },
+        {
+          "start": 22.26,
+          "end": 22.58,
+          "word": "difference.",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 23.96,
+      "end": 24.98,
+      "text": "At least not yet.",
+      "words": [
+        {
+          "start": 23.96,
+          "end": 24.38,
+          "word": "At",
+          "p": 0.989
+        },
+        {
+          "start": 24.38,
+          "end": 24.5,
+          "word": "least",
+          "p": 0.996
+        },
+        {
+          "start": 24.5,
+          "end": 24.7,
+          "word": "not",
+          "p": 0.916
+        },
+        {
+          "start": 24.7,
+          "end": 24.98,
+          "word": "yet.",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 25.64,
+      "end": 27.1,
+      "text": "I like that. Thanks man.",
+      "words": [
+        {
+          "start": 25.64,
+          "end": 25.8,
+          "word": "I",
+          "p": 0.978
+        },
+        {
+          "start": 25.8,
+          "end": 26.0,
+          "word": "like",
+          "p": 0.991
+        },
+        {
+          "start": 26.0,
+          "end": 26.32,
+          "word": "that.",
+          "p": 0.999
+        },
+        {
+          "start": 26.68,
+          "end": 26.84,
+          "word": "Thanks",
+          "p": 0.986
+        },
+        {
+          "start": 26.84,
+          "end": 27.1,
+          "word": "man.",
+          "p": 0.822
+        }
+      ]
+    },
+    {
+      "start": 27.88,
+      "end": 28.88,
+      "text": "Oh we're not done.",
+      "words": [
+        {
+          "start": 27.88,
+          "end": 28.06,
+          "word": "Oh",
+          "p": 0.962
+        },
+        {
+          "start": 28.06,
+          "end": 28.24,
+          "word": "we're",
+          "p": 0.825
+        },
+        {
+          "start": 28.24,
+          "end": 28.44,
+          "word": "not",
+          "p": 0.999
+        },
+        {
+          "start": 28.44,
+          "end": 28.88,
+          "word": "done.",
+          "p": 0.997
+        }
+      ]
+    },
+    {
+      "start": 28.88,
+      "end": 37.04,
+      "text": "Oh, no, no, no, not by a long shot, because when he comes back tomorrow morning with",
+      "words": [
+        {
+          "start": 28.88,
+          "end": 29.7,
+          "word": "Oh,",
+          "p": 0.247
+        },
+        {
+          "start": 29.76,
+          "end": 29.88,
+          "word": "no,",
+          "p": 0.959
+        },
+        {
+          "start": 30.0,
+          "end": 30.08,
+          "word": "no,",
+          "p": 0.868
+        },
+        {
+          "start": 30.2,
+          "end": 30.36,
+          "word": "no,",
+          "p": 0.796
+        },
+        {
+          "start": 30.44,
+          "end": 30.62,
+          "word": "not",
+          "p": 0.8
+        },
+        {
+          "start": 30.62,
+          "end": 30.84,
+          "word": "by",
+          "p": 0.99
+        },
+        {
+          "start": 30.84,
+          "end": 31.02,
+          "word": "a",
+          "p": 0.992
+        },
+        {
+          "start": 31.02,
+          "end": 31.18,
+          "word": "long",
+          "p": 0.996
+        },
+        {
+          "start": 31.18,
+          "end": 31.64,
+          "word": "shot,",
+          "p": 0.942
+        },
+        {
+          "start": 31.68,
+          "end": 33.58,
+          "word": "because",
+          "p": 0.961
+        },
+        {
+          "start": 33.58,
+          "end": 33.78,
+          "word": "when",
+          "p": 0.982
+        },
+        {
+          "start": 33.78,
+          "end": 33.9,
+          "word": "he",
+          "p": 0.995
+        },
+        {
+          "start": 33.9,
+          "end": 34.16,
+          "word": "comes",
+          "p": 0.998
+        },
+        {
+          "start": 34.16,
+          "end": 34.5,
+          "word": "back",
+          "p": 0.999
+        },
+        {
+          "start": 34.5,
+          "end": 34.9,
+          "word": "tomorrow",
+          "p": 0.976
+        },
+        {
+          "start": 34.9,
+          "end": 35.48,
+          "word": "morning",
+          "p": 0.992
+        },
+        {
+          "start": 35.48,
+          "end": 37.04,
+          "word": "with",
+          "p": 0.724
+        }
+      ]
+    },
+    {
+      "start": 37.04,
+      "end": 45.56,
+      "text": "a headache, exhausted, groggy, confused as to why, you know what you do, you hit him",
+      "words": [
+        {
+          "start": 37.04,
+          "end": 37.14,
+          "word": "a",
+          "p": 0.905
+        },
+        {
+          "start": 37.14,
+          "end": 37.44,
+          "word": "headache,",
+          "p": 0.997
+        },
+        {
+          "start": 37.52,
+          "end": 38.08,
+          "word": "exhausted,",
+          "p": 0.973
+        },
+        {
+          "start": 38.34,
+          "end": 38.56,
+          "word": "groggy,",
+          "p": 0.98
+        },
+        {
+          "start": 38.7,
+          "end": 39.64,
+          "word": "confused",
+          "p": 0.997
+        },
+        {
+          "start": 39.64,
+          "end": 39.92,
+          "word": "as",
+          "p": 0.95
+        },
+        {
+          "start": 39.92,
+          "end": 40.14,
+          "word": "to",
+          "p": 0.999
+        },
+        {
+          "start": 40.14,
+          "end": 40.44,
+          "word": "why,",
+          "p": 0.999
+        },
+        {
+          "start": 41.42,
+          "end": 41.52,
+          "word": "you",
+          "p": 0.982
+        },
+        {
+          "start": 41.52,
+          "end": 41.68,
+          "word": "know",
+          "p": 0.993
+        },
+        {
+          "start": 41.68,
+          "end": 41.86,
+          "word": "what",
+          "p": 0.994
+        },
+        {
+          "start": 41.86,
+          "end": 41.98,
+          "word": "you",
+          "p": 0.857
+        },
+        {
+          "start": 41.98,
+          "end": 42.68,
+          "word": "do,",
+          "p": 0.897
+        },
+        {
+          "start": 44.24,
+          "end": 45.34,
+          "word": "you",
+          "p": 0.895
+        },
+        {
+          "start": 45.34,
+          "end": 45.46,
+          "word": "hit",
+          "p": 0.998
+        },
+        {
+          "start": 45.46,
+          "end": 45.56,
+          "word": "him",
+          "p": 0.992
+        }
+      ]
+    },
+    {
+      "start": 45.56,
+      "end": 46.4,
+      "text": "again.",
+      "words": [
+        {
+          "start": 45.56,
+          "end": 46.4,
+          "word": "again.",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 47.54,
+      "end": 47.96,
+      "text": "Decaf.",
+      "words": [
+        {
+          "start": 47.54,
+          "end": 47.96,
+          "word": "Decaf.",
+          "p": 0.741
+        }
+      ]
+    },
+    {
+      "start": 48.58,
+      "end": 50.36,
+      "text": "Decaf is diabolical, man.",
+      "words": [
+        {
+          "start": 48.58,
+          "end": 49.06,
+          "word": "Decaf",
+          "p": 0.777
+        },
+        {
+          "start": 49.06,
+          "end": 49.24,
+          "word": "is",
+          "p": 0.947
+        },
+        {
+          "start": 49.24,
+          "end": 49.94,
+          "word": "diabolical,",
+          "p": 0.995
+        },
+        {
+          "start": 50.18,
+          "end": 50.36,
+          "word": "man.",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 50.46,
+      "end": 52.84,
+      "text": "Error 404, caffeine not found.",
+      "words": [
+        {
+          "start": 50.46,
+          "end": 50.66,
+          "word": "Error",
+          "p": 0.578
+        },
+        {
+          "start": 50.66,
+          "end": 51.36,
+          "word": "404,",
+          "p": 0.955
+        },
+        {
+          "start": 51.6,
+          "end": 51.92,
+          "word": "caffeine",
+          "p": 0.987
+        },
+        {
+          "start": 51.92,
+          "end": 52.26,
+          "word": "not",
+          "p": 0.986
+        },
+        {
+          "start": 52.26,
+          "end": 52.84,
+          "word": "found.",
+          "p": 1.0
+        }
+      ]
+    },
+    {
+      "start": 53.96,
+      "end": 54.98,
+      "text": "Oh, my God.",
+      "words": [
+        {
+          "start": 53.96,
+          "end": 54.34,
+          "word": "Oh,",
+          "p": 0.961
+        },
+        {
+          "start": 54.34,
+          "end": 54.54,
+          "word": "my",
+          "p": 0.999
+        },
+        {
+          "start": 54.54,
+          "end": 54.98,
+          "word": "God.",
+          "p": 0.718
+        }
+      ]
+    },
+    {
+      "start": 55.3,
+      "end": 58.38,
+      "text": "He can't tell the difference, at least not yet.",
+      "words": [
+        {
+          "start": 55.3,
+          "end": 55.54,
+          "word": "He",
+          "p": 0.994
+        },
+        {
+          "start": 55.54,
+          "end": 55.84,
+          "word": "can't",
+          "p": 0.997
+        },
+        {
+          "start": 55.84,
+          "end": 55.98,
+          "word": "tell",
+          "p": 0.999
+        },
+        {
+          "start": 55.98,
+          "end": 56.16,
+          "word": "the",
+          "p": 0.999
+        },
+        {
+          "start": 56.16,
+          "end": 56.56,
+          "word": "difference,",
+          "p": 0.999
+        },
+        {
+          "start": 57.44,
+          "end": 57.66,
+          "word": "at",
+          "p": 0.994
+        },
+        {
+          "start": 57.66,
+          "end": 57.78,
+          "word": "least",
+          "p": 0.999
+        },
+        {
+          "start": 57.78,
+          "end": 57.98,
+          "word": "not",
+          "p": 0.954
+        },
+        {
+          "start": 57.98,
+          "end": 58.38,
+          "word": "yet.",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 58.38,
+      "end": 63.46,
+      "text": "He'll probably thank you as you serve it with a smile.",
+      "words": [
+        {
+          "start": 58.38,
+          "end": 59.3,
+          "word": "He'll",
+          "p": 0.639
+        },
+        {
+          "start": 59.3,
+          "end": 59.64,
+          "word": "probably",
+          "p": 0.988
+        },
+        {
+          "start": 59.64,
+          "end": 59.94,
+          "word": "thank",
+          "p": 0.955
+        },
+        {
+          "start": 59.94,
+          "end": 60.52,
+          "word": "you",
+          "p": 0.998
+        },
+        {
+          "start": 60.52,
+          "end": 61.88,
+          "word": "as",
+          "p": 0.384
+        },
+        {
+          "start": 61.88,
+          "end": 62.02,
+          "word": "you",
+          "p": 0.977
+        },
+        {
+          "start": 62.02,
+          "end": 62.32,
+          "word": "serve",
+          "p": 0.993
+        },
+        {
+          "start": 62.32,
+          "end": 62.52,
+          "word": "it",
+          "p": 0.993
+        },
+        {
+          "start": 62.52,
+          "end": 62.68,
+          "word": "with",
+          "p": 0.987
+        },
+        {
+          "start": 62.68,
+          "end": 62.9,
+          "word": "a",
+          "p": 0.996
+        },
+        {
+          "start": 62.9,
+          "end": 63.46,
+          "word": "smile.",
+          "p": 0.996
+        }
+      ]
+    },
+    {
+      "start": 63.78,
+      "end": 65.24,
+      "text": "It's messed up, I love it.",
+      "words": [
+        {
+          "start": 63.78,
+          "end": 63.92,
+          "word": "It's",
+          "p": 0.849
+        },
+        {
+          "start": 63.92,
+          "end": 64.14,
+          "word": "messed",
+          "p": 0.921
+        },
+        {
+          "start": 64.14,
+          "end": 64.46,
+          "word": "up,",
+          "p": 0.99
+        },
+        {
+          "start": 64.46,
+          "end": 64.62,
+          "word": "I",
+          "p": 0.971
+        },
+        {
+          "start": 64.62,
+          "end": 64.9,
+          "word": "love",
+          "p": 0.996
+        },
+        {
+          "start": 64.9,
+          "end": 65.24,
+          "word": "it.",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 65.38,
+      "end": 65.96,
+      "text": "What's wrong with you?",
+      "words": [
+        {
+          "start": 65.38,
+          "end": 65.56,
+          "word": "What's",
+          "p": 0.86
+        },
+        {
+          "start": 65.56,
+          "end": 65.74,
+          "word": "wrong",
+          "p": 0.999
+        },
+        {
+          "start": 65.74,
+          "end": 65.9,
+          "word": "with",
+          "p": 0.901
+        },
+        {
+          "start": 65.9,
+          "end": 65.96,
+          "word": "you?",
+          "p": 0.876
+        }
+      ]
+    },
+    {
+      "start": 65.96,
+      "end": 67.92,
+      "text": "But it doesn't stop there.",
+      "words": [
+        {
+          "start": 65.96,
+          "end": 66.08,
+          "word": "But",
+          "p": 0.834
+        },
+        {
+          "start": 66.08,
+          "end": 66.34,
+          "word": "it",
+          "p": 0.984
+        },
+        {
+          "start": 66.34,
+          "end": 66.8,
+          "word": "doesn't",
+          "p": 0.997
+        },
+        {
+          "start": 66.8,
+          "end": 67.22,
+          "word": "stop",
+          "p": 0.999
+        },
+        {
+          "start": 67.22,
+          "end": 67.92,
+          "word": "there.",
+          "p": 0.994
+        }
+      ]
+    },
+    {
+      "start": 69.42,
+      "end": 73.94,
+      "text": "Because when he comes back the following afternoon,",
+      "words": [
+        {
+          "start": 69.42,
+          "end": 69.98,
+          "word": "Because",
+          "p": 0.825
+        },
+        {
+          "start": 69.98,
+          "end": 70.22,
+          "word": "when",
+          "p": 0.992
+        },
+        {
+          "start": 70.22,
+          "end": 70.54,
+          "word": "he",
+          "p": 0.983
+        },
+        {
+          "start": 70.54,
+          "end": 71.36,
+          "word": "comes",
+          "p": 0.987
+        },
+        {
+          "start": 71.36,
+          "end": 71.86,
+          "word": "back",
+          "p": 0.999
+        },
+        {
+          "start": 71.86,
+          "end": 72.94,
+          "word": "the",
+          "p": 0.773
+        },
+        {
+          "start": 72.94,
+          "end": 73.26,
+          "word": "following",
+          "p": 0.998
+        },
+        {
+          "start": 73.26,
+          "end": 73.94,
+          "word": "afternoon,",
+          "p": 0.989
+        }
+      ]
+    },
+    {
+      "start": 74.9,
+      "end": 76.24,
+      "text": "headaches, sleep deprived.",
+      "words": [
+        {
+          "start": 74.9,
+          "end": 75.46,
+          "word": "headaches,",
+          "p": 0.321
+        },
+        {
+          "start": 75.78,
+          "end": 75.86,
+          "word": "sleep",
+          "p": 0.988
+        },
+        {
+          "start": 75.86,
+          "end": 76.24,
+          "word": "deprived.",
+          "p": 0.828
+        }
+      ]
+    },
+    {
+      "start": 76.4,
+      "end": 77.74,
+      "text": "Y'all need hobbies, man.",
+      "words": [
+        {
+          "start": 76.4,
+          "end": 76.44,
+          "word": "Y",
+          "p": 0.742
+        },
+        {
+          "start": 76.44,
+          "end": 76.48,
+          "word": "'all",
+          "p": 0.995
+        },
+        {
+          "start": 76.48,
+          "end": 76.72,
+          "word": "need",
+          "p": 0.976
+        },
+        {
+          "start": 76.72,
+          "end": 77.16,
+          "word": "hobbies,",
+          "p": 0.983
+        },
+        {
+          "start": 77.48,
+          "end": 77.74,
+          "word": "man.",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 78.08,
+      "end": 79.08,
+      "text": "Hit him again.",
+      "words": [
+        {
+          "start": 78.08,
+          "end": 78.2,
+          "word": "Hit",
+          "p": 0.782
+        },
+        {
+          "start": 78.2,
+          "end": 78.32,
+          "word": "him",
+          "p": 0.659
+        },
+        {
+          "start": 78.32,
+          "end": 79.08,
+          "word": "again.",
+          "p": 0.997
+        }
+      ]
+    },
+    {
+      "start": 81.2,
+      "end": 82.44,
+      "text": "Take care, baby.",
+      "words": [
+        {
+          "start": 81.2,
+          "end": 81.76,
+          "word": "Take",
+          "p": 0.101
+        },
+        {
+          "start": 81.76,
+          "end": 82.08,
+          "word": "care,",
+          "p": 0.997
+        },
+        {
+          "start": 82.36,
+          "end": 82.44,
+          "word": "baby.",
+          "p": 0.986
+        }
+      ]
+    },
+    {
+      "start": 82.82,
+      "end": 83.46,
+      "text": "Y'all are messed up.",
+      "words": [
+        {
+          "start": 82.82,
+          "end": 82.92,
+          "word": "Y",
+          "p": 0.908
+        },
+        {
+          "start": 82.92,
+          "end": 82.94,
+          "word": "'all",
+          "p": 0.999
+        },
+        {
+          "start": 82.94,
+          "end": 83.04,
+          "word": "are",
+          "p": 0.891
+        },
+        {
+          "start": 83.04,
+          "end": 83.26,
+          "word": "messed",
+          "p": 0.998
+        },
+        {
+          "start": 83.26,
+          "end": 83.46,
+          "word": "up.",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 83.62,
+      "end": 84.66,
+      "text": "He'll probably start calling you out of work",
+      "words": [
+        {
+          "start": 83.62,
+          "end": 83.7,
+          "word": "He'll",
+          "p": 0.893
+        },
+        {
+          "start": 83.7,
+          "end": 83.7,
+          "word": "probably",
+          "p": 0.983
+        },
+        {
+          "start": 83.7,
+          "end": 83.84,
+          "word": "start",
+          "p": 0.971
+        },
+        {
+          "start": 83.84,
+          "end": 84.12,
+          "word": "calling",
+          "p": 0.99
+        },
+        {
+          "start": 84.12,
+          "end": 84.26,
+          "word": "you",
+          "p": 0.416
+        },
+        {
+          "start": 84.26,
+          "end": 84.3,
+          "word": "out",
+          "p": 0.982
+        },
+        {
+          "start": 84.3,
+          "end": 84.4,
+          "word": "of",
+          "p": 0.926
+        },
+        {
+          "start": 84.4,
+          "end": 84.66,
+          "word": "work",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 85.22,
+      "end": 87.5,
+      "text": "thinking he's suffering a terrible health crisis,",
+      "words": [
+        {
+          "start": 85.14,
+          "end": 85.42,
+          "word": "thinking",
+          "p": 0.592
+        },
+        {
+          "start": 85.42,
+          "end": 85.7,
+          "word": "he's",
+          "p": 0.991
+        },
+        {
+          "start": 85.7,
+          "end": 85.98,
+          "word": "suffering",
+          "p": 0.999
+        },
+        {
+          "start": 85.98,
+          "end": 86.62,
+          "word": "a",
+          "p": 0.704
+        },
+        {
+          "start": 86.62,
+          "end": 86.86,
+          "word": "terrible",
+          "p": 0.998
+        },
+        {
+          "start": 86.86,
+          "end": 87.12,
+          "word": "health",
+          "p": 0.997
+        },
+        {
+          "start": 87.12,
+          "end": 87.5,
+          "word": "crisis,",
+          "p": 0.997
+        }
+      ]
+    },
+    {
+      "start": 87.5,
+      "end": 96.34,
+      "text": "migraines, something you can't quite explain. That sounds illegal. And you just keep giving him",
+      "words": [
+        {
+          "start": 87.5,
+          "end": 88.4,
+          "word": "migraines,",
+          "p": 0.671
+        },
+        {
+          "start": 88.86,
+          "end": 88.98,
+          "word": "something",
+          "p": 0.98
+        },
+        {
+          "start": 88.98,
+          "end": 89.14,
+          "word": "you",
+          "p": 0.521
+        },
+        {
+          "start": 89.14,
+          "end": 89.38,
+          "word": "can't",
+          "p": 0.99
+        },
+        {
+          "start": 89.38,
+          "end": 89.54,
+          "word": "quite",
+          "p": 0.993
+        },
+        {
+          "start": 89.54,
+          "end": 90.04,
+          "word": "explain.",
+          "p": 0.999
+        },
+        {
+          "start": 90.74,
+          "end": 91.14,
+          "word": "That",
+          "p": 0.716
+        },
+        {
+          "start": 91.14,
+          "end": 91.58,
+          "word": "sounds",
+          "p": 0.989
+        },
+        {
+          "start": 91.58,
+          "end": 92.08,
+          "word": "illegal.",
+          "p": 0.987
+        },
+        {
+          "start": 92.76,
+          "end": 92.92,
+          "word": "And",
+          "p": 0.963
+        },
+        {
+          "start": 92.92,
+          "end": 93.18,
+          "word": "you",
+          "p": 0.996
+        },
+        {
+          "start": 93.18,
+          "end": 93.88,
+          "word": "just",
+          "p": 0.98
+        },
+        {
+          "start": 93.88,
+          "end": 94.76,
+          "word": "keep",
+          "p": 0.991
+        },
+        {
+          "start": 94.76,
+          "end": 95.62,
+          "word": "giving",
+          "p": 0.981
+        },
+        {
+          "start": 95.62,
+          "end": 96.34,
+          "word": "him",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 96.34,
+      "end": 102.9,
+      "text": "decaf. It's beautiful. Until eventually his body acclimates.",
+      "words": [
+        {
+          "start": 96.34,
+          "end": 97.2,
+          "word": "decaf.",
+          "p": 0.953
+        },
+        {
+          "start": 97.94,
+          "end": 98.34,
+          "word": "It's",
+          "p": 0.989
+        },
+        {
+          "start": 98.34,
+          "end": 98.78,
+          "word": "beautiful.",
+          "p": 0.999
+        },
+        {
+          "start": 100.34,
+          "end": 100.58,
+          "word": "Until",
+          "p": 0.633
+        },
+        {
+          "start": 100.58,
+          "end": 101.02,
+          "word": "eventually",
+          "p": 0.97
+        },
+        {
+          "start": 101.02,
+          "end": 101.92,
+          "word": "his",
+          "p": 0.493
+        },
+        {
+          "start": 101.92,
+          "end": 102.26,
+          "word": "body",
+          "p": 1.0
+        },
+        {
+          "start": 102.26,
+          "end": 102.9,
+          "word": "acclimates.",
+          "p": 0.967
+        }
+      ]
+    },
+    {
+      "start": 105.4,
+      "end": 110.2,
+      "text": "And he starts sleeping peacefully. Why? Why are you paused dramatically like that?",
+      "words": [
+        {
+          "start": 105.4,
+          "end": 105.66,
+          "word": "And",
+          "p": 0.758
+        },
+        {
+          "start": 105.66,
+          "end": 105.84,
+          "word": "he",
+          "p": 0.985
+        },
+        {
+          "start": 105.84,
+          "end": 106.22,
+          "word": "starts",
+          "p": 0.98
+        },
+        {
+          "start": 106.22,
+          "end": 106.74,
+          "word": "sleeping",
+          "p": 0.998
+        },
+        {
+          "start": 106.74,
+          "end": 107.28,
+          "word": "peacefully.",
+          "p": 0.997
+        },
+        {
+          "start": 108.36,
+          "end": 108.52,
+          "word": "Why?",
+          "p": 0.976
+        },
+        {
+          "start": 108.62,
+          "end": 108.74,
+          "word": "Why",
+          "p": 0.978
+        },
+        {
+          "start": 108.74,
+          "end": 108.94,
+          "word": "are",
+          "p": 0.653
+        },
+        {
+          "start": 108.94,
+          "end": 108.94,
+          "word": "you",
+          "p": 0.992
+        },
+        {
+          "start": 108.94,
+          "end": 109.2,
+          "word": "paused",
+          "p": 0.342
+        },
+        {
+          "start": 109.2,
+          "end": 109.66,
+          "word": "dramatically",
+          "p": 0.992
+        },
+        {
+          "start": 109.66,
+          "end": 109.92,
+          "word": "like",
+          "p": 0.986
+        },
+        {
+          "start": 109.92,
+          "end": 110.2,
+          "word": "that?",
+          "p": 0.994
+        }
+      ]
+    },
+    {
+      "start": 110.56,
+      "end": 117.28,
+      "text": "You know what to do, don't you? Then I give him regular. You're goddamn right you do.",
+      "words": [
+        {
+          "start": 110.56,
+          "end": 111.18,
+          "word": "You",
+          "p": 0.301
+        },
+        {
+          "start": 111.18,
+          "end": 112.54,
+          "word": "know",
+          "p": 0.997
+        },
+        {
+          "start": 112.54,
+          "end": 112.7,
+          "word": "what",
+          "p": 0.997
+        },
+        {
+          "start": 112.7,
+          "end": 112.84,
+          "word": "to",
+          "p": 0.995
+        },
+        {
+          "start": 112.84,
+          "end": 113.04,
+          "word": "do,",
+          "p": 0.999
+        },
+        {
+          "start": 113.22,
+          "end": 113.3,
+          "word": "don't",
+          "p": 0.999
+        },
+        {
+          "start": 113.3,
+          "end": 113.48,
+          "word": "you?",
+          "p": 0.977
+        },
+        {
+          "start": 114.68,
+          "end": 115.02,
+          "word": "Then",
+          "p": 0.867
+        },
+        {
+          "start": 115.02,
+          "end": 115.14,
+          "word": "I",
+          "p": 0.974
+        },
+        {
+          "start": 115.14,
+          "end": 115.28,
+          "word": "give",
+          "p": 0.97
+        },
+        {
+          "start": 115.28,
+          "end": 115.44,
+          "word": "him",
+          "p": 0.947
+        },
+        {
+          "start": 115.44,
+          "end": 115.82,
+          "word": "regular.",
+          "p": 0.746
+        },
+        {
+          "start": 116.06,
+          "end": 116.3,
+          "word": "You're",
+          "p": 0.967
+        },
+        {
+          "start": 116.3,
+          "end": 116.6,
+          "word": "goddamn",
+          "p": 0.816
+        },
+        {
+          "start": 116.6,
+          "end": 116.9,
+          "word": "right",
+          "p": 0.998
+        },
+        {
+          "start": 116.9,
+          "end": 117.12,
+          "word": "you",
+          "p": 0.884
+        },
+        {
+          "start": 117.12,
+          "end": 117.28,
+          "word": "do.",
+          "p": 0.448
+        }
+      ]
+    },
+    {
+      "start": 117.5,
+      "end": 121.46,
+      "text": "and throw in an extra shot on top a little red eye for being a loyal customer",
+      "words": [
+        {
+          "start": 117.5,
+          "end": 117.86,
+          "word": "and",
+          "p": 0.283
+        },
+        {
+          "start": 117.86,
+          "end": 118.08,
+          "word": "throw",
+          "p": 0.646
+        },
+        {
+          "start": 118.08,
+          "end": 118.22,
+          "word": "in",
+          "p": 0.95
+        },
+        {
+          "start": 118.22,
+          "end": 118.38,
+          "word": "an",
+          "p": 0.983
+        },
+        {
+          "start": 118.38,
+          "end": 118.66,
+          "word": "extra",
+          "p": 0.997
+        },
+        {
+          "start": 118.66,
+          "end": 119.02,
+          "word": "shot",
+          "p": 0.998
+        },
+        {
+          "start": 119.02,
+          "end": 119.24,
+          "word": "on",
+          "p": 0.985
+        },
+        {
+          "start": 119.24,
+          "end": 119.48,
+          "word": "top",
+          "p": 0.908
+        },
+        {
+          "start": 119.48,
+          "end": 119.68,
+          "word": "a",
+          "p": 0.156
+        },
+        {
+          "start": 119.68,
+          "end": 119.84,
+          "word": "little",
+          "p": 0.946
+        },
+        {
+          "start": 119.84,
+          "end": 120.1,
+          "word": "red",
+          "p": 0.967
+        },
+        {
+          "start": 120.1,
+          "end": 120.34,
+          "word": "eye",
+          "p": 0.739
+        },
+        {
+          "start": 120.34,
+          "end": 120.52,
+          "word": "for",
+          "p": 0.986
+        },
+        {
+          "start": 120.52,
+          "end": 120.72,
+          "word": "being",
+          "p": 0.978
+        },
+        {
+          "start": 120.72,
+          "end": 120.9,
+          "word": "a",
+          "p": 0.993
+        },
+        {
+          "start": 120.9,
+          "end": 121.18,
+          "word": "loyal",
+          "p": 0.988
+        },
+        {
+          "start": 121.18,
+          "end": 121.46,
+          "word": "customer",
+          "p": 0.828
+        }
+      ]
+    },
+    {
+      "start": 121.46,
+      "end": 125.16,
+      "text": "you have insomnia talk about jet fuel that heart rate will be popping",
+      "words": [
+        {
+          "start": 121.46,
+          "end": 121.62,
+          "word": "you",
+          "p": 0.587
+        },
+        {
+          "start": 121.62,
+          "end": 121.78,
+          "word": "have",
+          "p": 0.986
+        },
+        {
+          "start": 121.78,
+          "end": 122.34,
+          "word": "insomnia",
+          "p": 0.938
+        },
+        {
+          "start": 122.34,
+          "end": 122.86,
+          "word": "talk",
+          "p": 0.842
+        },
+        {
+          "start": 122.86,
+          "end": 123.18,
+          "word": "about",
+          "p": 0.998
+        },
+        {
+          "start": 123.18,
+          "end": 123.38,
+          "word": "jet",
+          "p": 0.978
+        },
+        {
+          "start": 123.38,
+          "end": 123.92,
+          "word": "fuel",
+          "p": 0.98
+        },
+        {
+          "start": 123.92,
+          "end": 124.22,
+          "word": "that",
+          "p": 0.906
+        },
+        {
+          "start": 124.22,
+          "end": 124.5,
+          "word": "heart",
+          "p": 0.996
+        },
+        {
+          "start": 124.5,
+          "end": 124.68,
+          "word": "rate",
+          "p": 0.984
+        },
+        {
+          "start": 124.68,
+          "end": 124.8,
+          "word": "will",
+          "p": 0.84
+        },
+        {
+          "start": 124.8,
+          "end": 124.92,
+          "word": "be",
+          "p": 0.996
+        },
+        {
+          "start": 124.92,
+          "end": 125.16,
+          "word": "popping",
+          "p": 0.195
+        }
+      ]
+    },
+    {
+      "start": 125.16,
+      "end": 128.18,
+      "text": "nah but what did this guy do to deserve this man",
+      "words": [
+        {
+          "start": 125.16,
+          "end": 125.56,
+          "word": "nah",
+          "p": 0.784
+        },
+        {
+          "start": 125.56,
+          "end": 125.74,
+          "word": "but",
+          "p": 0.929
+        },
+        {
+          "start": 125.74,
+          "end": 126.02,
+          "word": "what",
+          "p": 0.996
+        },
+        {
+          "start": 126.02,
+          "end": 126.26,
+          "word": "did",
+          "p": 0.999
+        },
+        {
+          "start": 126.26,
+          "end": 126.46,
+          "word": "this",
+          "p": 0.998
+        },
+        {
+          "start": 126.46,
+          "end": 126.72,
+          "word": "guy",
+          "p": 0.999
+        },
+        {
+          "start": 126.72,
+          "end": 126.98,
+          "word": "do",
+          "p": 0.997
+        },
+        {
+          "start": 126.98,
+          "end": 127.16,
+          "word": "to",
+          "p": 0.999
+        },
+        {
+          "start": 127.16,
+          "end": 127.54,
+          "word": "deserve",
+          "p": 0.999
+        },
+        {
+          "start": 127.54,
+          "end": 127.82,
+          "word": "this",
+          "p": 0.999
+        },
+        {
+          "start": 127.82,
+          "end": 128.18,
+          "word": "man",
+          "p": 0.984
+        }
+      ]
+    },
+    {
+      "start": 128.18,
+      "end": 130.18,
+      "text": "he ordered a coffee right before closing",
+      "words": [
+        {
+          "start": 128.18,
+          "end": 128.52,
+          "word": "he",
+          "p": 0.756
+        },
+        {
+          "start": 128.52,
+          "end": 128.76,
+          "word": "ordered",
+          "p": 0.999
+        },
+        {
+          "start": 128.76,
+          "end": 128.96,
+          "word": "a",
+          "p": 0.997
+        },
+        {
+          "start": 128.96,
+          "end": 129.22,
+          "word": "coffee",
+          "p": 0.998
+        },
+        {
+          "start": 129.22,
+          "end": 129.4,
+          "word": "right",
+          "p": 0.997
+        },
+        {
+          "start": 129.4,
+          "end": 129.64,
+          "word": "before",
+          "p": 1.0
+        },
+        {
+          "start": 129.64,
+          "end": 130.18,
+          "word": "closing",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 130.18,
+      "end": 131.64,
+      "text": "he gets what he fucking deserves",
+      "words": [
+        {
+          "start": 130.18,
+          "end": 130.46,
+          "word": "he",
+          "p": 0.97
+        },
+        {
+          "start": 130.46,
+          "end": 130.68,
+          "word": "gets",
+          "p": 0.811
+        },
+        {
+          "start": 130.68,
+          "end": 130.8,
+          "word": "what",
+          "p": 0.953
+        },
+        {
+          "start": 130.8,
+          "end": 130.94,
+          "word": "he",
+          "p": 0.997
+        },
+        {
+          "start": 130.94,
+          "end": 131.26,
+          "word": "fucking",
+          "p": 0.797
+        },
+        {
+          "start": 131.26,
+          "end": 131.64,
+          "word": "deserves",
+          "p": 0.994
+        }
+      ]
+    }
+  ]
+}
