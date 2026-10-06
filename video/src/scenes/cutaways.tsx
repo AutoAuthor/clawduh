@@ -393,7 +393,7 @@ export const ShedDoorScene: React.FC = () => {
 };
 
 /* ------------------------------------------------------------------ */
-/* Title / credit card                                                 */
+/* Title card                                                          */
 /* ------------------------------------------------------------------ */
 
 export const TitleCard: React.FC = () => {
@@ -407,9 +407,6 @@ export const TitleCard: React.FC = () => {
     <div style={{ position: "absolute", inset: 0, background: "#070506", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", opacity: o, padding: portrait ? "0 70px" : 0, textAlign: "center" }}>
       <div style={{ fontFamily: "Creepster", fontSize: portrait ? 118 : 128, lineHeight: 1.05, color: "#d9d27a", letterSpacing: 4, transform: `translate(${jit("a")}px, ${jit("b")}px) rotate(-1.5deg)`, textShadow: "0 0 30px rgba(200,40,20,0.45)" }}>
         BROTHER, MAY I HAVE SOME OATS?
-      </div>
-      <div style={{ fontFamily: "SpecialElite", fontSize: portrait ? 34 : 38, color: "#b9b0a0", marginTop: 36, transform: `translate(${jit("c")}px, 0)` }}>
-        voice &amp; audio: burialgoods — "brother may I have some oats" (a tribute to Joe Capo)
       </div>
     </div>
   );

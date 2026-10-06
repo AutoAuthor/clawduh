@@ -1,5 +1,4 @@
 import React, { useMemo } from "react";
-import { useVideoConfig } from "remotion";
 import { noise2D } from "@remotion/noise";
 import { Cat, CatProps } from "../../characters/Cat";
 import { INK } from "../../characters/parts";
@@ -325,16 +324,6 @@ export const OverShoulderScene: React.FC = () => {
   );
 };
 
-/** Small screen-space credit in the top-left corner (any output size). */
-const Credit: React.FC<{ text: string }> = ({ text }) => {
-  const { width } = useVideoConfig();
-  return (
-    <text x={width > 1200 ? 48 : 40} y={64} fontFamily="SpecialElite" fontSize={width > 1200 ? 30 : 34} fill="#d8d0bf" opacity={0.85}>
-      {text}
-    </text>
-  );
-};
-
 /** The punchline: water hits the cat square in the face. */
 export const SprayHitScene: React.FC<{ drenched?: boolean }> = ({ drenched = false }) => {
   const { shot } = useEpisode();
@@ -358,10 +347,7 @@ export const SprayHitScene: React.FC<{ drenched?: boolean }> = ({ drenched = fal
         !drenched && local < 0.12 ? (
           <ScreenFlash color="#ffffff" opacity={0.8 * (1 - local / 0.12)} />
         ) : (
-          <>
-            <LightWash id="moonwash2" color="#7da0d8" cx={1700} cy={200} r={900} opacity={0.25} />
-            {drenched ? <Credit text="voice: burialgoods" /> : null}
-          </>
+          <LightWash id="moonwash2" color="#7da0d8" cx={1700} cy={200} r={900} opacity={0.25} />
         )
       }
     >

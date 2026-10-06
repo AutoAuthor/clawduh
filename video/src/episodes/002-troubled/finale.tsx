@@ -346,7 +346,7 @@ export const NightRest: React.FC<{ chuckLying: boolean; brisketExpr?: "rage" | "
   );
 };
 
-/** Black title card with credit, sized for either format. */
+/** Black title card, sized for either format. */
 export const TitleCard002: React.FC = () => {
   const { shot } = useEpisode();
   const { width, height } = useVideoConfig();
@@ -358,7 +358,6 @@ export const TitleCard002: React.FC = () => {
       <div style={{ fontFamily: "Creepster", fontSize: portrait ? 112 : 124, lineHeight: 1.05, color: "#d9d27a", letterSpacing: 4, transform: `translate(${jit("a")}px, ${jit("b")}px) rotate(-1.5deg)`, textShadow: "0 0 30px rgba(200,40,20,0.45)" }}>
         BROTHER, I AM TROUBLED
       </div>
-      <div style={{ fontFamily: "SpecialElite", fontSize: portrait ? 34 : 38, color: "#b9b0a0", marginTop: 36 }}>voice &amp; audio: burialgoods — "Brother, I am troubled"</div>
     </div>
   );
 };
