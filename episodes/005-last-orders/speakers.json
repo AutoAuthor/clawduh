@@ -1,0 +1,37 @@
+{
+  "_comment": "Audio-only episode. Turns assigned from the script's meaning plus a per-line pitch / loudness / phonation and MFCC-timbre comparison (method and close calls in README).",
+  "cast": {
+    "lyle": "Lyle - the frazzled hedgehog barista stuck brewing a fresh pot at closing",
+    "vern": "Vern - the heavy-lidded iguana coworker with the escalating decaf revenge plan",
+    "mo": "Mo - the sloth on mop duty, the slow-motion voice of reason (until the very end)"
+  },
+  "turns": [
+    { "at": "What's wrong man", "speaker": "vern" },
+    { "at": "This customer came in", "speaker": "lyle" },
+    { "at": "Do you though", "speaker": "vern" },
+    { "at": "What", "speaker": "lyle" },
+    { "at": "Or and hear me out", "speaker": "vern" },
+    { "at": "I like that", "speaker": "lyle" },
+    { "at": "Oh we're not done", "speaker": "vern" },
+    { "at": "Decaf is diabolical", "speaker": "mo" },
+    { "at": "Error 404 caffeine", "speaker": "vern" },
+    { "at": "It's messed up I love it", "speaker": "lyle" },
+    { "at": "What's wrong with you", "speaker": "mo" },
+    { "at": "But it doesn't stop there", "speaker": "vern" },
+    { "at": "Y 'all need hobbies", "speaker": "mo" },
+    { "at": "Hit him again", "speaker": "vern" },
+    { "at": "Y 'all are messed up", "speaker": "mo" },
+    { "at": "He'll probably start calling", "speaker": "vern" },
+    { "at": "That sounds illegal", "speaker": "lyle" },
+    { "at": "And you just keep giving", "speaker": "vern" },
+    { "at": "Why Why are you paused", "speaker": "mo" },
+    { "at": "You know what to do", "speaker": "vern" },
+    { "at": "Then I give him regular", "speaker": "lyle" },
+    { "at": "You're goddamn right", "speaker": "vern" },
+    { "at": "you have insomnia", "speaker": "mo" },
+    { "at": "talk about jet fuel", "speaker": "vern" },
+    { "at": "nah but what did", "speaker": "mo" },
+    { "at": "he ordered a coffee right", "speaker": "lyle" },
+    { "at": "he gets what he", "speaker": "mo" }
+  ]
+}
