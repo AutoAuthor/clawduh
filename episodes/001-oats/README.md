@@ -9,7 +9,7 @@
 | **Status** | ✅ final — timeline from the real audio (whisper + Rhubarb) |
 | **Compositions** | `ep001-oats` (1920×1080) · `ep001-oats-vertical` (1080×1920) |
 | **Code** | `video/src/episodes/001-oats/` — `shots.tsx` (direction), `common.tsx` (positions/cameras), `timeline.json` |
-| **Masters** | `renders/ep001-oats/` (Git LFS) |
+| **Masters** | `renders/001-oats/` (Git LFS) |
 
 **Cast:** Brother Gristle (gaunt sheep who has seen the truth) · Brother Dumpling (fat believer with the red X) ·
 the Tall Skinny Figures · cameo props: the Shed of No Return, the roaring beast, the furry red demon.

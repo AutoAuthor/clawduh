@@ -6,5 +6,5 @@ tools/rhubarb/
 __pycache__/
 *.pyc
 
-# renders are made locally (episode 001 masters were committed via LFS before this rule)
+# renders are made locally; review masters are force-added (git add -f) and stored in Git LFS
 renders/
