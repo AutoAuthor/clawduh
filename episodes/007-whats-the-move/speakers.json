@@ -1,0 +1,19 @@
+{
+  "_comment": "Turns from the script's meaning, checked with a per-line timbre comparison (MFCC centroids + frame GMMs, leave-one-out) and the pitch track. Close calls are in the README. Build with --transcript analysis/transcript_fixed.json.",
+  "cast": {
+    "duane": "Duane - balding 45-year-old hyena on his mama's plastic-covered couch, birthday party hat, keeps asking what's the move",
+    "lyle": "Lyle - lanky goat in a sweaty shirt and loosened tie, car keys in hand, going home; roasts Duane with an ah-hyuk bleat-laugh"
+  },
+  "turns": [
+    { "at": "yo so what's the move", "speaker": "duane" },
+    { "at": "it's 3 a.m. i'm going home", "speaker": "lyle" },
+    { "at": "come on bro don't be like that", "speaker": "duane" },
+    { "at": "like what tired exhausted", "speaker": "lyle" },
+    { "at": "brother the night's still young", "speaker": "duane" },
+    { "at": "Oh dear you know what's not young", "speaker": "lyle" },
+    { "at": "Bro I'm just trying to have fun", "speaker": "duane" },
+    { "at": "You'll need to try to acquire", "speaker": "lyle" },
+    { "at": "what's the move move out of", "speaker": "duane" },
+    { "at": "Move out of my way so I", "speaker": "lyle" }
+  ]
+}

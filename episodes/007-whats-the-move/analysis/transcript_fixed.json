@@ -1,0 +1,786 @@
+{
+  "language": "en",
+  "duration": 61.2078125,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 9.02,
+      "text": "yo so what's the move what's the move it's 3 a.m i'm going home come on bro don't be like that",
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.42,
+          "word": "yo",
+          "p": 0.299
+        },
+        {
+          "start": 0.42,
+          "end": 0.86,
+          "word": "so",
+          "p": 0.711
+        },
+        {
+          "start": 0.86,
+          "end": 1.12,
+          "word": "what's",
+          "p": 0.892
+        },
+        {
+          "start": 1.12,
+          "end": 1.24,
+          "word": "the",
+          "p": 0.977
+        },
+        {
+          "start": 1.24,
+          "end": 1.78,
+          "word": "move",
+          "p": 0.989
+        },
+        {
+          "start": 2.95,
+          "end": 3.28,
+          "word": "what's",
+          "p": 0.758,
+          "fixed": true
+        },
+        {
+          "start": 3.3,
+          "end": 3.48,
+          "word": "the",
+          "p": 0.998
+        },
+        {
+          "start": 3.48,
+          "end": 3.94,
+          "word": "move",
+          "p": 0.997
+        },
+        {
+          "start": 4.25,
+          "end": 4.64,
+          "word": "it's",
+          "p": 0.905,
+          "fixed": true
+        },
+        {
+          "start": 4.66,
+          "end": 4.98,
+          "word": "3",
+          "p": 0.893
+        },
+        {
+          "start": 4.98,
+          "end": 5.34,
+          "word": "a.m.",
+          "p": 0.311,
+          "fixed": true
+        },
+        {
+          "start": 5.34,
+          "end": 5.6,
+          "word": "i'm",
+          "p": 0.978
+        },
+        {
+          "start": 5.6,
+          "end": 5.76,
+          "word": "going",
+          "p": 0.996
+        },
+        {
+          "start": 5.76,
+          "end": 6.3,
+          "word": "home",
+          "p": 0.984
+        },
+        {
+          "start": 7.12,
+          "end": 7.26,
+          "word": "come",
+          "p": 0.964,
+          "fixed": true
+        },
+        {
+          "start": 7.26,
+          "end": 7.64,
+          "word": "on",
+          "p": 0.999
+        },
+        {
+          "start": 7.64,
+          "end": 7.82,
+          "word": "bro",
+          "p": 0.525
+        },
+        {
+          "start": 7.82,
+          "end": 8.0,
+          "word": "don't",
+          "p": 0.993
+        },
+        {
+          "start": 8.0,
+          "end": 8.2,
+          "word": "be",
+          "p": 1.0
+        },
+        {
+          "start": 8.2,
+          "end": 8.42,
+          "word": "like",
+          "p": 1.0
+        },
+        {
+          "start": 8.42,
+          "end": 9.02,
+          "word": "that",
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "start": 9.55,
+      "end": 15.94,
+      "text": "like what tired exhausted sweaty i'm going home buddy it's late",
+      "words": [
+        {
+          "start": 9.55,
+          "end": 9.86,
+          "word": "like",
+          "p": 0.948,
+          "fixed": true
+        },
+        {
+          "start": 9.88,
+          "end": 10.25,
+          "word": "what",
+          "p": 0.996,
+          "fixed": true
+        },
+        {
+          "start": 10.95,
+          "end": 11.45,
+          "word": "tired",
+          "p": 0.854,
+          "fixed": true
+        },
+        {
+          "start": 11.82,
+          "end": 12.85,
+          "word": "exhausted",
+          "p": 0.988,
+          "fixed": true
+        },
+        {
+          "start": 12.9,
+          "end": 13.4,
+          "word": "sweaty",
+          "p": 0.964,
+          "fixed": true
+        },
+        {
+          "start": 13.75,
+          "end": 14.06,
+          "word": "i'm",
+          "p": 0.994,
+          "fixed": true
+        },
+        {
+          "start": 14.06,
+          "end": 14.28,
+          "word": "going",
+          "p": 0.999
+        },
+        {
+          "start": 14.28,
+          "end": 14.68,
+          "word": "home",
+          "p": 0.999
+        },
+        {
+          "start": 14.68,
+          "end": 15.12,
+          "word": "buddy",
+          "p": 0.883
+        },
+        {
+          "start": 15.12,
+          "end": 15.52,
+          "word": "it's",
+          "p": 0.994
+        },
+        {
+          "start": 15.52,
+          "end": 15.94,
+          "word": "late",
+          "p": 0.847
+        }
+      ]
+    },
+    {
+      "start": 17.1,
+      "end": 20.8,
+      "text": "brother the night's still young don't be a bitch",
+      "words": [
+        {
+          "start": 17.42,
+          "end": 17.9,
+          "word": "brother",
+          "p": 0.941,
+          "fixed": true
+        },
+        {
+          "start": 18.64,
+          "end": 18.78,
+          "word": "the",
+          "p": 0.987,
+          "fixed": true
+        },
+        {
+          "start": 18.78,
+          "end": 19.08,
+          "word": "night's",
+          "p": 0.974
+        },
+        {
+          "start": 19.08,
+          "end": 19.24,
+          "word": "still",
+          "p": 0.997
+        },
+        {
+          "start": 19.24,
+          "end": 19.74,
+          "word": "young",
+          "p": 0.999
+        },
+        {
+          "start": 19.74,
+          "end": 20.32,
+          "word": "don't",
+          "p": 0.996
+        },
+        {
+          "start": 20.32,
+          "end": 20.42,
+          "word": "be",
+          "p": 1.0
+        },
+        {
+          "start": 20.42,
+          "end": 20.62,
+          "word": "a",
+          "p": 0.999
+        },
+        {
+          "start": 20.62,
+          "end": 21.04,
+          "word": "bitch",
+          "p": 0.786
+        }
+      ]
+    },
+    {
+      "start": 23.78,
+      "end": 29.92,
+      "text": "Oh dear, you know what's not young? You! Ain't it time to start a family?",
+      "words": [
+        {
+          "start": 23.78,
+          "end": 24.1,
+          "word": "Oh",
+          "p": 0.217,
+          "fixed": true
+        },
+        {
+          "start": 24.1,
+          "end": 24.7,
+          "word": "dear,",
+          "p": 0.033,
+          "fixed": true
+        },
+        {
+          "start": 25.32,
+          "end": 25.46,
+          "word": "you",
+          "p": 0.748
+        },
+        {
+          "start": 25.46,
+          "end": 25.7,
+          "word": "know",
+          "p": 0.991
+        },
+        {
+          "start": 25.7,
+          "end": 25.98,
+          "word": "what's",
+          "p": 0.91
+        },
+        {
+          "start": 25.98,
+          "end": 26.2,
+          "word": "not",
+          "p": 0.987
+        },
+        {
+          "start": 26.2,
+          "end": 26.62,
+          "word": "young?",
+          "p": 0.977
+        },
+        {
+          "start": 27.32,
+          "end": 27.5,
+          "word": "You!",
+          "p": 0.791
+        },
+        {
+          "start": 28.32,
+          "end": 28.44,
+          "word": "Ain't",
+          "p": 0.962
+        },
+        {
+          "start": 28.44,
+          "end": 28.64,
+          "word": "it",
+          "p": 0.98
+        },
+        {
+          "start": 28.64,
+          "end": 28.8,
+          "word": "time",
+          "p": 0.982
+        },
+        {
+          "start": 28.8,
+          "end": 29.02,
+          "word": "to",
+          "p": 0.993
+        },
+        {
+          "start": 29.02,
+          "end": 29.24,
+          "word": "start",
+          "p": 0.992
+        },
+        {
+          "start": 29.24,
+          "end": 29.46,
+          "word": "a",
+          "p": 0.981
+        },
+        {
+          "start": 29.46,
+          "end": 29.92,
+          "word": "family?",
+          "p": 0.992
+        }
+      ]
+    },
+    {
+      "start": 30.86,
+      "end": 32.1,
+      "text": "Bro, I'm just trying to have fun.",
+      "words": [
+        {
+          "start": 30.86,
+          "end": 31.0,
+          "word": "Bro,",
+          "p": 0.443
+        },
+        {
+          "start": 31.04,
+          "end": 31.22,
+          "word": "I'm",
+          "p": 0.969
+        },
+        {
+          "start": 31.22,
+          "end": 31.3,
+          "word": "just",
+          "p": 0.966
+        },
+        {
+          "start": 31.3,
+          "end": 31.44,
+          "word": "trying",
+          "p": 0.69
+        },
+        {
+          "start": 31.44,
+          "end": 31.54,
+          "word": "to",
+          "p": 0.99
+        },
+        {
+          "start": 31.54,
+          "end": 31.76,
+          "word": "have",
+          "p": 0.997
+        },
+        {
+          "start": 31.76,
+          "end": 32.1,
+          "word": "fun.",
+          "p": 0.987
+        }
+      ]
+    },
+    {
+      "start": 32.9,
+      "end": 35.04,
+      "text": "You'll need to try to acquire some capital.",
+      "words": [
+        {
+          "start": 32.9,
+          "end": 33.32,
+          "word": "You'll",
+          "p": 0.637,
+          "fixed": true
+        },
+        {
+          "start": 33.32,
+          "end": 33.4,
+          "word": "need",
+          "p": 0.972
+        },
+        {
+          "start": 33.4,
+          "end": 33.66,
+          "word": "to",
+          "p": 0.995
+        },
+        {
+          "start": 33.66,
+          "end": 33.84,
+          "word": "try",
+          "p": 0.978
+        },
+        {
+          "start": 33.84,
+          "end": 34.0,
+          "word": "to",
+          "p": 0.829
+        },
+        {
+          "start": 34.0,
+          "end": 34.36,
+          "word": "acquire",
+          "p": 0.988
+        },
+        {
+          "start": 34.36,
+          "end": 34.7,
+          "word": "some",
+          "p": 0.998
+        },
+        {
+          "start": 34.7,
+          "end": 35.04,
+          "word": "capital.",
+          "p": 0.939
+        }
+      ]
+    },
+    {
+      "start": 36.0,
+      "end": 39.0,
+      "text": "You old at 3am asking what's the move.",
+      "words": [
+        {
+          "start": 36.0,
+          "end": 36.18,
+          "word": "You",
+          "p": 0.15,
+          "fixed": true
+        },
+        {
+          "start": 36.3,
+          "end": 36.8,
+          "word": "old",
+          "p": 0.3,
+          "fixed": true
+        },
+        {
+          "start": 36.8,
+          "end": 37.06,
+          "word": "at",
+          "p": 0.986
+        },
+        {
+          "start": 37.06,
+          "end": 37.72,
+          "word": "3am",
+          "p": 0.609
+        },
+        {
+          "start": 37.72,
+          "end": 38.18,
+          "word": "asking",
+          "p": 0.786
+        },
+        {
+          "start": 38.18,
+          "end": 38.58,
+          "word": "what's",
+          "p": 0.78
+        },
+        {
+          "start": 38.58,
+          "end": 38.74,
+          "word": "the",
+          "p": 0.995
+        },
+        {
+          "start": 38.74,
+          "end": 39.0,
+          "word": "move.",
+          "p": 0.982
+        }
+      ]
+    },
+    {
+      "start": 39.92,
+      "end": 41.36,
+      "text": "Move out your mama's house!",
+      "words": [
+        {
+          "start": 39.92,
+          "end": 40.18,
+          "word": "Move",
+          "p": 0.945
+        },
+        {
+          "start": 40.18,
+          "end": 40.38,
+          "word": "out",
+          "p": 0.744
+        },
+        {
+          "start": 40.38,
+          "end": 40.62,
+          "word": "your",
+          "p": 0.882
+        },
+        {
+          "start": 40.62,
+          "end": 41.08,
+          "word": "mama's",
+          "p": 0.824
+        },
+        {
+          "start": 41.08,
+          "end": 41.36,
+          "word": "house!",
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "start": 42.52,
+      "end": 43.46,
+      "text": "Move some weight!",
+      "words": [
+        {
+          "start": 42.52,
+          "end": 42.72,
+          "word": "Move",
+          "p": 0.988
+        },
+        {
+          "start": 42.72,
+          "end": 43.08,
+          "word": "some",
+          "p": 0.994
+        },
+        {
+          "start": 43.08,
+          "end": 43.46,
+          "word": "weight!",
+          "p": 0.206
+        }
+      ]
+    },
+    {
+      "start": 45.18,
+      "end": 46.4,
+      "text": "Move some bitches!",
+      "words": [
+        {
+          "start": 45.18,
+          "end": 45.46,
+          "word": "Move",
+          "p": 0.976
+        },
+        {
+          "start": 45.46,
+          "end": 45.82,
+          "word": "some",
+          "p": 0.996
+        },
+        {
+          "start": 45.82,
+          "end": 46.4,
+          "word": "bitches!",
+          "p": 0.922
+        }
+      ]
+    },
+    {
+      "start": 46.4,
+      "end": 49.06,
+      "text": "Ah-hyuk! Ah-hyuk! Ah-hyuk! Ah-hyuk!",
+      "words": [
+        {
+          "start": 46.4,
+          "end": 47.2,
+          "word": "Ah-hyuk!",
+          "p": 0.02,
+          "fixed": true
+        },
+        {
+          "start": 47.36,
+          "end": 47.74,
+          "word": "Ah-hyuk!",
+          "p": 0.921,
+          "fixed": true
+        },
+        {
+          "start": 48.06,
+          "end": 48.38,
+          "word": "Ah-hyuk!",
+          "p": 0.922,
+          "fixed": true
+        },
+        {
+          "start": 48.62,
+          "end": 49.06,
+          "word": "Ah-hyuk!",
+          "p": 0.897,
+          "fixed": true
+        }
+      ]
+    },
+    {
+      "start": 49.72,
+      "end": 51.26,
+      "text": "Ooh, what's the move?",
+      "words": [
+        {
+          "start": 49.72,
+          "end": 50.22,
+          "word": "Ooh,",
+          "p": 0.515
+        },
+        {
+          "start": 50.42,
+          "end": 50.76,
+          "word": "what's",
+          "p": 0.921
+        },
+        {
+          "start": 50.76,
+          "end": 50.96,
+          "word": "the",
+          "p": 0.991
+        },
+        {
+          "start": 50.96,
+          "end": 51.26,
+          "word": "move?",
+          "p": 0.554
+        }
+      ]
+    },
+    {
+      "start": 51.76,
+      "end": 55.02,
+      "text": "Move out of my way so I can go home and sleep! Ah-hyuk!",
+      "words": [
+        {
+          "start": 51.76,
+          "end": 51.94,
+          "word": "Move",
+          "p": 0.937
+        },
+        {
+          "start": 51.94,
+          "end": 52.2,
+          "word": "out",
+          "p": 0.999
+        },
+        {
+          "start": 52.2,
+          "end": 52.34,
+          "word": "of",
+          "p": 0.798
+        },
+        {
+          "start": 52.34,
+          "end": 52.5,
+          "word": "my",
+          "p": 0.997
+        },
+        {
+          "start": 52.5,
+          "end": 52.82,
+          "word": "way",
+          "p": 0.996
+        },
+        {
+          "start": 52.82,
+          "end": 53.08,
+          "word": "so",
+          "p": 0.833
+        },
+        {
+          "start": 53.08,
+          "end": 53.22,
+          "word": "I",
+          "p": 0.976
+        },
+        {
+          "start": 53.22,
+          "end": 53.38,
+          "word": "can",
+          "p": 0.981
+        },
+        {
+          "start": 53.38,
+          "end": 53.64,
+          "word": "go",
+          "p": 0.985
+        },
+        {
+          "start": 53.64,
+          "end": 53.8,
+          "word": "home",
+          "p": 0.999
+        },
+        {
+          "start": 53.8,
+          "end": 53.98,
+          "word": "and",
+          "p": 0.988
+        },
+        {
+          "start": 53.98,
+          "end": 54.44,
+          "word": "sleep!",
+          "p": 0.998
+        },
+        {
+          "start": 54.68,
+          "end": 55.02,
+          "word": "Ah-hyuk!",
+          "p": 0.917,
+          "fixed": true
+        }
+      ]
+    }
+  ],
+  "_comment": "whisper transcript.json with corrected word boundaries (checked against loudness + pitch) and 'Held' -> 'You old'. Words changed by hand carry fixed=true. Build with --transcript analysis/transcript_fixed.json."
+}
